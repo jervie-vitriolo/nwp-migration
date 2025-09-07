@@ -1,12 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Update.Internal;
-using NWP_DB_Migration.Article;
-using System;
-using System.Collections.Generic;
-using System.Net.NetworkInformation;
-using System.Reflection.PortableExecutable;
+﻿using NWP_DB_Migration.Article;
 using System.Text.RegularExpressions;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
+using static System.Net.Mime.MediaTypeNames;
+
 
 List<string[]> articleList = new List<string[]>();
 articleList.Add(new[] { "28,197" });
@@ -41,7 +38,7 @@ foreach (var range in articleList)
     var p = deserializer.Deserialize<Post>(yml);
     if (p != null)
     {
-        CreatetSqlInsert(p);
+        CreatePostInsertSql(p);
     }
 
 
@@ -49,12 +46,16 @@ foreach (var range in articleList)
 }
 
 
-void CreatetSqlInsert(Post post){
+void CreatePostInsertSql(Post post){
 
-    string InsertString = $"INSERT INTO `wp_posts` ( `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
+    string PostInsertSql = $"INSERT INTO `wp_posts` ( `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
                           $"VALUES( '{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{post.title}', '{post.caption}', '{getPostStatus(post)}', 'open', 'open', '', '{post.title.Replace(" ", "-")}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
 
+    //Extract fetured image
+    ExtractFeaturedImage(post.imagesource);
 }
+
+
 
 string formatDateTime(DateTime created)
 {
@@ -114,7 +115,6 @@ string CleanChecks(string text)
 {
     try
     {
-     
 
         text= Regex.Replace(text, @"[\r\n\x00\x1a\\'""]", @"\$0");
 
@@ -166,6 +166,92 @@ List<string> GetArticles(string filePath, int startLine, int endLine)
         return new List<string>(); // Return empty list on error
     }
 }
+
+
+void ExtractFeaturedImage(string imageSource)
+{
+    var filePath = @"C:\temp\images.nwp.2025.9.xml";
+
+
+    if (!File.Exists(filePath))
+    {
+        Console.WriteLine($"Error: File not found at {filePath}");
+        return;
+    }
+
+    try
+    {
+        // Use File.ReadLines to read lines lazily and efficiently
+        var matchingLines = File.ReadLines(filePath)
+                                .Select((line, index) => new { LineText = line, LineNumber = index + 1 })
+                                .Where(item => item.LineText.Contains(imageSource));
+
+        string ImageFileName = string.Empty;
+        if (matchingLines.Any())
+        {
+            var startLine = matchingLines.FirstOrDefault().LineNumber;
+
+            int skipCount = startLine - 1;
+            int takeCount = 70  ;
+
+            // Skip the lines before the start of the range, then take the specified number of lines.
+            var ImageRange = File.ReadLines(filePath)
+                       .Skip(skipCount)
+                       .Take(takeCount)
+                       .ToList();
+
+            bool IsFound = false;
+
+            foreach (var item in ImageRange)
+            {
+                if (IsFound)
+                {
+                    //convert base 64 string to Jpg
+                    Base64StringToJpeg(item.Replace("<sv:value>", "").Replace("</sv:value>","") , imageSource);
+
+
+                    break;
+                }
+                else if (item.Contains("<sv:property sv:name=\"jcr:data\" sv:type=\"Binary\">"))
+                {
+                    IsFound = true;
+                    continue;
+                }
+            }
+
+        }
+        else
+        {
+            Console.WriteLine($"'{imageSource}' not found in the file.");
+        }
+    }
+    catch (FileNotFoundException)
+    {
+        Console.WriteLine($"Error: File not found at '{filePath}'");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"An error occurred: {ex.Message}");
+    }
+}
+
+void Base64StringToJpeg(string base64String, string fileName)
+{
+    try
+    {
+        string filePath = $@"C:\temp\{fileName}.jpg";
+        File.WriteAllBytes(filePath, Convert.FromBase64String(base64String));
+    }
+    catch (FormatException ex)
+    {
+        Console.WriteLine($"Error: Invalid Base64 string. {ex.Message}");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"An error occurred: {ex.Message}");
+    }
+}
+
 static void ProcessAuthors(string filePath, string searchText)
 {
     if (!File.Exists(filePath))
