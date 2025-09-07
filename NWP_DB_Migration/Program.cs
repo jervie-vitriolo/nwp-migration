@@ -1,7 +1,10 @@
-﻿using NWP_DB_Migration.Article;
+﻿using Microsoft.EntityFrameworkCore.Update.Internal;
+using NWP_DB_Migration.Article;
 using System;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
+using System.Reflection.PortableExecutable;
+using System.Text.RegularExpressions;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
@@ -41,10 +44,7 @@ foreach (var range in articleList)
         CreatetSqlInsert(p);
     }
 
-    
-    //Author
-    //Get the Id of the author from user table
-    //author 38, category 36
+
 
 }
 
@@ -52,8 +52,13 @@ foreach (var range in articleList)
 void CreatetSqlInsert(Post post){
 
     string InsertString = $"INSERT INTO `wp_posts` ( `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
-                          $"VALUES( '{getPostAuthorID(post.author)}', '{post.created}', '{post.created}', '{getPostContent(post)}', '{post.title}', '{post.caption}', '{getPostStatus(post)}', 'open', 'open', '', '{post.title.Replace(" ","-")}', '', '', '{post.lastmodified}', '{post.lastmodified}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
+                          $"VALUES( '{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{post.title}', '{post.caption}', '{getPostStatus(post)}', 'open', 'open', '', '{post.title.Replace(" ", "-")}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
 
+}
+
+string formatDateTime(DateTime created)
+{
+    return created.ToString("yyyy-MM-dd HH:mm:ss");
 }
 
 string getPostStatus(Post post)
@@ -75,7 +80,58 @@ int getPostAuthorID(string name)
 
 string getPostContent(Post post)
 {
-    return "";
+    string finalString = string.Empty;
+
+    try
+    {
+        finalString = CleanChecks(post.section0.text);
+        finalString = finalString + CleanChecks(post.section1.text);
+        finalString = finalString + CleanChecks(post.section2.text);
+        finalString = finalString + CleanChecks(post.section3.text);
+        finalString = finalString + CleanChecks(post.section4.text);
+        finalString = finalString + CleanChecks(post.section5.text);
+        finalString = finalString + CleanChecks(post.section6.text);
+        finalString = finalString + CleanChecks(post.section7.text);
+        finalString = finalString + CleanChecks(post.section8.text);
+        finalString = finalString + CleanChecks(post.section9.text);
+        finalString = finalString + CleanChecks(post.section10.text);
+        finalString = finalString + CleanChecks(post.section11.text);
+        finalString = finalString + CleanChecks(post.section12.text);
+        finalString = finalString + CleanChecks(post.section13.text);
+    }
+    catch (Exception ex)
+    {
+        return finalString;
+    }
+    
+
+
+
+    return finalString;
+}
+
+string CleanChecks(string text)
+{
+    try
+    {
+     
+
+        text= Regex.Replace(text, @"[\r\n\x00\x1a\\'""]", @"\$0");
+
+        if (!text.Contains("<p>") && !text.Contains("</p>"))
+        {
+            return $"<p>{text}</p> {Environment.NewLine}";
+
+        }
+
+        return text + Environment.NewLine;
+    }
+    catch (Exception)
+    {
+
+        throw;
+    }
+
 }
 
 List<string> GetArticles(string filePath, int startLine, int endLine)
