@@ -2,76 +2,138 @@
 using System.IO;
 using System.Net.NetworkInformation;
 using System.Text.RegularExpressions;
+using System.Xml.Linq;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 using static System.Net.Mime.MediaTypeNames;
 
 
-List<string[]> articleList = new List<string[]>();
-articleList.Add(new[] { "28,197" });
 
-var fileName = @"C:\temp\stories.nwp.2025.9.yaml";
+//0.
+//Clean up article
+//CleanUpArticle();
 
 //1.
 //ProcessAuthors(fileName, "author:");
 
 //2.
-//GenerateInsertSql(articleList, fileName);
+GenerateInsertSql();
 
 
 //3.
 //Extract fetured image
-ExtractFeaturedImage();
+//ExtractFeaturedImage();
 
-void CreatePostInsertSql(Post post){
 
-    int PostID = 2406;
-    int ImageId = 2405;
+void CleanUpArticle()
+{
+    string subpath = "";
+    // Get all subdirectories in the specified path
+    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - in progress\5" };
+
+
+    // Loop through each directory
+    foreach (string directory in directories)
+    {
+        Console.WriteLine(directory);
+        
+        foreach (string filePath in Directory.EnumerateFiles(directory))
+        {
+            Console.WriteLine($"Found file: {filePath}");
+            
+            string updatedcontent=string.Empty; 
+
+            for (int i = 0; i < 582; i++)
+            {
+                string matchingLines = File.ReadAllText(filePath);
+                updatedcontent = matchingLines.Replace($"'{i}':", $"section{i}:");
+                File.WriteAllText(filePath, updatedcontent);
+            }
+
+            
+        }
+
+    }
+}
+
+void CreatePostInsertSql(Post post,int PostID,int ImageId){
+
+    
 
 
     string WP_Post_Article_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
                           $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{post.title}', '{post.caption}', '{getPostStatus(post)}', 'open', 'open', '', '{post.title.Replace(" ", "-")}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
 
-
-   
     string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{GetPostMetaValue(post.imagesource)}');";
 
 }
 
 
-void GenerateInsertSql(List<string[]> articleList, string fileName)
+void GenerateInsertSql()
 {
-    foreach (var range in articleList)
+    string subpath = "";
+    // Get all subdirectories in the specified path
+    //string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - DONE\5",
+    //                         @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - DONE\6",
+    //                         @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - DONE\7"};
+
+    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - DONE\5"};
+
+
+    // Loop through each directory
+    foreach (string directory in directories)
     {
-        // Split the string by comma and convert each part to an integer
-        int[] intArray = range.FirstOrDefault().Split(',')
-                        .Select(s => int.Parse(s.Trim())) // Trim to handle potential whitespace
-                        .ToArray();
-
-        int startLine = intArray[0];
-        int endLine = intArray[1];
-
-        List<string> articles = GetArticles(fileName, startLine, endLine);
-        string yml = string.Join("\n", articles);
-
-        //start parsing
-        var deserializer = new DeserializerBuilder()
-            .WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
-            .Build();
-
-
-        //yml contains a string containing your YAML
-        var p = deserializer.Deserialize<Post>(yml);
-        if (p != null)
+        Console.WriteLine(directory);
+        int PostID = 2881;
+        int ImageId = 2882;
+        foreach (string filePath in Directory.EnumerateFiles(directory))
         {
-            CreatePostInsertSql(p);
+            Console.WriteLine($"Found file: {filePath}");
+
+            var matchingLines = File.ReadLines(filePath)
+                                .Select((line, index) => new { LineText = line, LineNumber = index + 1 })
+                                .Where(item => item.LineText.Contains("START HERE----->"));
+
+            int[] lineNumbers = matchingLines.Select(x => x.LineNumber).ToArray();
+
+            for (int i = 0; i < lineNumbers.Length; i++)
+            {
+
+                int startLine = lineNumbers[i]+1;
+                int endLine = lineNumbers[i+1]-1;
+
+                List<string> articles = GetArticles(filePath, startLine, endLine);
+                string yml = string.Join("\n", articles);
+
+                //start parsing
+                var deserializer = new DeserializerBuilder()
+                    .WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
+                    .Build();
+
+
+                //yml contains a string containing your YAML
+                var p = deserializer.Deserialize<Post>(yml);
+                if (p != null)
+                {
+                    CreatePostInsertSql(p,PostID,ImageId);
+                    PostID++;
+                    ImageId++;
+                }
+
+            }
+            
+
         }
+
     }
+
 }
 
 int GetPostMetaValue(string imagesource)
 {
-    return 2412;
+    ImageList ImageList = new ImageList();
+    var ImageId = ImageList.GetImage().FirstOrDefault(s => s.ImageTitle == imagesource).ImageId;
+    return ImageId;
 }
 
 string formatDateTime(DateTime created)
@@ -183,15 +245,11 @@ List<string> GetArticles(string filePath, int startLine, int endLine)
 
 void ExtractFeaturedImage()
 {
-
-    //var resourceDirectory = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024";
-    //var resourceDirectory = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024";
-
     // Get all subdirectories in the specified path
-    //string[] directories = Directory.GetDirectories(resourceDirectory);
-    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024\5",
-                             @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024\6",
-                             @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024\7"};
+    var DIR2024 = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024";
+    string[] directories = { @$"{DIR2024}\5",
+                             @$"{DIR2024}\6",
+                             @$"{DIR2024}\7"};
 
     string subpath="";
     
@@ -205,50 +263,22 @@ void ExtractFeaturedImage()
         foreach (string filePath in Directory.EnumerateFiles(directory))
         {
             Console.WriteLine($"Found file: {filePath}");
-
             string[] lines = File.ReadAllLines(filePath);
+            string imageSource = "";
+
             for (int i = 0; i < lines.Length; i++)
             { 
-                if (lines[i].Contains("        <sv:property sv:name=\"jcr:uuid\" sv:type=\"String\">"))
+
+                //check for filename
+                if (lines[i].Equals("        <sv:property sv:name=\"jcr:uuid\" sv:type=\"String\">"))
                 {
-                    
-                    var imageSource = lines[i+1].Replace("<sv:value>", "").Replace("</sv:value>", "").Trim();
+                    imageSource = lines[i+1].Replace("<sv:value>", "").Replace("</sv:value>", "").Trim();
+                }
 
-                    // Use File.ReadLines to read lines lazily and efficiently
-                    var matchingLines = lines.Select((line, index) => new { LineText = line, LineNumber = index + 1 })
-                                            .Where(item => item.LineText.Contains(imageSource));
-
-                    string ImageFileName = string.Empty;
-                    if (matchingLines.Any())
-                    {
-                        var startLine = matchingLines.FirstOrDefault().LineNumber;
-
-                        int skipCount = startLine - 1;
-                        int takeCount = 70;
-
-                        // Skip the lines before the start of the range, then take the specified number of lines.
-                        var ImageRange = File.ReadLines(filePath)
-                                   .Skip(skipCount)
-                                   .Take(takeCount)
-                                   .ToList();
-
-                        bool IsFound = false;
-
-                        foreach (var item in ImageRange)
-                        {
-                            if (IsFound)
-                            {
-                                //convert base 64 string to Jpg
-                                Base64StringToJpeg(item.Replace("<sv:value>", "").Replace("</sv:value>", ""), imageSource, subpath);
-                                break;
-                            }
-                            else if (item.Contains("<sv:property sv:name=\"jcr:data\" sv:type=\"Binary\">"))
-                            {
-                                IsFound = true;
-                                continue;
-                            }
-                        }
-                    }
+                //check for actual base64 string images for parsing
+                if (lines[i].Contains("<sv:property sv:name=\"jcr:data\" sv:type=\"Binary\">"))
+                {
+                    Base64StringToJpeg(lines[i+1].Replace("<sv:value>", "").Replace("</sv:value>", ""), imageSource, subpath);
                 }
 
             }
