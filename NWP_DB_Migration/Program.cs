@@ -1,4 +1,5 @@
 ﻿using NWP_DB_Migration.Article;
+using System.IO;
 using System.Net.NetworkInformation;
 using System.Text.RegularExpressions;
 using YamlDotNet.Serialization;
@@ -15,12 +16,12 @@ var fileName = @"C:\temp\stories.nwp.2025.9.yaml";
 //ProcessAuthors(fileName, "author:");
 
 //2.
-GenerateInsertSql(articleList, fileName);
+//GenerateInsertSql(articleList, fileName);
 
 
 //3.
 //Extract fetured image
-//ExtractFeaturedImage(fileName);
+ExtractFeaturedImage();
 
 void CreatePostInsertSql(Post post){
 
@@ -180,72 +181,97 @@ List<string> GetArticles(string filePath, int startLine, int endLine)
 }
 
 
-void ExtractFeaturedImage(string articleFilePath)
+void ExtractFeaturedImage()
 {
-    var ImagefilePath = @"C:\temp\images.nwp.2025.9.xml";
 
+    //var resourceDirectory = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024";
+    //var resourceDirectory = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024";
 
-    if (!File.Exists(articleFilePath))
+    // Get all subdirectories in the specified path
+    //string[] directories = Directory.GetDirectories(resourceDirectory);
+    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024\5",
+                             @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024\6",
+                             @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024\7"};
+
+    string subpath="";
+    
+    // Loop through each directory
+    foreach (string directory in directories)
     {
-        Console.WriteLine($"Error: File not found at {articleFilePath}");
-        return;
-    }
+        var tempArry = directory.Split("\\");
+        subpath = $@"{tempArry[tempArry.Length-2]}\{tempArry[tempArry.Length-1]}";
 
-
-    //get article text
-    string[] lines = File.ReadAllLines(articleFilePath);
-    foreach (string line in lines)
-    {
-        if (line.Contains("imagesource:"))
+        Console.WriteLine(directory);
+        foreach (string filePath in Directory.EnumerateFiles(directory))
         {
-            var imageSource = line.Replace("imagesource:", "").Replace("'","").Trim();
+            Console.WriteLine($"Found file: {filePath}");
 
-            // Use File.ReadLines to read lines lazily and efficiently
-            var matchingLines = File.ReadLines(articleFilePath)
-                                    .Select((line, index) => new { LineText = line, LineNumber = index + 1 })
-                                    .Where(item => item.LineText.Contains(imageSource));
-
-            string ImageFileName = string.Empty;
-            if (matchingLines.Any())
-            {
-                var startLine = matchingLines.FirstOrDefault().LineNumber;
-
-                int skipCount = startLine - 1;
-                int takeCount = 70;
-
-                // Skip the lines before the start of the range, then take the specified number of lines.
-                var ImageRange = File.ReadLines(ImagefilePath)
-                           .Skip(skipCount)
-                           .Take(takeCount)
-                           .ToList();
-
-                bool IsFound = false;
-
-                foreach (var item in ImageRange)
+            string[] lines = File.ReadAllLines(filePath);
+            for (int i = 0; i < lines.Length; i++)
+            { 
+                if (lines[i].Contains("        <sv:property sv:name=\"jcr:uuid\" sv:type=\"String\">"))
                 {
-                    if (IsFound)
+                    
+                    var imageSource = lines[i+1].Replace("<sv:value>", "").Replace("</sv:value>", "").Trim();
+
+                    // Use File.ReadLines to read lines lazily and efficiently
+                    var matchingLines = lines.Select((line, index) => new { LineText = line, LineNumber = index + 1 })
+                                            .Where(item => item.LineText.Contains(imageSource));
+
+                    string ImageFileName = string.Empty;
+                    if (matchingLines.Any())
                     {
-                        //convert base 64 string to Jpg
-                        Base64StringToJpeg(item.Replace("<sv:value>", "").Replace("</sv:value>", ""), imageSource);
-                        break;
-                    }
-                    else if (item.Contains("<sv:property sv:name=\"jcr:data\" sv:type=\"Binary\">"))
-                    {
-                        IsFound = true;
-                        continue;
+                        var startLine = matchingLines.FirstOrDefault().LineNumber;
+
+                        int skipCount = startLine - 1;
+                        int takeCount = 70;
+
+                        // Skip the lines before the start of the range, then take the specified number of lines.
+                        var ImageRange = File.ReadLines(filePath)
+                                   .Skip(skipCount)
+                                   .Take(takeCount)
+                                   .ToList();
+
+                        bool IsFound = false;
+
+                        foreach (var item in ImageRange)
+                        {
+                            if (IsFound)
+                            {
+                                //convert base 64 string to Jpg
+                                Base64StringToJpeg(item.Replace("<sv:value>", "").Replace("</sv:value>", ""), imageSource, subpath);
+                                break;
+                            }
+                            else if (item.Contains("<sv:property sv:name=\"jcr:data\" sv:type=\"Binary\">"))
+                            {
+                                IsFound = true;
+                                continue;
+                            }
+                        }
                     }
                 }
+
             }
+
+
         }
 
     }
+
 }
 
-void Base64StringToJpeg(string base64String, string fileName)
+void Base64StringToJpeg(string base64String, string fileName,string subPath)
 {
     try
     {
-        string filePath = $@"C:\temp\featured images\{fileName}.jpg";
+        string dirDestination = $@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp-extracted\{subPath}";
+
+        if(!Directory.Exists(dirDestination))
+        {
+            Directory.CreateDirectory(dirDestination);
+        }
+
+        string filePath = $@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp-extracted\{subPath}\{fileName}.jpg";
         File.WriteAllBytes(filePath, Convert.FromBase64String(base64String));
     }
     catch (FormatException ex)
