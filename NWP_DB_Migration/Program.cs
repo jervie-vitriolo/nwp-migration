@@ -1,4 +1,5 @@
 ﻿using NWP_DB_Migration.Article;
+using System.Net.NetworkInformation;
 using System.Text.RegularExpressions;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
@@ -48,14 +49,32 @@ foreach (var range in articleList)
 
 void CreatePostInsertSql(Post post){
 
-    string PostInsertSql = $"INSERT INTO `wp_posts` ( `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
-                          $"VALUES( '{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{post.title}', '{post.caption}', '{getPostStatus(post)}', 'open', 'open', '', '{post.title.Replace(" ", "-")}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
+    int PostID = 2406;
+    int ImageId = 2405;
+
+
+    string WP_Post_Article_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
+                          $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{post.title}', '{post.caption}', '{getPostStatus(post)}', 'open', 'open', '', '{post.title.Replace(" ", "-")}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
+
+
+    
+
+    string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{GetPostMetaValue(post.imagesource)}');";
+
+
+
+    //string WP_Post_FeaturedImage_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
+    //                      $"VALUES({ImageId} ,'{getPostAuthorID(post.author)}', '{formatDateTime(DateTime.Now)}', '{formatDateTime(DateTime.Now)}', '', 'Migrated Featured Image', '{post.caption}', 'inherit', 'open', 'closed', '', '{post.imagesource}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(DateTime.Now)}', '', {PostID}, '/wp-content/uploads/2025/09/{post.imagesource}.jpg', 0, 'attachment', 'image/jpeg', 0);";
+
 
     //Extract fetured image
-    ExtractFeaturedImage(post.imagesource);
+    //ExtractFeaturedImage(post.imagesource);
 }
 
-
+int GetPostMetaValue(string imagesource)
+{
+    return 
+}
 
 string formatDateTime(DateTime created)
 {
@@ -104,9 +123,6 @@ string getPostContent(Post post)
     {
         return finalString;
     }
-    
-
-
 
     return finalString;
 }
@@ -128,7 +144,6 @@ string CleanChecks(string text)
     }
     catch (Exception)
     {
-
         throw;
     }
 
