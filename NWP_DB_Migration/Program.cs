@@ -9,43 +9,18 @@ using static System.Net.Mime.MediaTypeNames;
 List<string[]> articleList = new List<string[]>();
 articleList.Add(new[] { "28,197" });
 
-
-
 var fileName = @"C:\temp\stories.nwp.2025.9.yaml";
 
+//1.
 //ProcessAuthors(fileName, "author:");
 
-
-foreach (var range in articleList)
-{
-    // Split the string by comma and convert each part to an integer
-    int[] intArray = range.FirstOrDefault().Split(',')
-                    .Select(s => int.Parse(s.Trim())) // Trim to handle potential whitespace
-                    .ToArray();
-
-    int startLine = intArray[0];
-    int endLine = intArray[1];
-
-    List<string> articles = GetArticles(fileName, startLine, endLine);
-    string yml = string.Join("\n", articles);
-
-    //start parsing
-    var deserializer = new DeserializerBuilder()
-        .WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
-        .Build();
-
-    
-    //yml contains a string containing your YAML
-    var p = deserializer.Deserialize<Post>(yml);
-    if (p != null)
-    {
-        CreatePostInsertSql(p);
-    }
+//2.
+GenerateInsertSql(articleList, fileName);
 
 
-
-}
-
+//3.
+//Extract fetured image
+//ExtractFeaturedImage(fileName);
 
 void CreatePostInsertSql(Post post){
 
@@ -57,23 +32,45 @@ void CreatePostInsertSql(Post post){
                           $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{post.title}', '{post.caption}', '{getPostStatus(post)}', 'open', 'open', '', '{post.title.Replace(" ", "-")}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
 
 
-    
-
+   
     string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{GetPostMetaValue(post.imagesource)}');";
 
+}
 
 
-    //string WP_Post_FeaturedImage_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
-    //                      $"VALUES({ImageId} ,'{getPostAuthorID(post.author)}', '{formatDateTime(DateTime.Now)}', '{formatDateTime(DateTime.Now)}', '', 'Migrated Featured Image', '{post.caption}', 'inherit', 'open', 'closed', '', '{post.imagesource}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(DateTime.Now)}', '', {PostID}, '/wp-content/uploads/2025/09/{post.imagesource}.jpg', 0, 'attachment', 'image/jpeg', 0);";
+void GenerateInsertSql(List<string[]> articleList, string fileName)
+{
+    foreach (var range in articleList)
+    {
+        // Split the string by comma and convert each part to an integer
+        int[] intArray = range.FirstOrDefault().Split(',')
+                        .Select(s => int.Parse(s.Trim())) // Trim to handle potential whitespace
+                        .ToArray();
+
+        int startLine = intArray[0];
+        int endLine = intArray[1];
+
+        List<string> articles = GetArticles(fileName, startLine, endLine);
+        string yml = string.Join("\n", articles);
+
+        //start parsing
+        var deserializer = new DeserializerBuilder()
+            .WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
+            .Build();
 
 
-    //Extract fetured image
-    //ExtractFeaturedImage(post.imagesource);
+        //yml contains a string containing your YAML
+        var p = deserializer.Deserialize<Post>(yml);
+        if (p != null)
+        {
+            CreatePostInsertSql(p);
+        }
+    }
 }
 
 int GetPostMetaValue(string imagesource)
 {
-    return 
+    return 2412;
 }
 
 string formatDateTime(DateTime created)
@@ -183,70 +180,64 @@ List<string> GetArticles(string filePath, int startLine, int endLine)
 }
 
 
-void ExtractFeaturedImage(string imageSource)
+void ExtractFeaturedImage(string articleFilePath)
 {
-    var filePath = @"C:\temp\images.nwp.2025.9.xml";
+    var ImagefilePath = @"C:\temp\images.nwp.2025.9.xml";
 
 
-    if (!File.Exists(filePath))
+    if (!File.Exists(articleFilePath))
     {
-        Console.WriteLine($"Error: File not found at {filePath}");
+        Console.WriteLine($"Error: File not found at {articleFilePath}");
         return;
     }
 
-    try
+
+    //get article text
+    string[] lines = File.ReadAllLines(articleFilePath);
+    foreach (string line in lines)
     {
-        // Use File.ReadLines to read lines lazily and efficiently
-        var matchingLines = File.ReadLines(filePath)
-                                .Select((line, index) => new { LineText = line, LineNumber = index + 1 })
-                                .Where(item => item.LineText.Contains(imageSource));
-
-        string ImageFileName = string.Empty;
-        if (matchingLines.Any())
+        if (line.Contains("imagesource:"))
         {
-            var startLine = matchingLines.FirstOrDefault().LineNumber;
+            var imageSource = line.Replace("imagesource:", "").Replace("'","").Trim();
 
-            int skipCount = startLine - 1;
-            int takeCount = 70  ;
+            // Use File.ReadLines to read lines lazily and efficiently
+            var matchingLines = File.ReadLines(articleFilePath)
+                                    .Select((line, index) => new { LineText = line, LineNumber = index + 1 })
+                                    .Where(item => item.LineText.Contains(imageSource));
 
-            // Skip the lines before the start of the range, then take the specified number of lines.
-            var ImageRange = File.ReadLines(filePath)
-                       .Skip(skipCount)
-                       .Take(takeCount)
-                       .ToList();
-
-            bool IsFound = false;
-
-            foreach (var item in ImageRange)
+            string ImageFileName = string.Empty;
+            if (matchingLines.Any())
             {
-                if (IsFound)
-                {
-                    //convert base 64 string to Jpg
-                    Base64StringToJpeg(item.Replace("<sv:value>", "").Replace("</sv:value>","") , imageSource);
+                var startLine = matchingLines.FirstOrDefault().LineNumber;
 
+                int skipCount = startLine - 1;
+                int takeCount = 70;
 
-                    break;
-                }
-                else if (item.Contains("<sv:property sv:name=\"jcr:data\" sv:type=\"Binary\">"))
+                // Skip the lines before the start of the range, then take the specified number of lines.
+                var ImageRange = File.ReadLines(ImagefilePath)
+                           .Skip(skipCount)
+                           .Take(takeCount)
+                           .ToList();
+
+                bool IsFound = false;
+
+                foreach (var item in ImageRange)
                 {
-                    IsFound = true;
-                    continue;
+                    if (IsFound)
+                    {
+                        //convert base 64 string to Jpg
+                        Base64StringToJpeg(item.Replace("<sv:value>", "").Replace("</sv:value>", ""), imageSource);
+                        break;
+                    }
+                    else if (item.Contains("<sv:property sv:name=\"jcr:data\" sv:type=\"Binary\">"))
+                    {
+                        IsFound = true;
+                        continue;
+                    }
                 }
             }
+        }
 
-        }
-        else
-        {
-            Console.WriteLine($"'{imageSource}' not found in the file.");
-        }
-    }
-    catch (FileNotFoundException)
-    {
-        Console.WriteLine($"Error: File not found at '{filePath}'");
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"An error occurred: {ex.Message}");
     }
 }
 
@@ -254,7 +245,7 @@ void Base64StringToJpeg(string base64String, string fileName)
 {
     try
     {
-        string filePath = $@"C:\temp\{fileName}.jpg";
+        string filePath = $@"C:\temp\featured images\{fileName}.jpg";
         File.WriteAllBytes(filePath, Convert.FromBase64String(base64String));
     }
     catch (FormatException ex)
