@@ -9,23 +9,103 @@ using YamlDotNet.Serialization.NamingConventions;
 using static System.Net.Mime.MediaTypeNames;
 
 
-
+//0 - clear out Tags
 
 //1 - Clean up article
 //CleanUpArticle();
 
 //2 - Generate classes
-GeneratePostClass();
+//GeneratePostClass();
 
 
 //3 - Authors
-//ProcessAuthors(fileName, "author:");
+//ProcessAuthors();
 
-//4 - SQL
-//GenerateInsertSql();
-
-//5 - Extract fetured image
+//4 - Extract fetured image
 //ExtractFeaturedImage();
+
+//5 - SQL
+GenerateInsertSql();
+
+void GenerateInsertSql()
+{
+    string subpath = "";
+    // Get all subdirectories in the specified path
+    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - in progress\2024\5" };
+
+
+    // Loop through each directory
+    foreach (string directory in directories)
+    {
+        Console.WriteLine(directory);
+        int PostID = 2888;
+        foreach (string filePath in Directory.EnumerateFiles(directory))
+        {
+            Console.WriteLine($"Found file: {filePath}");
+
+            var matchingLines = File.ReadLines(filePath)
+                                .Select((line, index) => new { LineText = line, LineNumber = index + 1 })
+                                .Where(item => item.LineText.Contains("START HERE----->"));
+
+            int[] lineNumbers = matchingLines.Select(x => x.LineNumber).ToArray();
+
+            for (int i = 0; i < lineNumbers.Length; i++)
+            {
+                int startLine = lineNumbers[i] + 1;
+                int endLine = 0;
+
+                if (i == lineNumbers.Length - 1)
+                {
+                    endLine = File.ReadAllLines(filePath).Length;
+                }
+                else
+                {
+                    endLine = lineNumbers[i + 1] - 1;
+                }
+
+                List<string> articles = GetArticles(filePath, startLine, endLine);
+                string yml = string.Join("\n", articles);
+
+                //start parsing
+                var deserializer = new DeserializerBuilder()
+                    .WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
+                    .Build();
+
+
+                //yml contains a string containing your YAML
+                var p = deserializer.Deserialize<Post>(yml);
+                if (p != null)
+                {
+                    CreatePostInsertSql(p, PostID);
+                    PostID++;
+                }
+
+            }
+
+
+        }
+
+    }
+
+}
+
+int GetPostMetaValue(string imagesource)
+{
+    try
+    {
+
+        ImageList ImageList = new ImageList();
+        var ImageId = ImageList.GetImage().FirstOrDefault(s => s.ImageTitle == imagesource).ImageId;
+        return ImageId;
+    }
+    catch (Exception)
+    {
+        //log the imagesource id if can't be found
+        return 0;
+        
+    }
+
+}
 
 void GeneratePostClass()
 {
@@ -48,7 +128,12 @@ void GeneratePostClass()
        "public string lastmodifiedby { get; set; } \n" +
        "public string type { get; set; } \n" +
        "public string text { get; set; } \n" +
-       "public string embedCode { get; set; } }\n\n\n";
+       "public string image { get; set; } \n" +
+       "public string contentwidth { get; set; } \n" +
+       "public string imagecaption { get; set; } \n" +
+       "public string embed { get; set; } \n" +
+       "public string scale { get; set; } \n" +
+       "public string embedcode { get; set; } }\n\n\n";
 
         ClassInit = ClassInit + $"public section{i} section{i} = new section{i}();";
 
@@ -92,7 +177,12 @@ void CleanUpArticle()
             matchingLines = matchingLines.Replace("lastModifiedBy", "lastmodifiedby");
             matchingLines = matchingLines.Replace("visualType", "visualtype");
             matchingLines = matchingLines.Replace("activationStatus", "activationstatus");
+            matchingLines = matchingLines.Replace("contentWidth", "contentwidth");
+            matchingLines = matchingLines.Replace("embedCode", "embedcode");
+            matchingLines = matchingLines.Replace("imageCaption", "imagecaption");
+            matchingLines = matchingLines.Replace("'imageCaption':", "imagecaption:");
 
+            
 
             //clean
             matchingLines = matchingLines.Replace("'jcr:", "'");
@@ -150,74 +240,7 @@ string mysqlStringFormat(string text)
     return string.Empty;
 }
 
-void GenerateInsertSql()
-{
-    string subpath = "";
-    // Get all subdirectories in the specified path
-    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - in progress\5" };
 
-
-    // Loop through each directory
-    foreach (string directory in directories)
-    {
-        Console.WriteLine(directory);
-        int PostID = 2888;
-        foreach (string filePath in Directory.EnumerateFiles(directory))
-        {
-            Console.WriteLine($"Found file: {filePath}");
-
-            var matchingLines = File.ReadLines(filePath)
-                                .Select((line, index) => new { LineText = line, LineNumber = index + 1 })
-                                .Where(item => item.LineText.Contains("START HERE----->"));
-
-            int[] lineNumbers = matchingLines.Select(x => x.LineNumber).ToArray();
-
-            for (int i = 0; i < lineNumbers.Length; i++)
-            {
-                int startLine = lineNumbers[i]+1;
-                int endLine = 0;
-
-                if (i==lineNumbers.Length-1)
-                {
-                     endLine = File.ReadAllLines(filePath).Length;
-                }
-                else
-                {
-                    endLine = lineNumbers[i+1] - 1;
-                }
-
-                List<string> articles = GetArticles(filePath, startLine, endLine);
-                string yml = string.Join("\n", articles);
-
-                //start parsing
-                var deserializer = new DeserializerBuilder()
-                    .WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
-                    .Build();
-
-
-                //yml contains a string containing your YAML
-                var p = deserializer.Deserialize<Post>(yml);
-                if (p != null)
-                {
-                    CreatePostInsertSql(p,PostID);
-                    PostID ++;
-                }
-
-            }
-            
-
-        }
-
-    }
-
-}
-
-int GetPostMetaValue(string imagesource)
-{
-    ImageList ImageList = new ImageList();
-    var ImageId = ImageList.GetImage().FirstOrDefault(s => s.ImageTitle == imagesource).ImageId;
-    return ImageId;
-}
 
 string formatDateTime(DateTime created)
 {
@@ -1006,61 +1029,80 @@ void Base64StringToJpeg(string base64String, string fileName,string subPath)
     }
 }
 
-static void ProcessAuthors(string filePath, string searchText)
+static void ProcessAuthors()
 {
-    if (!File.Exists(filePath))
+
+    // Get all subdirectories in the specified path
+    var nwp_dir = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\articles\nwp\";
+    string[] directories = { 
+                             @$"{nwp_dir}\2024\5",
+                             @$"{nwp_dir}\2024\6",
+                             @$"{nwp_dir}\2024\7",
+                             @$"{nwp_dir}\2025\1",
+                             @$"{nwp_dir}\2025\2",
+                             @$"{nwp_dir}\2025\3",
+                             @$"{nwp_dir}\2025\4",
+                             @$"{nwp_dir}\2025\5",
+                             @$"{nwp_dir}\2025\6",
+                             @$"{nwp_dir}\2025\7",
+                             @$"{nwp_dir}\2025\8"
+    };
+
+    var searchText = "'author':";
+    // Loop through each directory
+    List<string> authorsList = new List<string>();   
+    foreach (string directory in directories)
     {
-        Console.WriteLine($"Error: File not found at {filePath}");
-        return;
-    }
 
-    try
-    {
-        // Use File.ReadLines to read lines lazily and efficiently
-        var matchingLines = File.ReadLines(filePath)
-                                .Select((line, index) => new { LineText = line, LineNumber = index + 1 })
-                                .Where(item => item.LineText.Contains(searchText));
+        Console.WriteLine(directory);
 
-        string[] authors = matchingLines.Select(x => x.LineText.Replace("author:","").Replace("\'","").Trim()).Distinct().ToArray();
-        List<string> wp_users = new List<string>();
-        List<string> wp_usermeta = new List<string>();
-
-        if (matchingLines.Any())
+        foreach (string filePath in Directory.EnumerateFiles(directory))
         {
-            int i = 0;
-            int user_id = 6;
-            foreach (var author in authors)
+            Console.WriteLine($"Found file: {filePath}");
+            
+            // Use File.ReadLines to read lines lazily and efficiently
+            var matchingLines = File.ReadLines(filePath)
+                                    .Where(item => item.Contains(searchText));
+
+            string[] authors = matchingLines.Select(x => x.Replace($"{searchText}", "").Replace("\'", "").Trim()).Distinct().ToArray();
+            if (authors.Length>0)
             {
-                user_id++;
-                i++;
-                wp_users.Add($"INSERT INTO `wp_users` ( `ID`,`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES({user_id},'migrateduser-{i}', '$wp$2y$10$GveTsPNj/qlcYltZ7sctouaGAgwxGsCs83u.HXbm.XabHUDa0w/jy', 'migrateduser-{i}', 'migrated.user.{i}@newswatchplus.ph', 'https://newswatchplus-staging.azurewebsites.net/author/migrateduser-{i}', '2025-09-05 07:22:19', '', 0, '{author}');");
-
-                wp_usermeta.Add($"INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES" +
-                $"( {user_id}, 'nickname', 'migrateduser-{i}')," +
-                $"( {user_id}, 'first_name', '{author}'),"+
-                $"( {user_id}, 'last_name', ''),"+
-                $"( {user_id}, 'rich_editing', 'true'),"+
-                $"( {user_id}, 'syntax_highlighting', 'true'),"+
-                $"( {user_id}, 'comment_shortcuts', 'false'),"+
-                $"( {user_id}, 'admin_color', 'fresh'),"+
-                $"( {user_id}, 'show_admin_bar_front', 'true'),"+
-                "(" + user_id + ", 'wp_capabilities', 'a:1:{s:6:\"author\";b:1;}' ),"+
-                $"( {user_id}, 'wp_user_level', '2');");
-
+                authorsList.AddRange(authors);
             }
+                
+        }
 
-        }
-        else
-        {
-            Console.WriteLine($"'{searchText}' not found in the file.");
-        }
     }
-    catch (FileNotFoundException)
+
+
+    int i = 0;
+    int user_id = 6;
+    List<string> wp_users = new List<string>();
+    List<string> wp_usermeta = new List<string>();
+
+    authorsList = authorsList.OrderBy(authorsList=>authorsList).ToList();
+
+    foreach (var author in authorsList.Distinct())
     {
-        Console.WriteLine($"Error: File not found at '{filePath}'");
+
+        user_id++;
+        i++;
+        wp_users.Add($"INSERT INTO `wp_users` ( `ID`,`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES({user_id},'migrateduser-{i}', '$wp$2y$10$GveTsPNj/qlcYltZ7sctouaGAgwxGsCs83u.HXbm.XabHUDa0w/jy', 'migrateduser-{i}', 'migrated.user.{i}@newswatchplus.ph', 'https://newswatchplus-staging.azurewebsites.net/author/migrateduser-{i}', '2025-09-05 07:22:19', '', 0, '{author}');");
+
+        wp_usermeta.Add($"INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES" +
+        $"( {user_id}, 'nickname', 'migrateduser-{i}')," +
+        $"( {user_id}, 'first_name', '{author}')," +
+        $"( {user_id}, 'last_name', '')," +
+        $"( {user_id}, 'rich_editing', 'true')," +
+        $"( {user_id}, 'syntax_highlighting', 'true')," +
+        $"( {user_id}, 'comment_shortcuts', 'false')," +
+        $"( {user_id}, 'admin_color', 'fresh')," +
+        $"( {user_id}, 'show_admin_bar_front', 'true')," +
+        "(" + user_id + ", 'wp_capabilities', 'a:1:{s:6:\"author\";b:1;}' )," +
+        $"( {user_id}, 'wp_user_level', '2');");
+
     }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"An error occurred: {ex.Message}");
-    }
+
+    var _user = wp_users;
+    var _usermeta=wp_usermeta;
 }
