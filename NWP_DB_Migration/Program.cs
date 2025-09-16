@@ -8,8 +8,12 @@ using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 using static System.Net.Mime.MediaTypeNames;
 
+List<string> WP_Post_Article_InsertSql_list;
+List<string> WP_PostMeta_list;
+List<string> WP_term_relationships_list;
 
 //0 - clear out Tags
+// TODO
 
 //1 - Clean up article
 //CleanUpArticle();
@@ -18,7 +22,7 @@ using static System.Net.Mime.MediaTypeNames;
 //GeneratePostClass();
 
 
-//3 - Authors
+//3 - Authors - ALL DONE
 //ProcessAuthors();
 
 //4 - Extract fetured image
@@ -29,16 +33,21 @@ GenerateInsertSql();
 
 void GenerateInsertSql()
 {
+    WP_Post_Article_InsertSql_list = new List<string>();
+    WP_PostMeta_list = new List<string>();
+    WP_term_relationships_list = new List<string>();
+    
+
     string subpath = "";
     // Get all subdirectories in the specified path
-    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - in progress\2024\5" };
+    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - in progress\2024\6" };
 
 
     // Loop through each directory
     foreach (string directory in directories)
     {
         Console.WriteLine(directory);
-        int PostID = 2888;
+        int PostID = 2899;
         foreach (string filePath in Directory.EnumerateFiles(directory))
         {
             Console.WriteLine($"Found file: {filePath}");
@@ -81,12 +90,11 @@ void GenerateInsertSql()
                 }
 
             }
-
-
         }
-
+        LogCreatedPostInsertSql(directory);
     }
 
+    Console.WriteLine($"Completed");
 }
 
 int GetPostMetaValue(string imagesource)
@@ -95,8 +103,12 @@ int GetPostMetaValue(string imagesource)
     {
 
         ImageList ImageList = new ImageList();
-        var ImageId = ImageList.GetImage().FirstOrDefault(s => s.ImageTitle == imagesource).ImageId;
-        return ImageId;
+        var img = ImageList.GetImage().FirstOrDefault(s => s.ImageTitle == imagesource);
+        if (img != null)
+        {
+            return img.ImageId;
+        }
+        return 0;
     }
     catch (Exception)
     {
@@ -148,7 +160,7 @@ void CleanUpArticle()
 {
     string subpath = "";
     // Get all subdirectories in the specified path
-    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - in progress\2024\5" };
+    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - in progress\2024\6" };
 
 
     // Loop through each directory
@@ -206,6 +218,8 @@ void CleanUpArticle()
     }
 }
 
+
+
 void CreatePostInsertSql(Post post,int PostID){
 
     
@@ -216,18 +230,88 @@ void CreatePostInsertSql(Post post,int PostID){
 
     string WP_term_relationships = $"INSERT INTO wp_term_relationships(OBJECT_ID,TERM_TAXONOMY_ID,TERM_ORDER) VALUES({PostID},{getCategoryId(post.categories)},0);";
 
+
+    WP_Post_Article_InsertSql_list.Add( WP_Post_Article_InsertSql );
+    WP_PostMeta_list.Add(WP_PostMeta);
+    WP_term_relationships_list.Add(WP_term_relationships);
 }
+
+void LogCreatedPostInsertSql(string directory)
+{
+    var tempArry = directory.Split("\\");
+    var subpath = $@"{tempArry[tempArry.Length - 2]}\{tempArry[tempArry.Length - 1]}";
+    var dirDestination = $@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - in progress\{subpath}";
+
+
+    if (!Directory.Exists(dirDestination))
+    {
+        Directory.CreateDirectory(dirDestination);
+    }
+
+    if (WP_Post_Article_InsertSql_list.Count >0)
+    {
+        string filePath = $"{dirDestination}\\WP_Post_Article_InsertSql_list.sql";
+        using (StreamWriter sw = File.AppendText(filePath)) // Opens the file in append mode
+        {
+
+            foreach (var sql in WP_Post_Article_InsertSql_list)
+            {
+                sw.WriteLine(sql);
+            }
+        }
+    }
+
+    if (WP_PostMeta_list.Count > 0)
+    {
+        string filePath = $"{dirDestination}\\WP_PostMeta_list.sql";
+        using (StreamWriter sw = File.AppendText(filePath)) // Opens the file in append mode
+        {
+
+            foreach (var sql in WP_PostMeta_list)
+            {
+                sw.WriteLine(sql);
+            }
+        }
+    }
+    if (WP_term_relationships_list.Count > 0)
+    {
+        string filePath = $"{dirDestination}\\WP_term_relationships_list.sql";
+        using (StreamWriter sw = File.AppendText(filePath)) // Opens the file in append mode
+        {
+
+            foreach (var sql in WP_term_relationships_list)
+            {
+                sw.WriteLine(sql);
+            }
+        }
+    }
+}
+
 
 int getCategoryId(string categoryId)
 {
-    string categoryname = getFromNWPCategories(categoryId);
+    if (categoryId == null)
+    {
+        return 1;
+    }
+    else
+    {
+        NWPCategoryList NWPCategoryList = new NWPCategoryList();
+        var nwpCategory = NWPCategoryList.GetCategory().FirstOrDefault(s => s.ID.ToUpper().Trim().Equals(categoryId.ToUpper().Trim()));
 
-    return 36;
-}
+        if (nwpCategory != null)
+        {
+            CategoryList CategoryList = new CategoryList();
+            int ID = CategoryList.GetCategoryList().FirstOrDefault(s => s.Category.ToUpper().Trim().Equals(nwpCategory.Category.ToUpper().Trim())).ID;
 
-string getFromNWPCategories(string categoryId)
-{
-    return "news";
+            if (ID != 0)
+            {
+                return ID;
+            }
+        }
+
+        return 36;
+    }
 }
 
 string mysqlStringFormat(string text)
@@ -906,6 +990,8 @@ string CleanChecks(string text)
 {
     try
     {
+
+        if (text == null) return string.Empty;
 
         text= Regex.Replace(text, @"[\r\n\x00\x1a\\'""]", @"\$0");
 
