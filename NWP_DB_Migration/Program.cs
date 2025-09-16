@@ -12,6 +12,7 @@ using static System.Net.Mime.MediaTypeNames;
 List<string> WP_Post_Article_InsertSql_list;
 List<string> WP_PostMeta_list;
 List<string> WP_term_relationships_list;
+string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp\2024\11" };
 
 //STEPS
 //extract and upload images
@@ -39,10 +40,7 @@ CleanUpArticle();
 
 void AddStartHereAndCleanTags()
 {
-
-    string subpath = "";
-    // Get all subdirectories in the specified path
-    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp\2024\5" };
+    
 
 
     // Loop through each directory
@@ -64,6 +62,13 @@ void AddStartHereAndCleanTags()
                 {
                     matchingLines[i] = matchingLines[i].Replace("'  '", "'  'START HERE----->");
                 }
+
+                //Tags
+                if (matchingLines[i].Contains("'mgnl:tags': ["))
+                {
+                    matchingLines[i] = "    'mgnl:tags': []";
+                }
+
             }
 
             File.WriteAllLines(filePath, matchingLines);
@@ -104,12 +109,6 @@ void GenerateInsertSql()
     WP_Post_Article_InsertSql_list = new List<string>();
     WP_PostMeta_list = new List<string>();
     WP_term_relationships_list = new List<string>();
-    
-
-    string subpath = "";
-    // Get all subdirectories in the specified path
-    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - in progress\2024\6" };
-
 
     // Loop through each directory
     foreach (string directory in directories)
@@ -226,11 +225,6 @@ void GeneratePostClass()
 
 void CleanUpArticle()
 {
-    string subpath = "";
-    // Get all subdirectories in the specified path
-    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp\2024\5" };
-
-
     // Loop through each directory
     foreach (string directory in directories)
     {
@@ -240,7 +234,6 @@ void CleanUpArticle()
         {
             Console.WriteLine($"Clean up Section");
             string matchingLines = File.ReadAllText(filePath);
-
 
             //section
             for (int i = 0; i < 582; i++)
@@ -263,8 +256,6 @@ void CleanUpArticle()
             matchingLines = matchingLines.Replace("imageCaption", "imagecaption");
             matchingLines = matchingLines.Replace("'imageCaption':", "imagecaption:");
 
-            
-
             //clean
             matchingLines = matchingLines.Replace("'jcr:", "'");
             matchingLines = matchingLines.Replace("'mgnl:", "'");
@@ -276,11 +267,7 @@ void CleanUpArticle()
             matchingLines = matchingLines.Replace("': ", ": ");
             matchingLines = matchingLines.Replace("START HERE----->", "'START HERE----->");
 
-
             matchingLines = matchingLines.Replace("lastactivatedBy", "lastactivatedby");
-
-
-
 
             File.WriteAllText(filePath, matchingLines);
         }
@@ -310,7 +297,6 @@ void LogCreatedPostInsertSql(string directory)
     var tempArry = directory.Split("\\");
     var subpath = $@"{tempArry[tempArry.Length - 2]}\{tempArry[tempArry.Length - 1]}";
     var dirDestination = $@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - in progress\{subpath}";
-
 
     if (!Directory.Exists(dirDestination))
     {
@@ -1059,7 +1045,6 @@ string CleanChecks(string text)
 {
     try
     {
-
         if (text == null) return string.Empty;
 
         text= Regex.Replace(text, @"[\r\n\x00\x1a\\'""]", @"\$0");
