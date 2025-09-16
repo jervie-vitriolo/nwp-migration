@@ -1,5 +1,6 @@
 ﻿using NWP_DB_Migration.Article;
 using System.IO;
+using System.Linq;
 using System.Net.NetworkInformation;
 using System.Runtime.InteropServices.Marshalling;
 using System.Text.RegularExpressions;
@@ -12,24 +13,91 @@ List<string> WP_Post_Article_InsertSql_list;
 List<string> WP_PostMeta_list;
 List<string> WP_term_relationships_list;
 
-//0 - clear out Tags
-// TODO
+//STEPS
+//extract and upload images
+//ADD START HERE----->
+//Clean up with out tags
+AddStartHereAndCleanTags();
 
-//1 - Clean up article
-//CleanUpArticle();
+//Clean up article
+CleanUpArticle();
 
-//2 - Generate classes
+
+// SQL
+//GenerateInsertSql();
+
+
+//Generate classes - ALL DONE
 //GeneratePostClass();
 
-
-//3 - Authors - ALL DONE
+//Authors - ALL DONE
 //ProcessAuthors();
 
-//4 - Extract fetured image
+//Extract fetured image
 //ExtractFeaturedImage();
 
-//5 - SQL
-GenerateInsertSql();
+
+void AddStartHereAndCleanTags()
+{
+
+    string subpath = "";
+    // Get all subdirectories in the specified path
+    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp\2024\5" };
+
+
+    // Loop through each directory
+    foreach (string directory in directories)
+    {
+        Console.WriteLine(directory);
+        int PostID = 2899;
+        foreach (string filePath in Directory.EnumerateFiles(directory))
+        {
+            Console.WriteLine($"Found file: {filePath}");
+            AppendSingleQoute(filePath);
+
+            string[] matchingLines = File.ReadAllLines(filePath);
+
+            //add START HERE----->
+            for (int i = 0; i < matchingLines.Count(); i++)
+            {
+                if (!matchingLines[i].Contains("'  'j") && !matchingLines[i].Contains("'  'mgnl:"))
+                {
+                    matchingLines[i] = matchingLines[i].Replace("'  '", "'  'START HERE----->");
+                }
+            }
+
+            File.WriteAllLines(filePath, matchingLines);
+            RemoveSingleQoute(filePath);
+        }
+    }
+    Console.WriteLine($"Completed");
+}
+
+void AppendSingleQoute(string filePath)
+{
+    string[] matchingLines = File.ReadAllLines(filePath);
+
+    for (int i = 0; i < matchingLines.Count() ; i++)
+    {
+        matchingLines[i] = $"'{matchingLines[i]}";
+    }
+
+    File.WriteAllLines(filePath, matchingLines);
+}
+
+void RemoveSingleQoute(string filePath)
+{
+    string matchingLines = File.ReadAllText(filePath);
+
+    matchingLines = matchingLines.Replace("''", "'");
+    matchingLines = matchingLines.Replace("'  '", "  '");
+    matchingLines = matchingLines.Replace("'    '", "    '");
+    matchingLines = matchingLines.Replace("'      '", "      '");
+    matchingLines = matchingLines.Replace("'        ", "        ");
+    matchingLines = matchingLines.Replace("'      ", "      ");
+
+    File.WriteAllText(filePath, matchingLines);
+}
 
 void GenerateInsertSql()
 {
@@ -160,7 +228,7 @@ void CleanUpArticle()
 {
     string subpath = "";
     // Get all subdirectories in the specified path
-    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - in progress\2024\6" };
+    string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp\2024\5" };
 
 
     // Loop through each directory
@@ -172,6 +240,7 @@ void CleanUpArticle()
         {
             Console.WriteLine($"Clean up Section");
             string matchingLines = File.ReadAllText(filePath);
+
 
             //section
             for (int i = 0; i < 582; i++)
