@@ -29,6 +29,11 @@ namespace NWP_DB_Migration.Article
         public string template { get; set; }
         public string title { get; set; }
         public string visualtype { get; set; }
+        public string embedimage { get; set; }
+        public string image { get; set; }
+        public string authorimage { get; set; }   
+        
+
 
         public section0 section0 = new section0();
         public section1 section1 = new section1();

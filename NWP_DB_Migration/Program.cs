@@ -120,36 +120,46 @@ internal class Program
 
                     int[] lineNumbers = matchingLines.Select(x => x.LineNumber).ToArray();
 
+                    
                     for (int i = 0; i < lineNumbers.Length; i++)
                     {
-                        int startLine = lineNumbers[i] + 1;
-                        int endLine = 0;
-
-                        if (i == lineNumbers.Length - 1)
+                        try
                         {
-                            endLine = File.ReadAllLines(filePath).Length;
+                            int startLine = lineNumbers[i] + 1;
+                            int endLine = 0;
+
+                            if (i == lineNumbers.Length - 1)
+                            {
+                                endLine = File.ReadAllLines(filePath).Length;
+                            }
+                            else
+                            {
+                                endLine = lineNumbers[i + 1] - 1;
+                            }
+
+                            List<string> articles = GetArticles(filePath, startLine, endLine);
+                            string yml = string.Join("\n", articles);
+
+                            //start parsing
+                            var deserializer = new DeserializerBuilder()
+                                .WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
+                                .Build();
+
+
+                            //yml contains a string containing your YAML
+                            var p = deserializer.Deserialize<Post>(yml);
+                            if (p != null)
+                            {
+                                CreatePostInsertSql(p, PostID);
+                                PostID++;
+                            }
                         }
-                        else
+                        catch (Exception)
                         {
-                            endLine = lineNumbers[i + 1] - 1;
+                            Console.WriteLine($"Error at line {lineNumbers[i]}");
+                            continue;
                         }
-
-                        List<string> articles = GetArticles(filePath, startLine, endLine);
-                        string yml = string.Join("\n", articles);
-
-                        //start parsing
-                        var deserializer = new DeserializerBuilder()
-                            .WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
-                            .Build();
-
-
-                        //yml contains a string containing your YAML
-                        var p = deserializer.Deserialize<Post>(yml);
-                        if (p != null)
-                        {
-                            CreatePostInsertSql(p, PostID);
-                            PostID++;
-                        }
+                        
 
                     }
                 }
@@ -405,7 +415,7 @@ internal class Program
             else
             {
                 AuthorsList AuthorsList = new AuthorsList();
-                var ID = AuthorsList.GetAuthors().FirstOrDefault(s => s.Author == name).ID;
+                var ID = AuthorsList.GetAuthors().FirstOrDefault(s => name.Trim().Contains(s.Author)).ID;
                 return ID;
             }
 
@@ -422,10 +432,7 @@ internal class Program
                 case "text":
                     return text;
                 case "embedcode":
-
-                    var htm = $"\r\n <div class=\"wp-block-column\" style=\"flex-basis:25%\"></div>\r\n <div class=\"wp-block-column\" style=\"flex-basis:50%\">{embedcode}</div>\r\n <div class=\"wp-block-column\" style=\"flex-basis:25%\"></div>\r\n ";
-
-                    return htm;
+                    return embedcode;
                 default:
                     return string.Empty;
             }
