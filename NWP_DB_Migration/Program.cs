@@ -12,13 +12,13 @@ internal class Program
         List<string> WP_Post_Article_InsertSql_list;
         List<string> WP_PostMeta_list;
         List<string> WP_term_relationships_list;
-        string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp\2024\6" };
+        string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp\2024\7" };
 
         //ADD START HERE----->
-        //AddStartHereAndCleanTags();
+        AddStartHereAndCleanTags();
 
         //Clean up article
-        //CleanUpArticle();
+        CleanUpArticle();
 
 
         // SQL
@@ -434,6 +434,7 @@ internal class Program
                 case "embedcode":
                     return embedcode;
                 default:
+                   
                     return string.Empty;
             }
 
@@ -444,8 +445,14 @@ internal class Program
 
             try
             {
+                if (post.visualtype == "video" && post.embedsource.Contains("https://www.youtube.com/embed"))
+                {
+                    finalString = post.embedsource.Replace("width=\"560\"", "width=\"800\"").Replace("height=\"315\"", "height=\"500\"");
+                }
 
-                finalString =  CleanChecks(getBlock(post.section0.type, post.section0.embedcode, post.section0.text));
+
+
+                finalString = finalString + CleanChecks(getBlock(post.section0.type, post.section0.embedcode, post.section0.text));
                 finalString = finalString + CleanChecks(getBlock(post.section1.type, post.section1.embedcode, post.section1.text));
                 finalString = finalString + CleanChecks(getBlock(post.section2.type, post.section2.embedcode, post.section2.text));
                 finalString = finalString + CleanChecks(getBlock(post.section3.type, post.section3.embedcode, post.section3.text));

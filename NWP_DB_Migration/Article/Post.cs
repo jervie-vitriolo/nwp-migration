@@ -32,6 +32,8 @@ namespace NWP_DB_Migration.Article
         public string embedimage { get; set; }
         public string image { get; set; }
         public string authorimage { get; set; }   
+        public string embedsource { get; set; }
+        public string videoimage { get; set; }
         
 
 
