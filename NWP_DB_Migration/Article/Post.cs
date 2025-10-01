@@ -34,7 +34,7 @@ namespace NWP_DB_Migration.Article
         public string authorimage { get; set; }   
         public string embedsource { get; set; }
         public string videoimage { get; set; }
-        
+        public string videosource { get; set; }
 
 
         public section0 section0 = new section0();

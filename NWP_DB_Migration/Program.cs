@@ -12,13 +12,14 @@ internal class Program
         List<string> WP_Post_Article_InsertSql_list;
         List<string> WP_PostMeta_list;
         List<string> WP_term_relationships_list;
-        string[] directories = { @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp\2024\7" };
+        string[] directories = { @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\7"
+                                 };
 
         //ADD START HERE----->
-        AddStartHereAndCleanTags();
+        //AddStartHereAndCleanTags();
 
         //Clean up article
-        CleanUpArticle();
+        //CleanUpArticle();
 
 
         // SQL
@@ -109,7 +110,7 @@ internal class Program
             foreach (string directory in directories)
             {
                 Console.WriteLine(directory);
-                int PostID = 4525;
+                int PostID = 4594;//4525;
                 foreach (string filePath in Directory.EnumerateFiles(directory))
                 {
                     Console.WriteLine($"Found file: {filePath}");
