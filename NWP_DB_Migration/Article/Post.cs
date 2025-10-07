@@ -9,32 +9,32 @@ namespace NWP_DB_Migration.Article
     internal class Post
     {
 
-        public string author { get; set; }
-        public string caption { get; set; }
-        public string categories { get; set; }
+        public string author { get; set; } = string.Empty;
+        public string caption { get; set; } = string.Empty;
+        public string categories { get; set; } = string.Empty;
         public DateTime created { get; set; }
-        public string imagesource { get; set; }
-        public string mixintypes { get; set; }
-        public string primarytype { get; set; }
-        public string uuid { get; set; }
-        public string lead { get; set; }
+        public string imagesource { get; set; } = string.Empty;
+        public string mixintypes { get; set; } = string.Empty;
+        public string primarytype { get; set; } = string.Empty;
+        public string uuid { get; set; } = string.Empty;
+        public string lead { get; set; } = string.Empty;
         public bool activationstatus { get; set; }
-        public string createdby { get; set; }
+        public string createdby { get; set; } = string.Empty;
         public DateTime lastactivated { get; set; }
-        public string lastactivatedby { get; set; }
+        public string lastactivatedby { get; set; } = string.Empty;
         public DateTime lastmodified { get; set; }
-        public string lastmodifiedby { get; set; }
-        public string tags { get; set; }
-        public string stories { get; set; }
-        public string template { get; set; }
-        public string title { get; set; }
-        public string visualtype { get; set; }
-        public string embedimage { get; set; }
-        public string image { get; set; }
-        public string authorimage { get; set; }   
-        public string embedsource { get; set; }
-        public string videoimage { get; set; }
-        public string videosource { get; set; }
+        public string lastmodifiedby { get; set; } = string.Empty;
+        public string tags { get; set; } = string.Empty;
+        public string stories { get; set; } = string.Empty; 
+        public string template { get; set; } = string.Empty;
+        public string title { get; set; } = string.Empty;
+        public string visualtype { get; set; } = string.Empty;
+        public string embedimage { get; set; } = string.Empty;
+        public string image { get; set; } = string.Empty;
+        public string authorimage { get; set; } = string.Empty;   
+        public string embedsource { get; set; } = string.Empty;
+        public string videoimage { get; set; } = string.Empty;
+        public string videosource { get; set; } = string.Empty;
 
 
         public section0 section0 = new section0();

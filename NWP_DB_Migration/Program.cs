@@ -16,10 +16,10 @@ internal class Program
                                  };
 
         //ADD START HERE----->
-        //AddStartHereAndCleanTags();
+        AddStartHereAndCleanTags();
 
         //Clean up article
-        //CleanUpArticle();
+        CleanUpArticle();
 
 
         // SQL
@@ -110,7 +110,7 @@ internal class Program
             foreach (string directory in directories)
             {
                 Console.WriteLine(directory);
-                int PostID = 4594;//4525;
+                int PostID = 4955;
                 foreach (string filePath in Directory.EnumerateFiles(directory))
                 {
                     Console.WriteLine($"Found file: {filePath}");
