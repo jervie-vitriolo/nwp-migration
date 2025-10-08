@@ -14,6 +14,7 @@ internal class Program
         List<string> WP_Post_Article_InsertSql_list;
         List<string> WP_PostMeta_list;
         List<string> WP_term_relationships_list;
+        int ErrorCount = 0; 
         string[] directories = { @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\7"
                                  };
 
@@ -94,6 +95,10 @@ internal class Program
 
             for (int i = 0; i < matchingLines.Count(); i++)
             {
+                //if (matchingLines[i].Equals(""))
+                //{
+                //    continue;
+                //}
                 matchingLines[i] = $"'{matchingLines[i]}";
             }
 
@@ -174,13 +179,16 @@ internal class Program
                         }
                         catch (Exception)
                         {
+                            ErrorCount++;
                             Console.WriteLine($"Error at line {lineNumbers[i]}");
                             continue;
                         }
 
-
                     }
+
+                    
                 }
+                Console.WriteLine($"Total Error {ErrorCount}");
                 //LogCreatedPostInsertSql(directory);
             }
 
@@ -1324,48 +1332,35 @@ internal class Program
         // Iterate through each line using a foreach loop
         for (int i = 0; i < lines.Count(); i++)
         {
-            string pattern = @"(\w+'\w+)|(\w+' \w+)";
+            string pattern = @"(\w+'\w+)|(\w+' \w+)|(\w+''\w+)|(\w+'' \w+)";
 
             Regex regex = new Regex(pattern);
             MatchCollection matches = regex.Matches(lines[i]);
 
             foreach (Match match in matches)
             {
-
-                //Console.WriteLine($"Full Match: \"{match.Value}\"");
-
                 var newValue = match.Value.Replace("'", "’");
                 lines[i] = lines[i].Replace(match.Value, newValue);
             }
-
-            //if(lines[i].Trim().Equals("'"))
-            //{
-            //    lines[i] = string.Empty;
-            //}
 
         }
 
         for (int i = 0; i < lines.Count(); i++)
         {
-            string pattern = @"(\w+ '\w+)";
+            string pattern = @"(\w+ '\w+)|(\w+ ''\w+)";
 
             Regex regex = new Regex(pattern);
             MatchCollection matches = regex.Matches(lines[i]);
 
             foreach (Match match in matches)
             {
-
-                //Console.WriteLine($"Full Match: \"{match.Value}\"");
-
                 var newValue = match.Value.Replace("'", "‘");
                 lines[i] = lines[i].Replace(match.Value, newValue);
             }
 
-            //if (lines[i].Trim().Equals("'"))
-            //{
-            //    lines[i] = string.Empty;
-            //}
+
         }
+
 
         var revertFormat = string.Join(Environment.NewLine, lines);
         return revertFormat;
@@ -1375,7 +1370,7 @@ internal class Program
     {
         string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
         MySqlConnection conn = new MySqlConnection(connStr);
-        conn.Open();
+        //conn.Open();
 
         
         var wp_post = new MySqlCommand(wP_Post_Article_InsertSql, conn);
@@ -1389,7 +1384,7 @@ internal class Program
         //wP_term.ExecuteNonQuery();
 
 
-        conn.Close();
+        //conn.Close();
 
         Console.WriteLine("Saved");
     }
