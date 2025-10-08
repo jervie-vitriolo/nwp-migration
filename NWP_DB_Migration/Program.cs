@@ -1,9 +1,11 @@
 ﻿using MySql.Data.MySqlClient;
 using NWP_DB_Migration.Article;
+using System;
 using System.Reflection.PortableExecutable;
 using System.Text.RegularExpressions;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
+using static System.Net.Mime.MediaTypeNames;
 
 internal class Program
 {
@@ -15,12 +17,11 @@ internal class Program
         string[] directories = { @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\7"
                                  };
 
-        //ADD START HERE----->
-        AddStartHereAndCleanTags();
+        //PREP: clean up space after period in multiline tags,
+        //AddStartHereAndCleanTags();
 
         //Clean up article
-        CleanUpArticle();
-
+        //CleanUpArticle();
 
         // SQL
         GenerateInsertSql();
@@ -54,7 +55,20 @@ internal class Program
                     //add START HERE----->
                     for (int i = 0; i < matchingLines.Count(); i++)
                     {
-                        if (!matchingLines[i].Contains("'  'j") && !matchingLines[i].Contains("'  'mgnl:"))
+                        if (!matchingLines[i].Contains("'  'mgnl:")
+                            && !matchingLines[i].Contains("    'author")
+                            && !matchingLines[i].Contains("    'categories")
+                            && !matchingLines[i].Contains("    'created")
+                            && !matchingLines[i].Contains("    'imagesource")
+                            && !matchingLines[i].Contains("    'jcr")
+                            && !matchingLines[i].Contains("    'lead")
+                            && !matchingLines[i].Contains("    'stories")
+                            && !matchingLines[i].Contains("    'template")
+                            && !matchingLines[i].Contains("    'title")
+                            && !matchingLines[i].Contains("    'visualType")
+                            && !matchingLines[i].Contains("'jcr:")
+                            && !matchingLines[i].Contains("  'mgnl")
+                            )
                         {
                             matchingLines[i] = matchingLines[i].Replace("'  '", "'  'START HERE----->");
                         }
@@ -121,7 +135,7 @@ internal class Program
 
                     int[] lineNumbers = matchingLines.Select(x => x.LineNumber).ToArray();
 
-                    
+
                     for (int i = 0; i < lineNumbers.Length; i++)
                     {
                         try
@@ -148,7 +162,10 @@ internal class Program
 
 
                             //yml contains a string containing your YAML
-                            var p = deserializer.Deserialize<Post>(yml);
+                            //Replace aphostrophe with ‘
+                            string CleanYml = CleanApostrophe(yml);
+
+                            var p = deserializer.Deserialize<Post>(CleanYml);
                             if (p != null)
                             {
                                 CreatePostInsertSql(p, PostID);
@@ -160,7 +177,7 @@ internal class Program
                             Console.WriteLine($"Error at line {lineNumbers[i]}");
                             continue;
                         }
-                        
+
 
                     }
                 }
@@ -181,7 +198,7 @@ internal class Program
                 var sql = $"select ID from wp_posts where post_title='{imagesource}';";
                 int id = 0;
                 var wp_post = new MySqlCommand(sql, conn);
-                MySqlDataReader  reader  = wp_post.ExecuteReader();
+                MySqlDataReader reader = wp_post.ExecuteReader();
 
                 while (reader.Read())
                 {
@@ -409,7 +426,7 @@ internal class Program
 
         int getPostAuthorID(string name)
         {
-            if (name == null)
+            if (name == null || name==string.Empty)
             {
                 return 723; //Newswatch plus
             }
@@ -1299,6 +1316,61 @@ internal class Program
         }
     }
 
+    private static string CleanApostrophe(string yml)
+    {
+        
+        string[] lines = yml.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
+
+        // Iterate through each line using a foreach loop
+        for (int i = 0; i < lines.Count(); i++)
+        {
+            string pattern = @"(\w+'\w+)|(\w+' \w+)";
+
+            Regex regex = new Regex(pattern);
+            MatchCollection matches = regex.Matches(lines[i]);
+
+            foreach (Match match in matches)
+            {
+
+                //Console.WriteLine($"Full Match: \"{match.Value}\"");
+
+                var newValue = match.Value.Replace("'", "’");
+                lines[i] = lines[i].Replace(match.Value, newValue);
+            }
+
+            //if(lines[i].Trim().Equals("'"))
+            //{
+            //    lines[i] = string.Empty;
+            //}
+
+        }
+
+        for (int i = 0; i < lines.Count(); i++)
+        {
+            string pattern = @"(\w+ '\w+)";
+
+            Regex regex = new Regex(pattern);
+            MatchCollection matches = regex.Matches(lines[i]);
+
+            foreach (Match match in matches)
+            {
+
+                //Console.WriteLine($"Full Match: \"{match.Value}\"");
+
+                var newValue = match.Value.Replace("'", "‘");
+                lines[i] = lines[i].Replace(match.Value, newValue);
+            }
+
+            //if (lines[i].Trim().Equals("'"))
+            //{
+            //    lines[i] = string.Empty;
+            //}
+        }
+
+        var revertFormat = string.Join(Environment.NewLine, lines);
+        return revertFormat;
+    }
+
     private static void SaveDataToDatabase(string wP_Post_Article_InsertSql, string wP_PostMeta, string wP_term_relationships)
     {
         string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
@@ -1307,14 +1379,14 @@ internal class Program
 
         
         var wp_post = new MySqlCommand(wP_Post_Article_InsertSql, conn);
-        wp_post.ExecuteNonQuery();
+        //wp_post.ExecuteNonQuery();
 
         var wp_postMeta = new MySqlCommand(wP_PostMeta, conn);
-        wp_postMeta.ExecuteNonQuery();
+        //wp_postMeta.ExecuteNonQuery();
 
 
         var wP_term = new MySqlCommand(wP_term_relationships, conn);
-        wP_term.ExecuteNonQuery();
+        //wP_term.ExecuteNonQuery();
 
 
         conn.Close();
