@@ -14,41 +14,34 @@ namespace NWP_DB_Migration.Article
         public int ID { get; set; }
         public string Author { get; set; }
 
-        public List<AuthorsList> GetAuthors()
+        public int GetAuthors(string username)
         {
-            List<AuthorsList> authors = new List<AuthorsList>();
 
-            authors.Add(new AuthorsList { ID = 7, Author = "Aamer Madhani, Associated Press" });
+            try
+            {
+                string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
+                MySqlConnection conn = new MySqlConnection(connStr);
+                conn.Open();
 
+                var sql = $"select ID from wp_users where display_name COLLATE utf8mb4_bin ='{username}';";
+                int id = 1332; //Newswatchpluss Staff
+                var mycommand = new MySqlCommand(sql, conn);
+                MySqlDataReader reader = mycommand.ExecuteReader();
 
+                while (reader.Read())
+                {
+                    id = reader.GetInt32("ID");
+                }
 
-            return authors;
+                conn.Close();
 
-            //try
-            //{
-            //    string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
-            //    MySqlConnection conn = new MySqlConnection(connStr);
-            //    conn.Open();
-
-            //    var sql = $"select ID from wp_users where post_title='{imagesource}';";
-            //    int id = 0;
-            //    var wp_post = new MySqlCommand(sql, conn);
-            //    MySqlDataReader reader = wp_post.ExecuteReader();
-
-            //    while (reader.Read())
-            //    {
-            //        id = reader.GetInt32("ID");
-            //    }
-
-            //    conn.Close();
-
-            //    return id;
-            //}
-            //catch (Exception)
-            //{
-            //    //log the imagesource id if can't be found
-            //    return 0;
-            //}
+                return id;
+            }
+            catch (Exception)
+            {
+                //log the imagesource id if can't be found
+                return 0;
+            }
 
         }
     }

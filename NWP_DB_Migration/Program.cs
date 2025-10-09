@@ -19,10 +19,10 @@ internal class Program
                                  };
 
         //PREP: clean up space after period in multiline tags,
-        AddStartHereAndCleanTags();
+        //AddStartHereAndCleanTags();
 
         //Clean up article
-        CleanUpArticle();
+        //CleanUpArticle();
 
         // SQL
         GenerateInsertSql();
@@ -439,12 +439,12 @@ internal class Program
         {
             if (name == null || name==string.Empty)
             {
-                return 723; //Newswatch plus
+                return 1332; //Newswatch plus
             }
             else
             {
                 AuthorsList AuthorsList = new AuthorsList();
-                var ID = AuthorsList.GetAuthors().FirstOrDefault(s => name.Trim().Contains(s.Author)).ID;
+                var ID = AuthorsList.GetAuthors(name);
                 return ID;
             }
 
