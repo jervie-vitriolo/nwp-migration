@@ -15,7 +15,7 @@ internal class Program
         List<string> WP_PostMeta_list;
         List<string> WP_term_relationships_list;
         int ErrorCount = 0; 
-        string[] directories = { @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\8"
+        string[] directories = { @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\12"
                                  };
 
         //PREP: clean up space after period in multiline tags,

@@ -16,7 +16,6 @@ namespace NWP_DB_Migration.Article
 
         public int GetAuthors(string username)
         {
-
             try
             {
                 string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
