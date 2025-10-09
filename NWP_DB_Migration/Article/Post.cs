@@ -35,7 +35,10 @@ namespace NWP_DB_Migration.Article
         public string embedsource { get; set; } = string.Empty;
         public string videoimage { get; set; } = string.Empty;
         public string videosource { get; set; } = string.Empty;
+        public string lastactivatedversioncreated { get; set; } = string.Empty;
+        public string lastactivatedversion { get; set; } = string.Empty;
 
+        
 
         public section0 section0 = new section0();
         public section1 section1 = new section1();

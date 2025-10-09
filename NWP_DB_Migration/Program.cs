@@ -15,14 +15,14 @@ internal class Program
         List<string> WP_PostMeta_list;
         List<string> WP_term_relationships_list;
         int ErrorCount = 0; 
-        string[] directories = { @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\7"
+        string[] directories = { @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\8"
                                  };
 
         //PREP: clean up space after period in multiline tags,
-        //AddStartHereAndCleanTags();
+        AddStartHereAndCleanTags();
 
         //Clean up article
-        //CleanUpArticle();
+        CleanUpArticle();
 
         // SQL
         GenerateInsertSql();
@@ -306,6 +306,9 @@ internal class Program
                     matchingLines = matchingLines.Replace("START HERE----->", "'START HERE----->");
 
                     matchingLines = matchingLines.Replace("lastactivatedBy", "lastactivatedby");
+                    matchingLines = matchingLines.Replace("lastactivatedVersionCreated", "lastactivatedversioncreated");
+                    matchingLines = matchingLines.Replace("lastactivatedVersion", "lastactivatedversion");
+                    
 
                     File.WriteAllText(filePath, matchingLines);
                 }
@@ -465,6 +468,10 @@ internal class Program
             }
 
         }
+
+        #region getPostContent
+
+
         string getPostContent(Post post)
         {
             string finalString = string.Empty;
@@ -1089,7 +1096,11 @@ internal class Program
 
             return finalString;
         }
-        
+
+
+        #endregion
+
+
         string CleanChecks(string text)
         {
             try
@@ -1254,6 +1265,11 @@ internal class Program
                              @$"{nwp_dir}\2024\5",
                              @$"{nwp_dir}\2024\6",
                              @$"{nwp_dir}\2024\7",
+                             @$"{nwp_dir}\2024\8",
+                             @$"{nwp_dir}\2024\9",
+                             @$"{nwp_dir}\2024\10",
+                             @$"{nwp_dir}\2024\11",
+                             @$"{nwp_dir}\2024\12",
                              @$"{nwp_dir}\2025\1",
                              @$"{nwp_dir}\2025\2",
                              @$"{nwp_dir}\2025\3",
@@ -1261,7 +1277,8 @@ internal class Program
                              @$"{nwp_dir}\2025\5",
                              @$"{nwp_dir}\2025\6",
                              @$"{nwp_dir}\2025\7",
-                             @$"{nwp_dir}\2025\8"
+                             @$"{nwp_dir}\2025\8",
+
     };
 
             var searchText = "'author':";
@@ -1292,7 +1309,7 @@ internal class Program
 
 
             int i = 0;
-            int user_id = 6;
+            int user_id = 7;
             List<string> wp_users = new List<string>();
             List<string> wp_usermeta = new List<string>();
 
@@ -1368,19 +1385,19 @@ internal class Program
 
     private static void SaveDataToDatabase(string wP_Post_Article_InsertSql, string wP_PostMeta, string wP_term_relationships)
     {
-        string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
-        MySqlConnection conn = new MySqlConnection(connStr);
+        //string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
+        //MySqlConnection conn = new MySqlConnection(connStr);
         //conn.Open();
 
         
-        var wp_post = new MySqlCommand(wP_Post_Article_InsertSql, conn);
+        //var wp_post = new MySqlCommand(wP_Post_Article_InsertSql, conn);
         //wp_post.ExecuteNonQuery();
 
-        var wp_postMeta = new MySqlCommand(wP_PostMeta, conn);
+        //var wp_postMeta = new MySqlCommand(wP_PostMeta, conn);
         //wp_postMeta.ExecuteNonQuery();
 
 
-        var wP_term = new MySqlCommand(wP_term_relationships, conn);
+        //var wP_term = new MySqlCommand(wP_term_relationships, conn);
         //wP_term.ExecuteNonQuery();
 
 
