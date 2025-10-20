@@ -16,7 +16,7 @@ internal class Program
         List<string> WP_PostMeta_list;
         List<string> WP_term_relationships_list;
         int ErrorCount = 0; 
-        string[] directories = { @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\8",
+        string[] directories = { @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\10",
                                 
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\6",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\7",
@@ -28,10 +28,10 @@ internal class Program
                                  };
 
         //PREP: clean up space after period in multiline tags,
-        //AddStartHereAndCleanTags();
+        AddStartHereAndCleanTags();
 
         //Clean up article
-        //CleanUpArticle();
+        CleanUpArticle();
 
         // SQL
         GenerateInsertSql();
@@ -304,15 +304,14 @@ internal class Program
                     matchingLines = matchingLines.Replace("createdBy", "createdby");
                     matchingLines = matchingLines.Replace("lastActivated", "lastactivated");
                     matchingLines = matchingLines.Replace("lastActivatedBy", "lastactivatedby");
-                    matchingLines = matchingLines.Replace("lastModified", "lastmodified':");
+                    matchingLines = matchingLines.Replace("lastModified':", "lastmodified':");
                     matchingLines = matchingLines.Replace("lastModifiedBy", "lastmodifiedby");
                     matchingLines = matchingLines.Replace("visualType", "visualtype");
                     matchingLines = matchingLines.Replace("activationStatus", "activationstatus");
                     matchingLines = matchingLines.Replace("contentWidth", "contentwidth");
                     matchingLines = matchingLines.Replace("embedCode", "embedcode");
-                    matchingLines = matchingLines.Replace("imageCaption", "imagecaption");
+                    matchingLines = matchingLines.Replace("'imageCaption':", "imagecaption:");
                     matchingLines = matchingLines.Replace("authorImage", "authorimage");
-                    matchingLines = matchingLines.Replace("imageCaption", "imagecaption");
                     matchingLines = matchingLines.Replace("imageCredit", "imagecredit");
                     matchingLines = matchingLines.Replace("imageList", "imagelist");
                     

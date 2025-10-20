@@ -44,6 +44,7 @@ namespace NWP_DB_Migration.Article
         public string imagealttext { get; set; } = string.Empty;
         
         
+        
 
         public section0 section0 = new section0();
         public section1 section1 = new section1();
