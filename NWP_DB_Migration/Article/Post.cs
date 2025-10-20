@@ -37,7 +37,12 @@ namespace NWP_DB_Migration.Article
         public string videosource { get; set; } = string.Empty;
         public string lastactivatedversioncreated { get; set; } = string.Empty;
         public string lastactivatedversion { get; set; } = string.Empty;
-
+        public string credit { get; set; } = string.Empty;
+        public string updated { get; set; } = string.Empty;
+        public string kicker { get; set; } = string.Empty;
+        public string source { get; set; } = string.Empty;
+        public string imagealttext { get; set; } = string.Empty;
+        
         
 
         public section0 section0 = new section0();

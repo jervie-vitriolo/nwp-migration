@@ -16,6 +16,8 @@ namespace NWP_DB_Migration.Article
 
         public int GetAuthors(string username)
         {
+            return 1332;
+
             try
             {
                 string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
@@ -142,7 +144,7 @@ namespace NWP_DB_Migration.Article
             categories.Add(new CategoryList { ID = 105, Category = "Creatives Questionnaire" });
             categories.Add(new CategoryList { ID = 106, Category = "webcomics" });
             categories.Add(new CategoryList { ID = 107, Category = "Health" });
-            categories.Add(new CategoryList { ID = 108, Category = "Current Events" });
+            categories.Add(new CategoryList { ID = 108, Category = "Current-Events" });
             categories.Add(new CategoryList { ID = 109, Category = "Education" });
             categories.Add(new CategoryList { ID = 110, Category = "Pets" });
             categories.Add(new CategoryList { ID = 111, Category = "labor" });

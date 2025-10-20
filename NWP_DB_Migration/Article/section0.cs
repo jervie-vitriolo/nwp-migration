@@ -18,6 +18,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -40,6 +43,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -62,6 +68,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -84,6 +93,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -106,6 +118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -128,6 +143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -150,6 +168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -172,6 +193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -194,6 +218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -216,6 +243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -238,6 +268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -260,6 +293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -282,6 +318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -304,6 +343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -326,6 +368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -348,6 +393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -370,6 +418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -392,6 +443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -414,6 +468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -436,6 +493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -458,6 +518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -480,6 +543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -502,6 +568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -524,6 +593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -546,6 +618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -568,6 +643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -590,6 +668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -612,6 +693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -634,6 +718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -656,6 +743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -678,6 +768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -700,6 +793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -722,6 +818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -744,6 +843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -766,6 +868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -788,6 +893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -810,6 +918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -832,6 +943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -854,6 +968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -876,6 +993,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -898,6 +1018,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -920,6 +1043,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -942,6 +1068,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -964,6 +1093,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -986,6 +1118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1008,6 +1143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1030,6 +1168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1052,6 +1193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1074,6 +1218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1096,6 +1243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1118,6 +1268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1140,6 +1293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1162,6 +1318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1184,6 +1343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1206,6 +1368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1228,6 +1393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1250,6 +1418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1272,6 +1443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1294,6 +1468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1316,6 +1493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1338,6 +1518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1360,6 +1543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1382,6 +1568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1404,6 +1593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1426,6 +1618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1448,6 +1643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1470,6 +1668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1492,6 +1693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1514,6 +1718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1536,6 +1743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1558,6 +1768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1580,6 +1793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1602,6 +1818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1624,6 +1843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1646,6 +1868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1668,6 +1893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1690,6 +1918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1712,6 +1943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1734,6 +1968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1756,6 +1993,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1778,6 +2018,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1800,6 +2043,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1822,6 +2068,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1844,6 +2093,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1866,6 +2118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1888,6 +2143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1910,6 +2168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1932,6 +2193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1954,6 +2218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1976,6 +2243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -1998,6 +2268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2020,6 +2293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2042,6 +2318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2064,6 +2343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2086,6 +2368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2108,6 +2393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2130,6 +2418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2152,6 +2443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2174,6 +2468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2196,6 +2493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2218,6 +2518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2240,6 +2543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2262,6 +2568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2284,6 +2593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2306,6 +2618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2328,6 +2643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2350,6 +2668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2372,6 +2693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2394,6 +2718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2416,6 +2743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2438,6 +2768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2460,6 +2793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2482,6 +2818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2504,6 +2843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2526,6 +2868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2548,6 +2893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2570,6 +2918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2592,6 +2943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2614,6 +2968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2636,6 +2993,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2658,6 +3018,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2680,6 +3043,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2702,6 +3068,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2724,6 +3093,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2746,6 +3118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2768,6 +3143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2790,6 +3168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2812,6 +3193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2834,6 +3218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2856,6 +3243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2878,6 +3268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2900,6 +3293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2922,6 +3318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2944,6 +3343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2966,6 +3368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -2988,6 +3393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3010,6 +3418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3032,6 +3443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3054,6 +3468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3076,6 +3493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3098,6 +3518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3120,6 +3543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3142,6 +3568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3164,6 +3593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3186,6 +3618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3208,6 +3643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3230,6 +3668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3252,6 +3693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3274,6 +3718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3296,6 +3743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3318,6 +3768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3340,6 +3793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3362,6 +3818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3384,6 +3843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3406,6 +3868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3428,6 +3893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3450,6 +3918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3472,6 +3943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3494,6 +3968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3516,6 +3993,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3538,6 +4018,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3560,6 +4043,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3582,6 +4068,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3604,6 +4093,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3626,6 +4118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3648,6 +4143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3670,6 +4168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3692,6 +4193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3714,6 +4218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3736,6 +4243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3758,6 +4268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3780,6 +4293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3802,6 +4318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3824,6 +4343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3846,6 +4368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3868,6 +4393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3890,6 +4418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3912,6 +4443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3934,6 +4468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3956,6 +4493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -3978,6 +4518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4000,6 +4543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4022,6 +4568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4044,6 +4593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4066,6 +4618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4088,6 +4643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4110,6 +4668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4132,6 +4693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4154,6 +4718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4176,6 +4743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4198,6 +4768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4220,6 +4793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4242,6 +4818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4264,6 +4843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4286,6 +4868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4308,6 +4893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4330,6 +4918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4352,6 +4943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4374,6 +4968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4396,6 +4993,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4418,6 +5018,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4440,6 +5043,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4462,6 +5068,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4484,6 +5093,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4506,6 +5118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4528,6 +5143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4550,6 +5168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4572,6 +5193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4594,6 +5218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4616,6 +5243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4638,6 +5268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4660,6 +5293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4682,6 +5318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4704,6 +5343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4726,6 +5368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4748,6 +5393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4770,6 +5418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4792,6 +5443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4814,6 +5468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4836,6 +5493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4858,6 +5518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4880,6 +5543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4902,6 +5568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4924,6 +5593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4946,6 +5618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4968,6 +5643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -4990,6 +5668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5012,6 +5693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5034,6 +5718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5056,6 +5743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5078,6 +5768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5100,6 +5793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5122,6 +5818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5144,6 +5843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5166,6 +5868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5188,6 +5893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5210,6 +5918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5232,6 +5943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5254,6 +5968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5276,6 +5993,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5298,6 +6018,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5320,6 +6043,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5342,6 +6068,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5364,6 +6093,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5386,6 +6118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5408,6 +6143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5430,6 +6168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5452,6 +6193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5474,6 +6218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5496,6 +6243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5518,6 +6268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5540,6 +6293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5562,6 +6318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5584,6 +6343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5606,6 +6368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5628,6 +6393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5650,6 +6418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5672,6 +6443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5694,6 +6468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5716,6 +6493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5738,6 +6518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5760,6 +6543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5782,6 +6568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5804,6 +6593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5826,6 +6618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5848,6 +6643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5870,6 +6668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5892,6 +6693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5914,6 +6718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5936,6 +6743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5958,6 +6768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -5980,6 +6793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6002,6 +6818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6024,6 +6843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6046,6 +6868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6068,6 +6893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6090,6 +6918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6112,6 +6943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6134,6 +6968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6156,6 +6993,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6178,6 +7018,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6200,6 +7043,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6222,6 +7068,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6244,6 +7093,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6266,6 +7118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6288,6 +7143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6310,6 +7168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6332,6 +7193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6354,6 +7218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6376,6 +7243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6398,6 +7268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6420,6 +7293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6442,6 +7318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6464,6 +7343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6486,6 +7368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6508,6 +7393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6530,6 +7418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6552,6 +7443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6574,6 +7468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6596,6 +7493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6618,6 +7518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6640,6 +7543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6662,6 +7568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6684,6 +7593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6706,6 +7618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6728,6 +7643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6750,6 +7668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6772,6 +7693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6794,6 +7718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6816,6 +7743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6838,6 +7768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6860,6 +7793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6882,6 +7818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6904,6 +7843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6926,6 +7868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6948,6 +7893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6970,6 +7918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -6992,6 +7943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7014,6 +7968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7036,6 +7993,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7058,6 +8018,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7080,6 +8043,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7102,6 +8068,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7124,6 +8093,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7146,6 +8118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7168,6 +8143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7190,6 +8168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7212,6 +8193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7234,6 +8218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7256,6 +8243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7278,6 +8268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7300,6 +8293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7322,6 +8318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7344,6 +8343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7366,6 +8368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7388,6 +8393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7410,6 +8418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7432,6 +8443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7454,6 +8468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7476,6 +8493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7498,6 +8518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7520,6 +8543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7542,6 +8568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7564,6 +8593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7586,6 +8618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7608,6 +8643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7630,6 +8668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7652,6 +8693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7674,6 +8718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7696,6 +8743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7718,6 +8768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7740,6 +8793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7762,6 +8818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7784,6 +8843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7806,6 +8868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7828,6 +8893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7850,6 +8918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7872,6 +8943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7894,6 +8968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7916,6 +8993,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7938,6 +9018,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7960,6 +9043,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -7982,6 +9068,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8004,6 +9093,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8026,6 +9118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8048,6 +9143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8070,6 +9168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8092,6 +9193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8114,6 +9218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8136,6 +9243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8158,6 +9268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8180,6 +9293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8202,6 +9318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8224,6 +9343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8246,6 +9368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8268,6 +9393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8290,6 +9418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8312,6 +9443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8334,6 +9468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8356,6 +9493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8378,6 +9518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8400,6 +9543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8422,6 +9568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8444,6 +9593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8466,6 +9618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8488,6 +9643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8510,6 +9668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8532,6 +9693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8554,6 +9718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8576,6 +9743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8598,6 +9768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8620,6 +9793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8642,6 +9818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8664,6 +9843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8686,6 +9868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8708,6 +9893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8730,6 +9918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8752,6 +9943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8774,6 +9968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8796,6 +9993,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8818,6 +10018,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8840,6 +10043,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8862,6 +10068,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8884,6 +10093,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8906,6 +10118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8928,6 +10143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8950,6 +10168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8972,6 +10193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -8994,6 +10218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9016,6 +10243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9038,6 +10268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9060,6 +10293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9082,6 +10318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9104,6 +10343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9126,6 +10368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9148,6 +10393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9170,6 +10418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9192,6 +10443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9214,6 +10468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9236,6 +10493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9258,6 +10518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9280,6 +10543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9302,6 +10568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9324,6 +10593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9346,6 +10618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9368,6 +10643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9390,6 +10668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9412,6 +10693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9434,6 +10718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9456,6 +10743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9478,6 +10768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9500,6 +10793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9522,6 +10818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9544,6 +10843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9566,6 +10868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9588,6 +10893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9610,6 +10918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9632,6 +10943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9654,6 +10968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9676,6 +10993,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9698,6 +11018,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9720,6 +11043,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9742,6 +11068,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9764,6 +11093,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9786,6 +11118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9808,6 +11143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9830,6 +11168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9852,6 +11193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9874,6 +11218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9896,6 +11243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9918,6 +11268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9940,6 +11293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9962,6 +11318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -9984,6 +11343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10006,6 +11368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10028,6 +11393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10050,6 +11418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10072,6 +11443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10094,6 +11468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10116,6 +11493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10138,6 +11518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10160,6 +11543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10182,6 +11568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10204,6 +11593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10226,6 +11618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10248,6 +11643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10270,6 +11668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10292,6 +11693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10314,6 +11718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10336,6 +11743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10358,6 +11768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10380,6 +11793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10402,6 +11818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10424,6 +11843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10446,6 +11868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10468,6 +11893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10490,6 +11918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10512,6 +11943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10534,6 +11968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10556,6 +11993,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10578,6 +12018,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10600,6 +12043,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10622,6 +12068,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10644,6 +12093,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10666,6 +12118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10688,6 +12143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10710,6 +12168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10732,6 +12193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10754,6 +12218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10776,6 +12243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10798,6 +12268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10820,6 +12293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10842,6 +12318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10864,6 +12343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10886,6 +12368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10908,6 +12393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10930,6 +12418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10952,6 +12443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10974,6 +12468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -10996,6 +12493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11018,6 +12518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11040,6 +12543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11062,6 +12568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11084,6 +12593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11106,6 +12618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11128,6 +12643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11150,6 +12668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11172,6 +12693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11194,6 +12718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11216,6 +12743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11238,6 +12768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11260,6 +12793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11282,6 +12818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11304,6 +12843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11326,6 +12868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11348,6 +12893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11370,6 +12918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11392,6 +12943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11414,6 +12968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11436,6 +12993,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11458,6 +13018,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11480,6 +13043,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11502,6 +13068,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11524,6 +13093,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11546,6 +13118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11568,6 +13143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11590,6 +13168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11612,6 +13193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11634,6 +13218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11656,6 +13243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11678,6 +13268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11700,6 +13293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11722,6 +13318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11744,6 +13343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11766,6 +13368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11788,6 +13393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11810,6 +13418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11832,6 +13443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11854,6 +13468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11876,6 +13493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11898,6 +13518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11920,6 +13543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11942,6 +13568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11964,6 +13593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -11986,6 +13618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12008,6 +13643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12030,6 +13668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12052,6 +13693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12074,6 +13718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12096,6 +13743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12118,6 +13768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12140,6 +13793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12162,6 +13818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12184,6 +13843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12206,6 +13868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12228,6 +13893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12250,6 +13918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12272,6 +13943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12294,6 +13968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12316,6 +13993,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12338,6 +14018,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12360,6 +14043,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12382,6 +14068,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12404,6 +14093,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12426,6 +14118,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12448,6 +14143,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12470,6 +14168,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12492,6 +14193,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12514,6 +14218,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12536,6 +14243,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12558,6 +14268,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12580,6 +14293,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12602,6 +14318,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12624,6 +14343,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12646,6 +14368,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12668,6 +14393,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12690,6 +14418,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12712,6 +14443,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12734,6 +14468,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12756,6 +14493,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12778,6 +14518,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12800,6 +14543,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12822,6 +14568,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12844,6 +14593,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12866,6 +14618,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12888,6 +14643,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12910,6 +14668,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12932,6 +14693,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12954,6 +14718,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12976,6 +14743,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -12998,6 +14768,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -13020,6 +14793,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -13042,6 +14818,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -13064,6 +14843,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -13086,6 +14868,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -13108,6 +14893,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -13130,6 +14918,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -13152,6 +14943,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -13174,6 +14968,9 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
 
@@ -13196,8 +14993,13 @@
         public string imagecaption { get; set; }
         public string embed { get; set; }
         public string scale { get; set; }
+        public string imagecredit { get; set; }
+        public string imagealttext { get; set; }
+        public string url { get; set; }
         public string embedcode { get; set; }
     }
+
+
 
 
 }
