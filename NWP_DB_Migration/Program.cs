@@ -17,10 +17,12 @@ internal class Program
         List<string> WP_Post_Article_InsertSql_list;
         List<string> WP_PostMeta_list;
         List<string> WP_term_relationships_list;
+        List<string> WP_Post_Attachment_caption;
+        
         int ErrorCount = 0;
         string[] directories = {
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\1"
-                                @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\2",
+                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\2",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\3",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\4",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\5",
@@ -144,6 +146,7 @@ internal class Program
             WP_Post_Article_InsertSql_list = new List<string>();
             WP_PostMeta_list = new List<string>();
             WP_term_relationships_list = new List<string>();
+            WP_Post_Attachment_caption = new List<string>();
 
             // Loop through each directory
             foreach (string directory in directories)
@@ -353,6 +356,8 @@ internal class Program
 
         void CreatePostInsertSql(Post post, int PostID)
         {
+            string image_caption_sql = string.Empty;
+
             string WP_Post_Article_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
                                   $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{mysqlStringFormat(post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open', '', '{mysqlStringFormat(post.title).Replace(" ", "-")}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
 
@@ -360,11 +365,21 @@ internal class Program
 
             string WP_term_relationships = $"INSERT INTO wp_term_relationships(OBJECT_ID,TERM_TAXONOMY_ID,TERM_ORDER) VALUES({PostID},{getCategoryId(post.categories)},0);";
 
+            if(!string.IsNullOrEmpty(post.caption ))
+            {
+                image_caption_sql = $"update wp_posts set post_excerpt='{post.caption}'  where post_title ='{post.imagesource}' and post_type='attachment';";
+                WP_Post_Attachment_caption.Add(image_caption_sql);
+            }
+            
+
+
             WP_Post_Article_InsertSql_list.Add(WP_Post_Article_InsertSql);
             WP_PostMeta_list.Add(WP_PostMeta);
             WP_term_relationships_list.Add(WP_term_relationships);
+            
 
-            SaveDataToDatabase(WP_Post_Article_InsertSql, WP_PostMeta, WP_term_relationships);
+
+            SaveDataToDatabase(WP_Post_Article_InsertSql, WP_PostMeta, WP_term_relationships, image_caption_sql);
         }
 
         void LogCreatedPostInsertSql(string directory)
@@ -1212,11 +1227,30 @@ internal class Program
                 var DIR2024 = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024";
                 var DIR2025 = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2025";
                 var DIR6 = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\6";
-                var DIRRoot = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\";
+                var DIRRoot = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp";
                 string[] directories = { 
 
+                                 //@$"{DIR2025}\2",
+                                 //@$"{DIR2025}\3",
+                                 //@$"{DIR2025}\4",
+                                 //@$"{DIR2025}\5",
+                                 //@$"{DIR2025}\6",
+                                 //@$"{DIR2025}\7",
+                                 //@$"{DIR2025}\8",
+                                 //@$"{DIR2025}\9",
+                                 //@$"{DIR2025}\10",
+
+                                 @$"{DIR2024}\5",
+                                 @$"{DIR2024}\6",
+                                 @$"{DIR2024}\7",
+                                 @$"{DIR2024}\8",
+                                 @$"{DIR2024}\9",
+                                 @$"{DIR2024}\10",
+                                 @$"{DIR2024}\11",
+                                 @$"{DIR2024}\12",
+
+                                 @$"{DIR6}",
                                  @$"{DIRRoot}",
-                                 
                 };
                 
 
@@ -1252,14 +1286,14 @@ internal class Program
                         {
 
                             //check for filename
-                            if (!IsImageNext && lines[i].Equals("'      <sv:property sv:name=\"jcr:uuid\" sv:type=\"String\">"))
+                            if (!IsImageNext && lines[i].Equals("'    <sv:property sv:name=\"jcr:uuid\" sv:type=\"String\">"))
                             {
                                 imageSource = lines[i + 1].Replace("<sv:value>", "").Replace("</sv:value>", "").Replace("'","").Trim();
                                 Is2ndLevel = false;
                                 IsImageNext=true;
                             }
 
-                            if (!IsImageNext && lines[i].Equals("'          <sv:property sv:name=\"jcr:uuid\" sv:type=\"String\">"))
+                            if (!IsImageNext && lines[i].Equals("'      <sv:property sv:name=\"jcr:uuid\" sv:type=\"String\">"))
                             {
                                 imageSource = lines[i + 1].Replace("<sv:value>", "").Replace("</sv:value>", "").Replace("'", "").Trim();
                                 Is2ndLevel = true;
@@ -1267,23 +1301,14 @@ internal class Program
                             }
 
                             //check for actual base64 string images for parsing
-                            if (Is2ndLevel)
+                            
+                            if (lines[i].Contains("<sv:property sv:name=\"jcr:data\" sv:type=\"Binary\">"))
                             {
-                                if (lines[i].Contains("<sv:property sv:name=\"jcr:data\" sv:type=\"Binary\">"))
-                                {
-                                    Base64StringToJpeg(lines[i + 1].Replace("'                  <sv:value>", "").Replace("</sv:value>", ""), imageSource.Trim(), subpath);
-                                    IsImageNext = false;
-                                }
-                            }
-                            else
-                            {
-                                if (lines[i].Contains("<sv:property sv:name=\"jcr:data\" sv:type=\"Binary\">"))
-                                {
-                                    Base64StringToJpeg(lines[i + 1].Replace("'", "").Trim().Replace("<sv:value>", "").Replace("</sv:value>", ""), imageSource.Trim(), subpath);
+                                Base64StringToJpeg(lines[i + 1].Replace("'", "").Trim().Replace("<sv:value>", "").Replace("</sv:value>", ""), imageSource.Trim(), subpath);
 
-                                    IsImageNext = false;
-                                }
+                                IsImageNext = false;
                             }
+                            
                         }
 
                         RemoveSingleQoute(filePath);
@@ -1494,8 +1519,9 @@ internal class Program
         var revertFormat = string.Join(Environment.NewLine, lines);
         return revertFormat;
     }
-    private static void SaveDataToDatabase(string wP_Post_Article_InsertSql, string wP_PostMeta, string wP_term_relationships)
+    private static void SaveDataToDatabase(string wP_Post_Article_InsertSql, string wP_PostMeta, string wP_term_relationships,string image_captionSql)
     {
+        //staging
         //string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
         //MySqlConnection conn = new MySqlConnection(connStr);
         //conn.Open();
@@ -1511,6 +1537,12 @@ internal class Program
         //var wP_term = new MySqlCommand(wP_term_relationships, conn);
         //wP_term.ExecuteNonQuery();
 
+        if (!string.IsNullOrEmpty(image_captionSql))
+        {
+            //var image_caption = new MySqlCommand(image_captionSql, conn);
+            //image_caption.ExecuteNonQuery();
+        }
+        
 
         //conn.Close();
 
@@ -1570,4 +1602,6 @@ internal class Program
         
     }
 }
+
+
 
