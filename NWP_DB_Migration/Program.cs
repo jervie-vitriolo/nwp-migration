@@ -21,7 +21,7 @@ internal class Program
         
         int ErrorCount = 0;
         string[] directories = {
-                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\1"
+                                @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\1"
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\2",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\3",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\4",
@@ -48,7 +48,7 @@ internal class Program
         //CleanUpArticle();
 
         // SQL
-        //GenerateInsertSql();
+        GenerateInsertSql();
 
 
         //Generate classes - ALL DONE
@@ -58,7 +58,7 @@ internal class Program
         //ProcessAuthors();
 
         //Extract fetured image
-        ExtractFeaturedImage();
+        //ExtractFeaturedImage();
 
 
         void AddStartHereAndCleanTags()
@@ -1522,29 +1522,29 @@ internal class Program
     private static void SaveDataToDatabase(string wP_Post_Article_InsertSql, string wP_PostMeta, string wP_term_relationships,string image_captionSql)
     {
         //staging
-        //string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
-        //MySqlConnection conn = new MySqlConnection(connStr);
-        //conn.Open();
+        string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
+        MySqlConnection conn = new MySqlConnection(connStr);
+        conn.Open();
 
 
-        //var wp_post = new MySqlCommand(wP_Post_Article_InsertSql, conn);
-        //wp_post.ExecuteNonQuery();
+        var wp_post = new MySqlCommand(wP_Post_Article_InsertSql, conn);
+        wp_post.ExecuteNonQuery();
 
-        //var wp_postMeta = new MySqlCommand(wP_PostMeta, conn);
-        //wp_postMeta.ExecuteNonQuery();
+        var wp_postMeta = new MySqlCommand(wP_PostMeta, conn);
+        wp_postMeta.ExecuteNonQuery();
 
 
-        //var wP_term = new MySqlCommand(wP_term_relationships, conn);
-        //wP_term.ExecuteNonQuery();
+        var wP_term = new MySqlCommand(wP_term_relationships, conn);
+        wP_term.ExecuteNonQuery();
 
         if (!string.IsNullOrEmpty(image_captionSql))
         {
-            //var image_caption = new MySqlCommand(image_captionSql, conn);
-            //image_caption.ExecuteNonQuery();
+            var image_caption = new MySqlCommand(image_captionSql, conn);
+            image_caption.ExecuteNonQuery();
         }
         
 
-        //conn.Close();
+        conn.Close();
 
         SavedCount++;
         Console.WriteLine("Saved");
