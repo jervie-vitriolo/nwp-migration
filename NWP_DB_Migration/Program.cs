@@ -4,6 +4,7 @@ using System;
 using System.Reflection.PortableExecutable;
 using System.Security.Policy;
 using System.Text.RegularExpressions;
+using System.Xml.Linq;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 using static System.Net.Mime.MediaTypeNames;
@@ -18,8 +19,8 @@ internal class Program
         List<string> WP_term_relationships_list;
         int ErrorCount = 0;
         string[] directories = {
-                                @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\1"
-                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\2",
+                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\1"
+                                @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\2",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\3",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\4",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\5",
@@ -49,13 +50,13 @@ internal class Program
 
 
         //Generate classes - ALL DONE
-        GeneratePostClass();
+        //GeneratePostClass();
 
         //Authors - ALL DONE
         //ProcessAuthors();
 
         //Extract fetured image
-        //ExtractFeaturedImage();
+        ExtractFeaturedImage();
 
 
         void AddStartHereAndCleanTags()
@@ -353,7 +354,7 @@ internal class Program
         void CreatePostInsertSql(Post post, int PostID)
         {
             string WP_Post_Article_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
-                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{mysqlStringFormat(post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'open', 'open', '', '{mysqlStringFormat(post.title).Replace(" ", "-")}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
+                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{mysqlStringFormat(post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open', '', '{mysqlStringFormat(post.title).Replace(" ", "-")}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
 
             string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{GetPostMetaValue(post.imagesource)}');";
 
@@ -419,9 +420,11 @@ internal class Program
 
         int getCategoryId(string categoryId)
         {
+            return 1;
+
             if (categoryId == null)
             {
-                Console.WriteLine($"UNCATEGORISED");
+                //Console.WriteLine($"UNCATEGORISED");
                 return 1;
             }
             else
@@ -436,11 +439,11 @@ internal class Program
 
                     if (ID != 0)
                     {
-                        Console.WriteLine($"{nwpCategory.Category}");
+                        //Console.WriteLine($"{nwpCategory.Category}");
                         return ID;
                     }
                 }
-                Console.WriteLine($"NEWS CATEGORY");
+                //Console.WriteLine($"NEWS CATEGORY");
                 return 36;
             }
         }
@@ -489,9 +492,6 @@ internal class Program
 
         string getBlock(string title, string type, string embedcode,string text, string url, string embed,string image)
         {
-            //PBA Season 49 Philippine Cup: San Miguel vs Meralco
-            //imageGallery,embedCode, text
-            //post.section0.type == "embedCode"
 
             switch (type)
             {
@@ -1203,74 +1203,96 @@ internal class Program
 
         void ExtractFeaturedImage()
         {
-            // Get all subdirectories in the specified path
-            var DIR2024 = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024";
-            string[] directories = { @$"{DIR2024}\6",
-                             @$"{DIR2024}\5",
-                             @$"{DIR2024}\7"};
-
-
-            string subpath = "";
-            bool Is2ndLevel = false;
-            bool IsImageNext = false;
-            // Loop through each directory
-            foreach (string directory in directories)
+            string currfilePath = "";
+            string currdirectory = "";
+            try
             {
-                var tempArry = directory.Split("\\");
-                subpath = $@"{tempArry[tempArry.Length - 2]}\{tempArry[tempArry.Length - 1]}";
 
-                Console.WriteLine(directory);
-                foreach (string filePath in Directory.EnumerateFiles(directory))
+                // Get all subdirectories in the specified path
+                var DIR2024 = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024";
+                string[] directories = { 
+
+                                 @$"{DIR2024}\8",
+                };
+                
+
+
+                string subpath = "";
+                bool Is2ndLevel = false;
+                bool IsImageNext = false;
+
+                // Loop through each directory
+                foreach (string directory in directories)
                 {
-                    Console.WriteLine($"Found file: {filePath}");
-                    
-                    BeautifyXML(filePath);
-                    DeleteFolderTypeNode(filePath);
-                    AppendSingleQoute(filePath);
-                    
-                    string[] lines = File.ReadAllLines(filePath);
-                    string imageSource = "";
+                    currdirectory = directory;
 
-                    for (int i = 0; i < lines.Length; i++)
+                    var tempArry = directory.Split("\\");
+                    subpath = $@"{tempArry[tempArry.Length - 2]}\{tempArry[tempArry.Length - 1]}";
+
+                    Console.WriteLine(directory);
+                    foreach (string filePath in Directory.EnumerateFiles(directory))
                     {
+                        Console.WriteLine($"Found file: {filePath}");
 
-                        //check for filename
-                        if (!IsImageNext && lines[i].Equals("'        <sv:property sv:name=\"jcr:uuid\" sv:type=\"String\">"))
-                        {
-                            imageSource = lines[i + 1].Replace("<sv:value>", "").Replace("</sv:value>", "").Replace("'","").Trim();
-                            Is2ndLevel = false;
-                            IsImageNext=true;
-                        }
+                        currfilePath = filePath;
 
-                        if (!IsImageNext && lines[i].Equals("'            <sv:property sv:name=\"jcr:uuid\" sv:type=\"String\">"))
-                        {
-                            imageSource = lines[i + 1].Replace("<sv:value>", "").Replace("</sv:value>", "").Replace("'", "").Trim();
-                            Is2ndLevel = true;
-                            IsImageNext = true;
-                        }
 
-                        //check for actual base64 string images for parsing
-                        if (Is2ndLevel)
+                        BeautifyXML(filePath);
+                        DeleteFolderTypeNode(filePath);
+                        AppendSingleQoute(filePath);
+                    
+                        string[] lines = File.ReadAllLines(filePath);
+                        string imageSource = "";
+
+                        for (int i = 0; i < lines.Length; i++)
                         {
-                            if (lines[i].Contains("<sv:property sv:name=\"jcr:data\" sv:type=\"Binary\">"))
+
+                            //check for filename
+                            if (!IsImageNext && lines[i].Equals("'      <sv:property sv:name=\"jcr:uuid\" sv:type=\"String\">"))
                             {
-                                Base64StringToJpeg(lines[i + 1].Replace("'                    <sv:value>", "").Replace("</sv:value>", ""), imageSource.Trim(), subpath);
-                                IsImageNext = false;
+                                imageSource = lines[i + 1].Replace("<sv:value>", "").Replace("</sv:value>", "").Replace("'","").Trim();
+                                Is2ndLevel = false;
+                                IsImageNext=true;
+                            }
+
+                            if (!IsImageNext && lines[i].Equals("'          <sv:property sv:name=\"jcr:uuid\" sv:type=\"String\">"))
+                            {
+                                imageSource = lines[i + 1].Replace("<sv:value>", "").Replace("</sv:value>", "").Replace("'", "").Trim();
+                                Is2ndLevel = true;
+                                IsImageNext = true;
+                            }
+
+                            //check for actual base64 string images for parsing
+                            if (Is2ndLevel)
+                            {
+                                if (lines[i].Contains("<sv:property sv:name=\"jcr:data\" sv:type=\"Binary\">"))
+                                {
+                                    Base64StringToJpeg(lines[i + 1].Replace("'                  <sv:value>", "").Replace("</sv:value>", ""), imageSource.Trim(), subpath);
+                                    IsImageNext = false;
+                                }
+                            }
+                            else
+                            {
+                                if (lines[i].Contains("<sv:property sv:name=\"jcr:data\" sv:type=\"Binary\">"))
+                                {
+                                    Base64StringToJpeg(lines[i + 1].Replace("'", "").Trim().Replace("<sv:value>", "").Replace("</sv:value>", ""), imageSource.Trim(), subpath);
+
+                                    IsImageNext = false;
+                                }
                             }
                         }
-                        else
-                        {
-                            if (lines[i].Contains("<sv:property sv:name=\"jcr:data\" sv:type=\"Binary\">"))
-                            {
-                                Base64StringToJpeg(lines[i + 1].Replace("'                <sv:value>", "").Replace("</sv:value>", ""), imageSource.Trim(), subpath);
-                                IsImageNext = false;
-                            }
-                        }
+
+                        RemoveSingleQoute(filePath);
                     }
 
-                    RemoveSingleQoute(filePath);
                 }
 
+
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine($"{ex.Message}  - {currdirectory} - {currfilePath}");
             }
 
         }
@@ -1499,7 +1521,18 @@ internal class Program
     /// <exception cref="NotImplementedException"></exception>
     private static void BeautifyXML(string filePath)
     {
-        throw new NotImplementedException();
+        try
+        {
+            string xml = File.ReadAllText(filePath);
+            XDocument doc = XDocument.Parse(xml);
+            doc.ToString();
+
+            File.WriteAllText(filePath, doc.ToString());
+        }
+        catch (Exception)
+        {
+            // Handle and throw if fatal exception here; don't just ignore them
+        }
     }
 
     private static void DeleteFolderTypeNode(string filePath)
