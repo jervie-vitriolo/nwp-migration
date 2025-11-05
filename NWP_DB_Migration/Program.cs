@@ -1210,9 +1210,13 @@ internal class Program
 
                 // Get all subdirectories in the specified path
                 var DIR2024 = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2024";
+                var DIR2025 = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\2025";
+                var DIR6 = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\6";
+                var DIRRoot = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Assets\nwp\";
                 string[] directories = { 
 
-                                 @$"{DIR2024}\8",
+                                 @$"{DIRRoot}",
+                                 
                 };
                 
 
