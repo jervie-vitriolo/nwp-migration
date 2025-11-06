@@ -18,12 +18,12 @@ internal class Program
         List<string> WP_PostMeta_list;
         List<string> WP_term_relationships_list;
         List<string> WP_Post_Attachment_caption;
-        
+        int PostID = 6430;
         int ErrorCount = 0;
         string[] directories = {
-                                @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\1"
+                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\1"
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\2",
-                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\3",
+                                @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\3",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\4",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\5",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\6",
@@ -152,7 +152,6 @@ internal class Program
             foreach (string directory in directories)
             {
                 Console.WriteLine(directory);
-                int PostID = 4955;
                 foreach (string filePath in Directory.EnumerateFiles(directory))
                 {
                     //Console.WriteLine($"Found file: {filePath}");
@@ -204,7 +203,7 @@ internal class Program
                         catch (Exception ex) 
                         {
                             ErrorCount++;
-                           // Console.WriteLine($"Error at line {lineNumbers[i]} - {ex}");
+                            Console.WriteLine($"Error at line {lineNumbers[i]} - {ex}");
                             continue;
                         }
 
@@ -359,7 +358,7 @@ internal class Program
             string image_caption_sql = string.Empty;
 
             string WP_Post_Article_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
-                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{mysqlStringFormat(post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open', '', '{mysqlStringFormat(post.title).Replace(" ", "-")}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
+                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{mysqlStringFormat(post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{GenerateWordPressSlug(post.title)}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
 
             string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{GetPostMetaValue(post.imagesource)}');";
 
@@ -435,8 +434,6 @@ internal class Program
 
         int getCategoryId(string categoryId)
         {
-            return 1;
-
             if (categoryId == null)
             {
                 //Console.WriteLine($"UNCATEGORISED");
@@ -458,7 +455,7 @@ internal class Program
                         return ID;
                     }
                 }
-                //Console.WriteLine($"NEWS CATEGORY");
+                //Console.WriteLine($"NEWS");
                 return 36;
             }
         }
@@ -1434,6 +1431,33 @@ internal class Program
             var _usermeta = wp_usermeta;
         }
     }
+
+
+    public static string GenerateWordPressSlug(string title)
+    {
+        if (string.IsNullOrWhiteSpace(title))
+        {
+            return string.Empty;
+        }
+
+        // 1. Lowercase the string
+        string slug = title.ToLower();
+
+        // 2. Replace spaces with hyphens
+        slug = Regex.Replace(slug, @"\s+", "-");
+
+        // 3. Remove special characters (keep letters, numbers, and hyphens)
+        slug = Regex.Replace(slug, @"[^a-z0-9\-]", "");
+
+        // 4. Remove duplicate hyphens
+        slug = Regex.Replace(slug, @"-+", "-");
+
+        // 5. Trim leading/trailing hyphens
+        slug = slug.Trim('-');
+
+        return slug;
+    }
+
 
     private static string CleanApostrophe(string yml)
     {
