@@ -18,12 +18,12 @@ internal class Program
         List<string> WP_PostMeta_list;
         List<string> WP_term_relationships_list;
         List<string> WP_Post_Attachment_caption;
-        int PostID = 6430;
+        int PostID = 18000;
         int ErrorCount = 0;
         string[] directories = {
-                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\1"
+                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\1",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\2",
-                                @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\3",
+                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\3",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\4",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\5",
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\6",
@@ -33,12 +33,12 @@ internal class Program
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2025\10",
 
                                 //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\6",
-                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\7",
-                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\8",
-                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\9",
-                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\10",
-                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\11",
-                                //@"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\12"
+                                @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\7",
+                                @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\8",
+                                @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\9",
+                                @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\10",
+                                @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\11",
+                                @"C:\Users\jervi\Documents\nwp-data\Articles\nwp\2024\12"
                                  };
 
         //PREP: clean up space after period in multiline tags,
@@ -147,7 +147,7 @@ internal class Program
             WP_PostMeta_list = new List<string>();
             WP_term_relationships_list = new List<string>();
             WP_Post_Attachment_caption = new List<string>();
-
+            Post post = new Post();
             // Loop through each directory
             foreach (string directory in directories)
             {
@@ -193,17 +193,18 @@ internal class Program
                             string CleanYml = CleanApostrophe(yml);
                              CleanYml = CleanStories(CleanYml);
 
-                            var p = deserializer.Deserialize<Post>(CleanYml);
-                            if (p != null)
+                            post = deserializer.Deserialize<Post>(CleanYml);
+                            if (post != null)
                             {
-                                CreatePostInsertSql(p, PostID);
+                                CreatePostInsertSql(post, PostID);
+                                //GeRedirectUrl(post);
                                 PostID++;
                             }
                         }
                         catch (Exception ex) 
                         {
                             ErrorCount++;
-                            Console.WriteLine($"Error at line {lineNumbers[i]} - {ex}");
+                            Console.WriteLine($"Error at line {lineNumbers[i]} - {ex} - {post.title}");
                             continue;
                         }
 
@@ -219,13 +220,18 @@ internal class Program
             Console.WriteLine($"Completed");
         }
 
+
         int GetPostMetaValue(string imagesource)
         {
-            //return 0;
 
             try
             {
-                string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
+                //staging
+                //string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
+                //prod-1
+                //string connStr = "server=nwpprod-be3acdb5f5-wpdbserver.mysql.database.azure.com;user=kzpdurepoi;database=nwpprod_be3acdb5f5_database;password=7Q$xGRXSjVvFG1nP;";
+                //pord-2
+                string connStr = "server=nwpproduct-146b913ef7-wpdbserver.mysql.database.azure.com;user=qrdxngegwd;database=nwpproduct_146b913ef7_database;password=rgq6$jWrkQvsx3hL;";
                 MySqlConnection conn = new MySqlConnection(connStr);
                 conn.Open();
 
@@ -1432,6 +1438,10 @@ internal class Program
         }
     }
 
+    private static void GeRedirectUrl(Post p)
+    {
+        throw new NotImplementedException();
+    }
 
     public static string GenerateWordPressSlug(string title)
     {
@@ -1546,7 +1556,12 @@ internal class Program
     private static void SaveDataToDatabase(string wP_Post_Article_InsertSql, string wP_PostMeta, string wP_term_relationships,string image_captionSql)
     {
         //staging
-        string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
+        //string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
+        //prod 1
+        //string connStr = "server=nwpprod-be3acdb5f5-wpdbserver.mysql.database.azure.com;user=kzpdurepoi;database=nwpprod_be3acdb5f5_database;password=7Q$xGRXSjVvFG1nP;";
+        //prod 2
+        string connStr = "server=nwpproduct-146b913ef7-wpdbserver.mysql.database.azure.com;user=qrdxngegwd;database=nwpproduct_146b913ef7_database;password=rgq6$jWrkQvsx3hL;";
+
         MySqlConnection conn = new MySqlConnection(connStr);
         conn.Open();
 
