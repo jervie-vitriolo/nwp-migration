@@ -226,11 +226,7 @@ internal class Program
 
             try
             {
-                //staging
-                //string connStr = "server=nwpstaging-0dea0b440a-wpdbserver.mysql.database.azure.com;user=jdchodieso;database=nwpstaging_0dea0b440a_database;password=gJPcCa2O6yB$jfTm;";
-                //prod-1
-                //string connStr = "server=nwpprod-be3acdb5f5-wpdbserver.mysql.database.azure.com;user=kzpdurepoi;database=nwpprod_be3acdb5f5_database;password=7Q$xGRXSjVvFG1nP;";
-                //pord-2
+                
                 string connStr ="";
                 MySqlConnection conn = new MySqlConnection(connStr);
                 conn.Open();
