@@ -23,7 +23,7 @@ namespace NWP_DB_Migration.Article
                 //prod 1
                 //string connStr = "server=nwpprod-be3acdb5f5-wpdbserver.mysql.database.azure.com;user=kzpdurepoi;database=nwpprod_be3acdb5f5_database;password=7Q$xGRXSjVvFG1nP;";
                 //prod 2
-                string connStr = "server=nwpproduct-146b913ef7-wpdbserver.mysql.database.azure.com;user=qrdxngegwd;database=nwpproduct_146b913ef7_database;password=rgq6$jWrkQvsx3hL;";
+                string connStr ="";
                 MySqlConnection conn = new MySqlConnection(connStr);
                 conn.Open();
 
