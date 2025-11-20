@@ -20,7 +20,7 @@ internal class Program
         List<string> WP_PostMeta_list;
         List<string> WP_term_relationships_list;
         List<string> WP_Post_Attachment_caption;
-        int PostID = 59530;
+        int PostID = 60040;
         int ErrorCount = 0;
         string[] directories = {
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2015",
@@ -503,7 +503,8 @@ internal class Program
             string WP_Post_Article_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
                                   $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{mysqlStringFormat(post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{GenerateWordPressSlug(post.title)}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
 
-            string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{GetPostMetaValue(post.imagesource)}');";
+            var featuredImage = post.imagesource == "" ? post.embedimage : post.imagesource;
+            string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{GetPostMetaValue(featuredImage)}');";
 
             //Category
             string WP_term_relationships = $"INSERT INTO wp_term_relationships(OBJECT_ID,TERM_TAXONOMY_ID,TERM_ORDER) VALUES({PostID},{getCategoryId(post.categories)},0);";
@@ -516,7 +517,7 @@ internal class Program
 
             if (!string.IsNullOrEmpty(post.caption ))
             {
-                image_caption_sql = $"update wp_posts set post_excerpt='{post.caption}'  where post_title ='{post.imagesource}' and post_type='attachment';";
+                image_caption_sql = $"update wp_posts set post_excerpt='{post.caption}'  where post_title ='{featuredImage}' and post_type='attachment';";
                 WP_Post_Attachment_caption.Add(image_caption_sql);
             }
             
@@ -1733,10 +1734,10 @@ internal class Program
         wP_term.ExecuteNonQuery();
 
         var wP_term_category = new MySqlCommand(wP_term_relationships_category, conn);
-        wP_term.ExecuteNonQuery();
+        wP_term_category.ExecuteNonQuery();
 
         var wP_term_tag = new MySqlCommand(wP_term_relationships_tag, conn);
-        wP_term.ExecuteNonQuery();
+        wP_term_tag.ExecuteNonQuery();
 
         if (!string.IsNullOrEmpty(image_captionSql))
         {
