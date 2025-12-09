@@ -18,7 +18,7 @@ namespace NWP_DB_Migration.Article
         {
             try
             {
-                string connStr ="";
+                string connStr = "server=nwpproduct-146b913ef7-wpdbserver.mysql.database.azure.com;user=qrdxngegwd;database=nwpproduct_146b913ef7_database;password=rgq6$jWrkQvsx3hL;";
                 MySqlConnection conn = new MySqlConnection(connStr);
                 conn.Open();
 

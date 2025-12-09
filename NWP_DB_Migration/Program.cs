@@ -1,15 +1,9 @@
 ﻿using MySql.Data.MySqlClient;
 using NWP_DB_Migration.Article;
-using Org.BouncyCastle.Utilities;
-using System;
-using System.IO;
-using System.Reflection.PortableExecutable;
-using System.Security.Policy;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
-using static System.Net.Mime.MediaTypeNames;
 
 internal class Program
 {
@@ -20,10 +14,10 @@ internal class Program
         List<string> WP_PostMeta_list;
         List<string> WP_term_relationships_list;
         List<string> WP_Post_Attachment_caption;
-        int PostID = 60040;
+        int PostID = 589838;
         int ErrorCount = 0;
         string[] directories = {
-                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2015",
+                                @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2015",
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2016",
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2017",
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2018",
@@ -32,161 +26,32 @@ internal class Program
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2021",
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2022",
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2023"
-                                @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2024"
+                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2024"
                                  };
 
-        //PREP: clean up space after period in multiline tags,
-        //AddStartHereAndCleanTags();
 
-        //Clean up article
+
+
+        //Generate classes
+        //GeneratePostClass();
+
+        //Migrate Authors
+        //ProcessAuthors();
+
+        //Convert base64string to image file
+        //ExtractFeaturedImage();
+
+        //Add title starting point 
+        //AddTItleMarking();
+
+        //Remove unused properties and transform to small caps letter
         //CleanUpArticle();
 
-        // SQL
         GenerateInsertSql();
 
 
-        //Generate classes - ALL DONE
-        //GeneratePostClass();
 
-        //Authors - ALL DONE
-        //ProcessAuthors();
-
-        //Extract fetured image
-        //ExtractFeaturedImage();
-
-        //Error uploads
-        //ProcessAssets();
-
-        void ProcessAssets()
-        {
-            string path = @"D:\NWP\Assets\cnn-extracted\2024\1\";
-            string dirDestination = @"D:\NWP\Assets\cnn-extracted\2024\reupload\";
-
-            if (!Directory.Exists(dirDestination))
-            {
-                Directory.CreateDirectory(dirDestination);
-            }
-
-            
-            string[] assets = {
-"a01aa286-816f-4f15-b491-f73b4b218392.jpg",
-"a00de512-39dc-4aac-a79f-c8b7cf2a6105.jpg",
-"9fbce20b-951e-4b2d-96dd-561ecdca4c27.jpg",
-"9f5e9f12-af44-41be-a768-8a736e7578e3.jpg",
-"9f3ed5c0-4fde-4485-8f4e-98ac436e6765.jpg",
-"9e91f025-9ac8-418b-816e-3c86a3ed8869.jpg",
-"9e57a5a7-aa35-4588-8e07-9bc885af708f.jpg",
-"9e56b51e-36d3-4c52-bec0-e94c7c7ce807.jpg",
-"9e56ac01-d2a2-4152-a7fb-8f19391c9419.jpg",
-"9e19fa0c-a20e-422b-8b16-a2189c922143.jpg",
-"9cf267be-d726-48bb-98db-9f476b77462d.jpg",
-"9cca1d7f-58c1-4e9d-b974-928ed83a980b.jpg",
-"9c32ba9e-775b-4fde-a0b6-e037ef0c6c9f.jpg",
-"9b36a22f-c179-493d-8df0-28b1ed574665.jpg",
-"9ae2038c-45bb-434f-9eea-11f5b48d14bc.jpg",
-"9a94afca-157f-400a-b262-79558e732788.jpg",
-"9a927c60-95c1-4860-b251-b4d8cf4d300d.jpg",
-"9a71c750-841d-4e77-860b-b5de409f5cc6.jpg",
-"9a47f33f-6f99-4079-8718-0bb9734fd571.jpg",
-"9a1d2797-b6c3-4396-9be5-3b4d7a0c294b.jpg",
-"9a147081-4e1e-427f-b07d-07d7e61f5a9a.jpg",
-"9a0ef071-5af2-4930-b4bf-9884df1b9de9.jpg",
-"99a8ce20-7e2a-4c8a-8bee-5fec9ab8f1f9.jpg",
-"99769ff2-9030-4ef0-b530-951baec8bf9e.jpg",
-"9951cf55-941f-4369-8086-3142a7e6413b.jpg",
-"98e53d13-1e96-4648-a792-20e190889f99.jpg",
-"988b8315-ad6b-4e37-beb2-0c450e20945d.jpg",
-"98133c0f-0cc0-4b06-b3f2-51b214d5cdee.jpg",
-"980d836e-5ddc-4c02-8f0e-eaa43f553541.jpg",
-"97e87b5b-9151-478c-b7ce-4bcb5f6960b5.jpg",
-"97bd5e3b-f203-4fe8-8677-436ad7b9cf30.jpg",
-"97bcc825-53c0-4f8d-b384-667fe373349b.jpg",
-"97643ca6-bf85-4de3-90c3-8c0e52610411.jpg",
-"9762511b-de49-4a0a-a7be-ba4ebde0fc28.jpg",
-"973070a3-35e0-4598-b328-8d5bd8da81a4.jpg",
-"972df179-fc1b-4196-a35c-96c2df5626ad.jpg",
-"971f33c6-b61b-4f13-993d-76ae86ab9cf5.jpg",
-"97173429-5d92-4dc0-b40b-4e2ce47066d9.jpg",
-"96971256-82fb-4d61-9969-a255bfc057ac.jpg",
-"963fb349-8557-408b-b696-0287bc446dd0.jpg",
-"960e6d17-7a54-4753-b23c-5d145e60d0c8.jpg",
-"95290bac-d49c-44e5-96ff-89a25f922b20.jpg",
-"94984890-f1fe-4795-bafe-10645c4a0651.jpg",
-"9419793b-af12-414a-b06b-b630cc7c9544.jpg",
-"9407babf-9eea-48c2-b110-20bbcc5979f6.jpg",
-"93ded29a-e101-47c8-bc7d-edae250966c4.jpg",
-"93cab504-3263-45f2-a496-d5f71435b970.jpg",
-"939f0c5e-837f-4209-9cb0-d8422d749aa3.jpg",
-"937e4b2c-0081-4b1a-a0fd-fd4593097cb7.jpg",
-"936d5265-e7e9-461a-8c1f-1186574920a0.jpg",
-"9324d81d-5bf6-498a-bdda-3f750e6432ce.jpg",
-"92840bfe-e8bb-4ffd-8789-3663a9e172f5.jpg",
-"9252568f-e3f5-4d98-8a6c-67c43b85083c.jpg",
-"9226860f-bf6c-4abf-a467-042c46570542.jpg",
-"9202d795-2f67-40e8-a801-fdd5a431bb93.jpg",
-"91ed47f4-4855-457f-8e16-c4c5d3ac9c5c.jpg",
-"915e389b-bf7b-46fd-bf8b-d4474938bdb8.jpg",
-"9152dd77-a723-4e12-89cc-6cffd9db09fe.jpg",
-"91283895-e5ef-48f5-94e8-0c7c3d35046e.jpg",
-"911e88ab-08be-4f09-b0fe-c8c49b5e5304.jpg",
-"90fbc125-4378-4cf9-995a-ab4b3cd89db4.jpg",
-"90f1c0a8-9e2f-4807-8317-ae7c7dc41234.jpg",
-"90cf901f-58d9-483e-a4d1-eb4f5e8f0a54.jpg",
-"9077c9c9-0e75-47ea-9249-2126a424f848.jpg",
-"9054b44f-4341-4481-808c-91056682ed67.jpg",
-"8fce552a-c4eb-4ed0-923c-e1e62405e815.jpg",
-"8fbdc46a-c9b8-4cc4-9012-1c4e4cbc5760.jpg",
-"8f184c79-c2a5-4ce3-b89c-7312791c4782.jpg",
-"8f17b86c-a90d-40fc-8247-7690fc6c94d1.jpg",
-"8f16d097-b73f-418d-8363-1de2dbd3fede.jpg",
-"8f1436a5-3ab9-4223-8833-a81d20cefc8c.jpg",
-"8ee3d6c2-eca9-4842-834e-f0a82757dd3d.jpg",
-"8ec36a2b-32ac-45a8-a815-db1ab66fbf02.jpg",
-"8e82f0d1-30b7-49b5-beca-05da5861dd0f.jpg",
-"8e43118e-6e4e-4808-b4f7-2504eafea278.jpg",
-"8e1aca14-eade-4c8b-a704-6e53ca045204.jpg",
-"8dea03d8-945f-4ddb-9258-4a8c765be36e.jpg",
-"8ddcfe6b-38ea-4235-ab32-e18b2bfdeae5.jpg",
-"8dd249c0-d7e8-402f-ab54-24b62402d8c3.jpg",
-"8db18726-1c8a-49b1-ab5f-845fb523fb82.jpg",
-"8d97599a-72f4-4eae-88cc-970f6705a8b9.jpg",
-"8d50806c-47cb-427e-9033-0bb555201369.jpg",
-"8d119af6-0bdb-4ccc-a2aa-40d624b950fd.jpg",
-"8cf19eaf-3354-4e8e-b436-f6e148e869bd.jpg",
-"8c198011-9945-49f9-991e-843cf8289fc4.jpg",
-"8bfdf1b1-e2d7-4a63-b5af-f50cae5d1481.jpg",
-"8bd33db3-750e-4fe0-a193-ee1b793d7b41.jpg",
-"8af660f5-1371-4700-8e5b-d089199f4ba9.jpg",
-"8aeee57a-431e-4eb8-bbb4-88aff9c1c6db.jpg",
-"8aca6b85-d89e-48e0-b783-394f52ffe44a.jpg",
-"8a9df935-1bd6-46c7-a75d-19a47048db67.jpg",
-"8a478709-62d8-4806-b71e-a1d47ac47664.jpg",
-"8a47499f-3358-4bca-b045-165dabaeec0d.jpg",
-"8a401458-f52a-4c1d-b98b-4c59494cebcf.jpg",
-"898dbdd2-6203-444d-b03f-369425aa9386.jpg",
-"8975ac8f-fd96-412b-813c-82b01eea4c5a.jpg",
-"8973ec05-ed5b-47cf-83a9-e3c5c04f5055.jpg",
-"8917798c-897d-4359-a8d2-7d36e2dc73fd.jpg",
-"88a88f13-9526-4122-94bf-0a3a3873cd97.jpg",
-"8870250a-fda0-4fd4-bf9a-2b286ef8f68c.jpg",
-"8846e8e2-bde5-455c-895c-2e47d221abb0.jpg",
-"8791f155-fff7-419e-a7cd-66a29c607fd6.jpg",
-"87345b8f-6eb3-4c5f-a984-753056ebe3a6.jpg",
-"87333c2f-6a8b-413a-b594-48c6d2b53ed7.jpg",
-"86f5936d-5434-43c5-91a9-a49f5782e542.jpg",
-
-            };
-
-
-            foreach (var item in assets)
-            {
-                File.Copy($"{path}{item}", $"{dirDestination}{item}", true);
-                Console.WriteLine(item);
-            }
-
-        }
-
-        void AddStartHereAndCleanTags()
+        void AddTItleMarking()
         {
 
             // Loop through each directory
@@ -234,9 +99,7 @@ internal class Program
                         File.WriteAllLines(filePath, matchingLines);
                         RemoveSingleQoute(filePath);
                     }
-                }
-
-                    
+                }           
             }
             Console.WriteLine($"Completed");
         }
@@ -281,13 +144,18 @@ internal class Program
             // Loop through each directory
             foreach (string rootdirectory in directories)
             {
-
+                
                 foreach (string dir in Directory.GetDirectories(rootdirectory))
                 {
+                    //test only 1 directory
+                    string lastDirectoryName = Path.GetFileName(dir);
+                    //if (!lastDirectoryName.Equals("2")) continue;
+
+
                     Console.WriteLine(dir);
                     foreach (string filePath in Directory.EnumerateFiles(dir))
                     {
-                        //Console.WriteLine($"Found file: {filePath}");
+                        Console.WriteLine(filePath);
 
                         var matchingLines = File.ReadLines(filePath)
                                             .Select((line, index) => new { LineText = line, LineNumber = index + 1 })
@@ -321,14 +189,19 @@ internal class Program
                                     .Build();
 
 
+                                
                                 //yml contains a string containing your YAML
                                 //Replace aphostrophe with ‘
                                 string CleanYml = CleanApostrophe(yml);
                                 CleanYml = CleanStories(CleanYml);
+                                //Clean tags
+                                CleanYml = CleanTags(CleanYml);
 
                                 post = deserializer.Deserialize<Post>(CleanYml);
                                 if (post != null)
                                 {
+                                    //SavedCount++;
+                                    //Console.WriteLine("Saved");
                                     CreatePostInsertSql(post, PostID);
                                     //GeRedirectUrl(post);
                                     PostID++;
@@ -337,7 +210,10 @@ internal class Program
                             catch (Exception ex)
                             {
                                 ErrorCount++;
-                                Console.WriteLine($"Error at line {lineNumbers[i]} - {ex} - {post.title}");
+                                if (post != null)
+                                {
+                                    Console.WriteLine($"Error at line {lineNumbers[i]} - {ex} - {post.title}");
+                                }
                                 continue;
                             }
 
@@ -348,7 +224,6 @@ internal class Program
 
                     Console.WriteLine($"Total Error {ErrorCount}");
                     Console.WriteLine($"Total Saved {SavedCount}");
-                    //LogCreatedPostInsertSql(directory);
                 }
 
 
@@ -363,8 +238,8 @@ internal class Program
 
             try
             {
-                
-                string connStr ="";
+
+                string connStr = "server=nwpproduct-146b913ef7-wpdbserver.mysql.database.azure.com;user=qrdxngegwd;database=nwpproduct_146b913ef7_database;password=rgq6$jWrkQvsx3hL;";
                 MySqlConnection conn = new MySqlConnection(connStr);
                 conn.Open();
 
@@ -395,7 +270,6 @@ internal class Program
             string ClassInit = string.Empty;
             string XMas = string.Empty;
 
-
             for (int i = 0; i < 600; i++)
             {
                 section = section + $"internal class section{i} {{ \n" +
@@ -422,9 +296,15 @@ internal class Program
                "public string imagelist { get; set; } \n" +
                "public string authorimage { get; set; } \n" +
                "public string customlead { get; set; } \n" +
-               "public string embedcode { get; set; } }\n\n\n";
+               "public string embedcode { get; set; } \n" +
+               "public string assetautoplay { get; set; } \n" +
+               "public string quotation { get; set; } \n" +
+               "public string imageAltText { get; set; } \n" +
+               "public string videoCredit { get; set; } \n" +
+               "public string assetcontrols { get; set; } \n" +
+               "public string assetloop { get; set; } \n" +
+               "public string mixintypes { get; set; } }\n\n\n";
 
-                
                 ClassInit = ClassInit + $"public section{i} section{i} = new section{i}();\n";
                 XMas = XMas + $"finalString = finalString + CleanChecks(getBlock(post.title, post.section{i}.type, post.section{i}.embedcode,post.section{i}.text,post.section{i}.url,post.section{i}.embed,post.section{i}.image));\n";
             }
@@ -500,11 +380,14 @@ internal class Program
         {
             string image_caption_sql = string.Empty;
 
+            var featuredImage = post.imagesource == "" ? post.embedimage : post.imagesource;
+            int featuredImageId = GetPostMetaValue(featuredImage);
+
             string WP_Post_Article_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
                                   $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{mysqlStringFormat(post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{GenerateWordPressSlug(post.title)}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
 
-            var featuredImage = post.imagesource == "" ? post.embedimage : post.imagesource;
-            string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{GetPostMetaValue(featuredImage)}');";
+            
+            string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{featuredImageId}');";
 
             //Category
             string WP_term_relationships = $"INSERT INTO wp_term_relationships(OBJECT_ID,TERM_TAXONOMY_ID,TERM_ORDER) VALUES({PostID},{getCategoryId(post.categories)},0);";
@@ -527,59 +410,12 @@ internal class Program
             WP_PostMeta_list.Add(WP_PostMeta);
             WP_term_relationships_list.Add(WP_term_relationships);
             
-
-
-            SaveDataToDatabase(WP_Post_Article_InsertSql, WP_PostMeta, WP_term_relationships, image_caption_sql, WP_term_relationships_CNN_category, WP_term_relationships_CNN_tag);
-        }
-
-        void LogCreatedPostInsertSql(string directory)
-        {
-            var tempArry = directory.Split("\\");
-            var subpath = $@"{tempArry[tempArry.Length - 2]}\{tempArry[tempArry.Length - 1]}";
-            var dirDestination = $@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\Articles\nwp - in progress\{subpath}";
-
-            if (!Directory.Exists(dirDestination))
+            if (featuredImageId > 0)
             {
-                Directory.CreateDirectory(dirDestination);
+                SaveDataToDatabase(WP_Post_Article_InsertSql, WP_PostMeta, WP_term_relationships, image_caption_sql, WP_term_relationships_CNN_category, WP_term_relationships_CNN_tag);
             }
 
-            if (WP_Post_Article_InsertSql_list.Count > 0)
-            {
-                string filePath = $"{dirDestination}\\WP_Post_Article_InsertSql_list.sql";
-                using (StreamWriter sw = File.AppendText(filePath)) // Opens the file in append mode
-                {
-
-                    foreach (var sql in WP_Post_Article_InsertSql_list)
-                    {
-                        sw.WriteLine(sql);
-                    }
-                }
-            }
-
-            if (WP_PostMeta_list.Count > 0)
-            {
-                string filePath = $"{dirDestination}\\WP_PostMeta_list.sql";
-                using (StreamWriter sw = File.AppendText(filePath)) // Opens the file in append mode
-                {
-
-                    foreach (var sql in WP_PostMeta_list)
-                    {
-                        sw.WriteLine(sql);
-                    }
-                }
-            }
-            if (WP_term_relationships_list.Count > 0)
-            {
-                string filePath = $"{dirDestination}\\WP_term_relationships_list.sql";
-                using (StreamWriter sw = File.AppendText(filePath)) // Opens the file in append mode
-                {
-
-                    foreach (var sql in WP_term_relationships_list)
-                    {
-                        sw.WriteLine(sql);
-                    }
-                }
-            }
+            
         }
 
 
@@ -602,13 +438,20 @@ internal class Program
 
                     try
                     {
-                        var ID = CategoryList.GetCategoryList().FirstOrDefault(s => s.Category.ToUpper().Trim().Equals(nwpCategory.Category.ToUpper().Trim())).ID;
+                        CategoryList cat =  CategoryList.GetCategoryList().FirstOrDefault(s => s.Category.ToUpper().Trim().Equals(nwpCategory.Category.ToUpper().Trim()));
 
-                        if (ID != 0)
+                        if(cat != null)
                         {
-                            //Console.WriteLine($"{nwpCategory.Category}");
-                            return ID;
+                            if (cat.ID != 0)
+                            {
+                                //Console.WriteLine($"{nwpCategory.Category}");
+                                return cat.ID;
+                            }
                         }
+
+
+                        return 1;
+
                     }
                     catch (Exception)
                     {
@@ -653,7 +496,7 @@ internal class Program
         {
             if (name == null || name==string.Empty)
             {
-                return 1332; //Newswatch plus
+                return 4446; //4446- CNN Philippines Staff //1332 - Newswatch plus 
             }
             else
             {
@@ -701,6 +544,10 @@ internal class Program
                 if (post.visualtype == "video" && post.embedsource.Contains("https://www.youtube.com/embed"))
                 {
                     finalString = post.embedsource.Replace("width=\"560\"", "width=\"800\"").Replace("height=\"315\"", "height=\"500\"");
+                }
+                else if(post.visualtype == "embed")
+                {
+                    finalString = post.embedsource;
                 }
 
                 finalString = finalString + CleanChecks(getBlock(post.title, post.section0.type, post.section0.embedcode, post.section0.text, post.section0.url, post.section0.embed, post.section0.image));
@@ -1516,60 +1363,57 @@ internal class Program
         {
 
             // Get all subdirectories in the specified path
-            var nwp_dir = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP\articles\nwp\";
+            var nwp_dir = @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived";
             string[] directories = {
-                             //@$"{nwp_dir}\2024\5",
-                             //@$"{nwp_dir}\2024\6",
-                             //@$"{nwp_dir}\2024\7",
-                             //@$"{nwp_dir}\2024\8",
-                             //@$"{nwp_dir}\2024\9",
-                             //@$"{nwp_dir}\2024\10",
-                             //@$"{nwp_dir}\2024\11",
-                             //@$"{nwp_dir}\2024\12",
-                             //@$"{nwp_dir}\2025\1",
-                             //@$"{nwp_dir}\2025\2",
-                             //@$"{nwp_dir}\2025\3",
-                             //@$"{nwp_dir}\2025\4",
-                             //@$"{nwp_dir}\2025\5",
-                             @$"{nwp_dir}\2025\8",
-                             @$"{nwp_dir}\2025\9",
-                             @$"{nwp_dir}\2025\10",
+
+                             @$"{nwp_dir}\2015",
+                             @$"{nwp_dir}\2016",
+                             @$"{nwp_dir}\2017",
+                             @$"{nwp_dir}\2018",
+                             @$"{nwp_dir}\2019",
+                             @$"{nwp_dir}\2020",
+                             @$"{nwp_dir}\2021",
+                             @$"{nwp_dir}\2022",
+                             @$"{nwp_dir}\2023",
+                             @$"{nwp_dir}\2024",
 
     };
 
-            var searchText = "'author':";
+            var searchText = "author:";
             // Loop through each directory
             List<string> authorsList = new List<string>();
-            foreach (string directory in directories)
+            foreach (string dir in directories)
             {
-
-                Console.WriteLine(directory);
-
-                foreach (string filePath in Directory.EnumerateFiles(directory))
+                Console.WriteLine(dir);
+                foreach (string directory in Directory.GetDirectories(dir))
                 {
-                    Console.WriteLine($"Found file: {filePath}");
-
-                    // Use File.ReadLines to read lines lazily and efficiently
-                    var matchingLines = File.ReadLines(filePath)
-                                            .Where(item => item.Contains(searchText));
-
-                    string[] authors = matchingLines.Select(x => x.Replace($"{searchText}", "").Replace("\'", "").Trim()).Distinct().ToArray();
-                    if (authors.Length > 0)
+                    foreach (string filePath in Directory.EnumerateFiles(directory))
                     {
-                        authorsList.AddRange(authors);
-                    }
+                        Console.WriteLine($"Found file: {filePath}");
 
+                        // Use File.ReadLines to read lines lazily and efficiently
+                        var matchingLines = File.ReadLines(filePath)
+                                                .Where(item => item.Contains(searchText));
+
+                        string[] authors = matchingLines.Select(x => x.Replace($"{searchText}", "").Replace("\'", "").Trim()).Distinct().ToArray();
+                        if (authors.Length > 0)
+                        {
+                            authorsList.AddRange(authors);
+                        }
+
+                    }
                 }
 
+                
             }
 
 
-            int i = 0;
-            int user_id = 7;
+            int i = 1357;
+            int user_id = 1357;
             List<string> wp_users = new List<string>();
             List<string> wp_usermeta = new List<string>();
 
-            authorsList = authorsList.OrderBy(authorsList => authorsList).ToList();
+            authorsList = authorsList.Distinct().OrderBy(authorsList => authorsList).ToList();
 
             foreach (var author in authorsList.Distinct())
             {
@@ -1687,6 +1531,31 @@ internal class Program
         return revertFormat;
     }
 
+    private static string CleanTags(string yml)
+    {
+
+        string[] lines = yml.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
+
+        // Iterate through each line using a foreach loop
+        for (int i = 0; i < lines.Count(); i++)
+        {
+            string pattern = @"tags: '\w+";
+
+            Regex regex = new Regex(pattern);
+            MatchCollection matches = regex.Matches(lines[i]);
+
+            foreach (Match match in matches)
+            {
+                lines[i] = "    tags: ''";
+            }
+
+        }
+
+
+        var revertFormat = string.Join(Environment.NewLine, lines);
+        return revertFormat;
+    }
+
     private static string CleanStories(string yml)
     {
 
@@ -1717,7 +1586,7 @@ internal class Program
     {
 
         //Prod
-        string connStr = "";
+        string connStr = "server=nwpproduct-146b913ef7-wpdbserver.mysql.database.azure.com;user=qrdxngegwd;database=nwpproduct_146b913ef7_database;password=rgq6$jWrkQvsx3hL;";
 
         MySqlConnection conn = new MySqlConnection(connStr);
         conn.Open();

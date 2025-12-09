@@ -13,6 +13,8 @@ namespace NWP_DB_Migration.Article
         public string caption { get; set; } = string.Empty;
         public string categories { get; set; } = string.Empty;
         public DateTime created { get; set; }
+        public DateTime rated { get; set; }
+        public DateTime lastactivatedversionrated { get; set; }
         public string imagesource { get; set; } = string.Empty;
         public string mixintypes { get; set; } = string.Empty;
         public string primarytype { get; set; } = string.Empty;
@@ -25,13 +27,13 @@ namespace NWP_DB_Migration.Article
         public DateTime lastmodified { get; set; }
         public string lastmodifiedby { get; set; } = string.Empty;
         public string tags { get; set; } = string.Empty;
-        public string stories { get; set; } = string.Empty; 
+        public string stories { get; set; } = string.Empty;
         public string template { get; set; } = string.Empty;
         public string title { get; set; } = string.Empty;
         public string visualtype { get; set; } = string.Empty;
         public string embedimage { get; set; } = string.Empty;
         public string image { get; set; } = string.Empty;
-        public string authorimage { get; set; } = string.Empty;   
+        public string authorimage { get; set; } = string.Empty;
         public string embedsource { get; set; } = string.Empty;
         public string videoimage { get; set; } = string.Empty;
         public string videosource { get; set; } = string.Empty;
@@ -42,11 +44,23 @@ namespace NWP_DB_Migration.Article
         public string kicker { get; set; } = string.Empty;
         public string source { get; set; } = string.Empty;
         public string imagealttext { get; set; } = string.Empty;
-        
-        
-        
+        public string comment { get; set; } = string.Empty;
+        public string customlead { get; set; } = string.Empty;
 
-        public section0 section0 = new section0();
+        public string galleryimage { get; set; } = string.Empty;
+
+        public string gallerysource { get; set; } = string.Empty;
+        public string location { get; set; } = string.Empty;
+        public string authorBio { get; set; } = string.Empty;
+
+        public string customLead { get; set; } = string.Empty;
+
+
+
+
+
+
+        public section section0 = new section();
         public section1 section1 = new section1();
         public section2 section2 = new section2();
         public section3 section3 = new section3();

@@ -1,10 +1,10 @@
 ﻿namespace NWP_DB_Migration.Article
 {
-    internal class section0
+    internal class section
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -21,7 +21,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -29,7 +45,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -46,7 +62,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -54,7 +86,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -71,7 +103,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -79,7 +127,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -96,7 +144,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -104,7 +168,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -121,7 +185,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -129,7 +209,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -146,7 +226,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -154,7 +250,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -171,7 +267,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -179,7 +291,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -196,7 +308,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -204,7 +332,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -221,7 +349,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -229,7 +373,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -246,7 +390,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -254,7 +414,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -271,7 +431,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -279,7 +455,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -296,7 +472,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -304,7 +496,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -321,7 +513,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -329,7 +537,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -346,7 +554,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -354,7 +578,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -371,7 +595,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -379,7 +619,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -396,7 +636,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -404,7 +660,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -421,7 +677,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -429,7 +701,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -446,7 +718,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -454,7 +742,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -471,7 +759,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -479,7 +783,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -496,7 +800,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -504,7 +824,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -521,7 +841,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -529,7 +865,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -546,7 +882,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -554,7 +906,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -571,7 +923,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -579,7 +947,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -596,7 +964,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -604,7 +988,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -621,7 +1005,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -629,7 +1029,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -646,7 +1046,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -654,7 +1070,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -671,7 +1087,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -679,7 +1111,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -696,7 +1128,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -704,7 +1152,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -721,7 +1169,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -729,7 +1193,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -746,7 +1210,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -754,7 +1234,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -771,7 +1251,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -779,7 +1275,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -796,7 +1292,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -804,7 +1316,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -821,7 +1333,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -829,7 +1357,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -846,7 +1374,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -854,7 +1398,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -871,7 +1415,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -879,7 +1439,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -896,7 +1456,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -904,7 +1480,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -921,7 +1497,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -929,7 +1521,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -946,7 +1538,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -954,7 +1562,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -971,7 +1579,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -979,7 +1603,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -996,7 +1620,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1004,7 +1644,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1021,7 +1661,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1029,7 +1685,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1046,7 +1702,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1054,7 +1726,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1071,7 +1743,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1079,7 +1767,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1096,7 +1784,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1104,7 +1808,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1121,7 +1825,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1129,7 +1849,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1146,7 +1866,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1154,7 +1890,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1171,7 +1907,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1179,7 +1931,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1196,7 +1948,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1204,7 +1972,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1221,7 +1989,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1229,7 +2013,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1246,7 +2030,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1254,7 +2054,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1271,7 +2071,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1279,7 +2095,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1296,7 +2112,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1304,7 +2136,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1321,7 +2153,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1329,7 +2177,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1346,7 +2194,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1354,7 +2218,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1371,7 +2235,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1379,7 +2259,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1396,7 +2276,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1404,7 +2300,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1421,7 +2317,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1429,7 +2341,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1446,7 +2358,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1454,7 +2382,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1471,7 +2399,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1479,7 +2423,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1496,7 +2440,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1504,7 +2464,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1521,7 +2481,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1529,7 +2505,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1546,7 +2522,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1554,7 +2546,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1571,7 +2563,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1579,7 +2587,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1596,7 +2604,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1604,7 +2628,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1621,7 +2645,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1629,7 +2669,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1646,7 +2686,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1654,7 +2710,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1671,7 +2727,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1679,7 +2751,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1696,7 +2768,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1704,7 +2792,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1721,7 +2809,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1729,7 +2833,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1746,7 +2850,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1754,7 +2874,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1771,7 +2891,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1779,7 +2915,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1796,7 +2932,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1804,7 +2956,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1821,7 +2973,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1829,7 +2997,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1846,7 +3014,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1854,7 +3038,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1871,7 +3055,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1879,7 +3079,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1896,7 +3096,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1904,7 +3120,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1921,7 +3137,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1929,7 +3161,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1946,7 +3178,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1954,7 +3202,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1971,7 +3219,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -1979,7 +3243,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -1996,7 +3260,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2004,7 +3284,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2021,7 +3301,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2029,7 +3325,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2046,7 +3342,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2054,7 +3366,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2071,7 +3383,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2079,7 +3407,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2096,7 +3424,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2104,7 +3448,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2121,7 +3465,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2129,7 +3489,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2146,7 +3506,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2154,7 +3530,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2171,7 +3547,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2179,7 +3571,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2196,7 +3588,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2204,7 +3612,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2221,7 +3629,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2229,7 +3653,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2246,7 +3670,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2254,7 +3694,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2271,7 +3711,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2279,7 +3735,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2296,7 +3752,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2304,7 +3776,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2321,7 +3793,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2329,7 +3817,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2346,7 +3834,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2354,7 +3858,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2371,7 +3875,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2379,7 +3899,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2396,7 +3916,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2404,7 +3940,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2421,7 +3957,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2429,7 +3981,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2446,7 +3998,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2454,7 +4022,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2471,7 +4039,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2479,7 +4063,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2496,7 +4080,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2504,7 +4104,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2521,7 +4121,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2529,7 +4145,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2546,7 +4162,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2554,7 +4186,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2571,7 +4203,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2579,7 +4227,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2596,7 +4244,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2604,7 +4268,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2621,7 +4285,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2629,7 +4309,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2646,7 +4326,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2654,7 +4350,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2671,7 +4367,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2679,7 +4391,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2696,7 +4408,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2704,7 +4432,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2721,7 +4449,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2729,7 +4473,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2746,7 +4490,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2754,7 +4514,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2771,7 +4531,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2779,7 +4555,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2796,7 +4572,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2804,7 +4596,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2821,7 +4613,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2829,7 +4637,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2846,7 +4654,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2854,7 +4678,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2871,7 +4695,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2879,7 +4719,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2896,7 +4736,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2904,7 +4760,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2921,7 +4777,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2929,7 +4801,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2946,7 +4818,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2954,7 +4842,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2971,7 +4859,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -2979,7 +4883,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -2996,7 +4900,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3004,7 +4924,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3021,7 +4941,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3029,7 +4965,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3046,7 +4982,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3054,7 +5006,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3071,7 +5023,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3079,7 +5047,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3096,7 +5064,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3104,7 +5088,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3121,7 +5105,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3129,7 +5129,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3146,7 +5146,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3154,7 +5170,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3171,7 +5187,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3179,7 +5211,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3196,7 +5228,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3204,7 +5252,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3221,7 +5269,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3229,7 +5293,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3246,7 +5310,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3254,7 +5334,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3271,7 +5351,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3279,7 +5375,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3296,7 +5392,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3304,7 +5416,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3321,7 +5433,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3329,7 +5457,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3346,7 +5474,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3354,7 +5498,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3371,7 +5515,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3379,7 +5539,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3396,7 +5556,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3404,7 +5580,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3421,7 +5597,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3429,7 +5621,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3446,7 +5638,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3454,7 +5662,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3471,7 +5679,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3479,7 +5703,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3496,7 +5720,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3504,7 +5744,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3521,7 +5761,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3529,7 +5785,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3546,7 +5802,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3554,7 +5826,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3571,7 +5843,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3579,7 +5867,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3596,7 +5884,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3604,7 +5908,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3621,7 +5925,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3629,7 +5949,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3646,7 +5966,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3654,7 +5990,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3671,7 +6007,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3679,7 +6031,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3696,7 +6048,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3704,7 +6072,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3721,7 +6089,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3729,7 +6113,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3746,7 +6130,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3754,7 +6154,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3771,7 +6171,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3779,7 +6195,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3796,7 +6212,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3804,7 +6236,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3821,7 +6253,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3829,7 +6277,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3846,7 +6294,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3854,7 +6318,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3871,7 +6335,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3879,7 +6359,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3896,7 +6376,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3904,7 +6400,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3921,7 +6417,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3929,7 +6441,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3946,7 +6458,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3954,7 +6482,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3971,7 +6499,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -3979,7 +6523,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -3996,7 +6540,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4004,7 +6564,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4021,7 +6581,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4029,7 +6605,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4046,7 +6622,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4054,7 +6646,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4071,7 +6663,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4079,7 +6687,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4096,7 +6704,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4104,7 +6728,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4121,7 +6745,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4129,7 +6769,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4146,7 +6786,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4154,7 +6810,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4171,7 +6827,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4179,7 +6851,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4196,7 +6868,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4204,7 +6892,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4221,7 +6909,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4229,7 +6933,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4246,7 +6950,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4254,7 +6974,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4271,7 +6991,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4279,7 +7015,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4296,7 +7032,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4304,7 +7056,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4321,7 +7073,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4329,7 +7097,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4346,7 +7114,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4354,7 +7138,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4371,7 +7155,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4379,7 +7179,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4396,7 +7196,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4404,7 +7220,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4421,7 +7237,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4429,7 +7261,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4446,7 +7278,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4454,7 +7302,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4471,7 +7319,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4479,7 +7343,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4496,7 +7360,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4504,7 +7384,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4521,7 +7401,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4529,7 +7425,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4546,7 +7442,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4554,7 +7466,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4571,7 +7483,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4579,7 +7507,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4596,7 +7524,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4604,7 +7548,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4621,7 +7565,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4629,7 +7589,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4646,7 +7606,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4654,7 +7630,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4671,7 +7647,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4679,7 +7671,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4696,7 +7688,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4704,7 +7712,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4721,7 +7729,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4729,7 +7753,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4746,7 +7770,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4754,7 +7794,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4771,7 +7811,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4779,7 +7835,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4796,7 +7852,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4804,7 +7876,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4821,7 +7893,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4829,7 +7917,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4846,7 +7934,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4854,7 +7958,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4871,7 +7975,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4879,7 +7999,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4896,7 +8016,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4904,7 +8040,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4921,7 +8057,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4929,7 +8081,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4946,7 +8098,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4954,7 +8122,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4971,7 +8139,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -4979,7 +8163,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -4996,7 +8180,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5004,7 +8204,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5021,7 +8221,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5029,7 +8245,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5046,7 +8262,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5054,7 +8286,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5071,7 +8303,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5079,7 +8327,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5096,7 +8344,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5104,7 +8368,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5121,7 +8385,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5129,7 +8409,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5146,7 +8426,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5154,7 +8450,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5171,7 +8467,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5179,7 +8491,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5196,7 +8508,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5204,7 +8532,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5221,7 +8549,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5229,7 +8573,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5246,7 +8590,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5254,7 +8614,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5271,7 +8631,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5279,7 +8655,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5296,7 +8672,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5304,7 +8696,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5321,7 +8713,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5329,7 +8737,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5346,7 +8754,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5354,7 +8778,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5371,7 +8795,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5379,7 +8819,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5396,7 +8836,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5404,7 +8860,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5421,7 +8877,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5429,7 +8901,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5446,7 +8918,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5454,7 +8942,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5471,7 +8959,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5479,7 +8983,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5496,7 +9000,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5504,7 +9024,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5521,7 +9041,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5529,7 +9065,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5546,7 +9082,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5554,7 +9106,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5571,7 +9123,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5579,7 +9147,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5596,7 +9164,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5604,7 +9188,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5621,7 +9205,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5629,7 +9229,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5646,7 +9246,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5654,7 +9270,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5671,7 +9287,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5679,7 +9311,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5696,7 +9328,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5704,7 +9352,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5721,7 +9369,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5729,7 +9393,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5746,7 +9410,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5754,7 +9434,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5771,7 +9451,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5779,7 +9475,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5796,7 +9492,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5804,7 +9516,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5821,7 +9533,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5829,7 +9557,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5846,7 +9574,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5854,7 +9598,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5871,7 +9615,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5879,7 +9639,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5896,7 +9656,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5904,7 +9680,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5921,7 +9697,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5929,7 +9721,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5946,7 +9738,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5954,7 +9762,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5971,7 +9779,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -5979,7 +9803,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -5996,7 +9820,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6004,7 +9844,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6021,7 +9861,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6029,7 +9885,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6046,7 +9902,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6054,7 +9926,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6071,7 +9943,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6079,7 +9967,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6096,7 +9984,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6104,7 +10008,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6121,7 +10025,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6129,7 +10049,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6146,7 +10066,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6154,7 +10090,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6171,7 +10107,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6179,7 +10131,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6196,7 +10148,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6204,7 +10172,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6221,7 +10189,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6229,7 +10213,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6246,7 +10230,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6254,7 +10254,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6271,7 +10271,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6279,7 +10295,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6296,7 +10312,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6304,7 +10336,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6321,7 +10353,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6329,7 +10377,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6346,7 +10394,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6354,7 +10418,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6371,7 +10435,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6379,7 +10459,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6396,7 +10476,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6404,7 +10500,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6421,7 +10517,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6429,7 +10541,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6446,7 +10558,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6454,7 +10582,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6471,7 +10599,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6479,7 +10623,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6496,7 +10640,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6504,7 +10664,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6521,7 +10681,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6529,7 +10705,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6546,7 +10722,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6554,7 +10746,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6571,7 +10763,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6579,7 +10787,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6596,7 +10804,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6604,7 +10828,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6621,7 +10845,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6629,7 +10869,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6646,7 +10886,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6654,7 +10910,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6671,7 +10927,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6679,7 +10951,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6696,7 +10968,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6704,7 +10992,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6721,7 +11009,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6729,7 +11033,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6746,7 +11050,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6754,7 +11074,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6771,7 +11091,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6779,7 +11115,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6796,7 +11132,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6804,7 +11156,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6821,7 +11173,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6829,7 +11197,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6846,7 +11214,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6854,7 +11238,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6871,7 +11255,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6879,7 +11279,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6896,7 +11296,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6904,7 +11320,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6921,7 +11337,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6929,7 +11361,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6946,7 +11378,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6954,7 +11402,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6971,7 +11419,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -6979,7 +11443,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -6996,7 +11460,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7004,7 +11484,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7021,7 +11501,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7029,7 +11525,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7046,7 +11542,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7054,7 +11566,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7071,7 +11583,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7079,7 +11607,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7096,7 +11624,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7104,7 +11648,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7121,7 +11665,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7129,7 +11689,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7146,7 +11706,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7154,7 +11730,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7171,7 +11747,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7179,7 +11771,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7196,7 +11788,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7204,7 +11812,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7221,7 +11829,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7229,7 +11853,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7246,7 +11870,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7254,7 +11894,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7271,7 +11911,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7279,7 +11935,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7296,7 +11952,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7304,7 +11976,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7321,7 +11993,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7329,7 +12017,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7346,7 +12034,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7354,7 +12058,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7371,7 +12075,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7379,7 +12099,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7396,7 +12116,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7404,7 +12140,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7421,7 +12157,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7429,7 +12181,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7446,7 +12198,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7454,7 +12222,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7471,7 +12239,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7479,7 +12263,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7496,7 +12280,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7504,7 +12304,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7521,7 +12321,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7529,7 +12345,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7546,7 +12362,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7554,7 +12386,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7571,7 +12403,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7579,7 +12427,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7596,7 +12444,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7604,7 +12468,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7621,7 +12485,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7629,7 +12509,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7646,7 +12526,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7654,7 +12550,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7671,7 +12567,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7679,7 +12591,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7696,7 +12608,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7704,7 +12632,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7721,7 +12649,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7729,7 +12673,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7746,7 +12690,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7754,7 +12714,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7771,7 +12731,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7779,7 +12755,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7796,7 +12772,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7804,7 +12796,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7821,7 +12813,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7829,7 +12837,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7846,7 +12854,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7854,7 +12878,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7871,7 +12895,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7879,7 +12919,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7896,7 +12936,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7904,7 +12960,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7921,7 +12977,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7929,7 +13001,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7946,7 +13018,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7954,7 +13042,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7971,7 +13059,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -7979,7 +13083,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -7996,7 +13100,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8004,7 +13124,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8021,7 +13141,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8029,7 +13165,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8046,7 +13182,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8054,7 +13206,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8071,7 +13223,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8079,7 +13247,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8096,7 +13264,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8104,7 +13288,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8121,7 +13305,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8129,7 +13329,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8146,7 +13346,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8154,7 +13370,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8171,7 +13387,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8179,7 +13411,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8196,7 +13428,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8204,7 +13452,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8221,7 +13469,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8229,7 +13493,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8246,7 +13510,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8254,7 +13534,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8271,7 +13551,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8279,7 +13575,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8296,7 +13592,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8304,7 +13616,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8321,7 +13633,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8329,7 +13657,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8346,7 +13674,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8354,7 +13698,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8371,7 +13715,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8379,7 +13739,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8396,7 +13756,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8404,7 +13780,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8421,7 +13797,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8429,7 +13821,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8446,7 +13838,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8454,7 +13862,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8471,7 +13879,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8479,7 +13903,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8496,7 +13920,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8504,7 +13944,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8521,7 +13961,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8529,7 +13985,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8546,7 +14002,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8554,7 +14026,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8571,7 +14043,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8579,7 +14067,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8596,7 +14084,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8604,7 +14108,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8621,7 +14125,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8629,7 +14149,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8646,7 +14166,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8654,7 +14190,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8671,7 +14207,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8679,7 +14231,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8696,7 +14248,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8704,7 +14272,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8721,7 +14289,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8729,7 +14313,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8746,7 +14330,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8754,7 +14354,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8771,7 +14371,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8779,7 +14395,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8796,7 +14412,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8804,7 +14436,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8821,7 +14453,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8829,7 +14477,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8846,7 +14494,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8854,7 +14518,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8871,7 +14535,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8879,7 +14559,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8896,7 +14576,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8904,7 +14600,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8921,7 +14617,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8929,7 +14641,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8946,7 +14658,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8954,7 +14682,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8971,7 +14699,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -8979,7 +14723,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -8996,7 +14740,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9004,7 +14764,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9021,7 +14781,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9029,7 +14805,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9046,7 +14822,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9054,7 +14846,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9071,7 +14863,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9079,7 +14887,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9096,7 +14904,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9104,7 +14928,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9121,7 +14945,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9129,7 +14969,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9146,7 +14986,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9154,7 +15010,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9171,7 +15027,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9179,7 +15051,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9196,7 +15068,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9204,7 +15092,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9221,7 +15109,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9229,7 +15133,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9246,7 +15150,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9254,7 +15174,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9271,7 +15191,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9279,7 +15215,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9296,7 +15232,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9304,7 +15256,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9321,7 +15273,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9329,7 +15297,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9346,7 +15314,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9354,7 +15338,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9371,7 +15355,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9379,7 +15379,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9396,7 +15396,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9404,7 +15420,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9421,7 +15437,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9429,7 +15461,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9446,7 +15478,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9454,7 +15502,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9471,7 +15519,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9479,7 +15543,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9496,7 +15560,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9504,7 +15584,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9521,7 +15601,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9529,7 +15625,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9546,7 +15642,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9554,7 +15666,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9571,7 +15683,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9579,7 +15707,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9596,7 +15724,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9604,7 +15748,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9621,7 +15765,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9629,7 +15789,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9646,7 +15806,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9654,7 +15830,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9671,7 +15847,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9679,7 +15871,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9696,7 +15888,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9704,7 +15912,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9721,7 +15929,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9729,7 +15953,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9746,7 +15970,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9754,7 +15994,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9771,7 +16011,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9779,7 +16035,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9796,7 +16052,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9804,7 +16076,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9821,7 +16093,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9829,7 +16117,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9846,7 +16134,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9854,7 +16158,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9871,7 +16175,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9879,7 +16199,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9896,7 +16216,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9904,7 +16240,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9921,7 +16257,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9929,7 +16281,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9946,7 +16298,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9954,7 +16322,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9971,7 +16339,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -9979,7 +16363,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -9996,7 +16380,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10004,7 +16404,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10021,7 +16421,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10029,7 +16445,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10046,7 +16462,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10054,7 +16486,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10071,7 +16503,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10079,7 +16527,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10096,7 +16544,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10104,7 +16568,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10121,7 +16585,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10129,7 +16609,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10146,7 +16626,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10154,7 +16650,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10171,7 +16667,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10179,7 +16691,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10196,7 +16708,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10204,7 +16732,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10221,7 +16749,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10229,7 +16773,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10246,7 +16790,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10254,7 +16814,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10271,7 +16831,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10279,7 +16855,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10296,7 +16872,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10304,7 +16896,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10321,7 +16913,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10329,7 +16937,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10346,7 +16954,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10354,7 +16978,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10371,7 +16995,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10379,7 +17019,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10396,7 +17036,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10404,7 +17060,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10421,7 +17077,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10429,7 +17101,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10446,7 +17118,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10454,7 +17142,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10471,7 +17159,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10479,7 +17183,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10496,7 +17200,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10504,7 +17224,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10521,7 +17241,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10529,7 +17265,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10546,7 +17282,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10554,7 +17306,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10571,7 +17323,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10579,7 +17347,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10596,7 +17364,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10604,7 +17388,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10621,7 +17405,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10629,7 +17429,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10646,7 +17446,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10654,7 +17470,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10671,7 +17487,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10679,7 +17511,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10696,7 +17528,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10704,7 +17552,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10721,7 +17569,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10729,7 +17593,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10746,7 +17610,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10754,7 +17634,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10771,7 +17651,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10779,7 +17675,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10796,7 +17692,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10804,7 +17716,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10821,7 +17733,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10829,7 +17757,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10846,7 +17774,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10854,7 +17798,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10871,7 +17815,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10879,7 +17839,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10896,7 +17856,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10904,7 +17880,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10921,7 +17897,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10929,7 +17921,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10946,7 +17938,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10954,7 +17962,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10971,7 +17979,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -10979,7 +18003,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -10996,7 +18020,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11004,7 +18044,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11021,7 +18061,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11029,7 +18085,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11046,7 +18102,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11054,7 +18126,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11071,7 +18143,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11079,7 +18167,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11096,7 +18184,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11104,7 +18208,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11121,7 +18225,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11129,7 +18249,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11146,7 +18266,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11154,7 +18290,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11171,7 +18307,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11179,7 +18331,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11196,7 +18348,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11204,7 +18372,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11221,7 +18389,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11229,7 +18413,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11246,7 +18430,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11254,7 +18454,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11271,7 +18471,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11279,7 +18495,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11296,7 +18512,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11304,7 +18536,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11321,7 +18553,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11329,7 +18577,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11346,7 +18594,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11354,7 +18618,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11371,7 +18635,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11379,7 +18659,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11396,7 +18676,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11404,7 +18700,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11421,7 +18717,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11429,7 +18741,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11446,7 +18758,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11454,7 +18782,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11471,7 +18799,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11479,7 +18823,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11496,7 +18840,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11504,7 +18864,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11521,7 +18881,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11529,7 +18905,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11546,7 +18922,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11554,7 +18946,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11571,7 +18963,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11579,7 +18987,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11596,7 +19004,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11604,7 +19028,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11621,7 +19045,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11629,7 +19069,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11646,7 +19086,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11654,7 +19110,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11671,7 +19127,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11679,7 +19151,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11696,7 +19168,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11704,7 +19192,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11721,7 +19209,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11729,7 +19233,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11746,7 +19250,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11754,7 +19274,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11771,7 +19291,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11779,7 +19315,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11796,7 +19332,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11804,7 +19356,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11821,7 +19373,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11829,7 +19397,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11846,7 +19414,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11854,7 +19438,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11871,7 +19455,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11879,7 +19479,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11896,7 +19496,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11904,7 +19520,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11921,7 +19537,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11929,7 +19561,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11946,7 +19578,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11954,7 +19602,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11971,7 +19619,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -11979,7 +19643,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -11996,7 +19660,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12004,7 +19684,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12021,7 +19701,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12029,7 +19725,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12046,7 +19742,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12054,7 +19766,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12071,7 +19783,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12079,7 +19807,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12096,7 +19824,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12104,7 +19848,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12121,7 +19865,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12129,7 +19889,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12146,7 +19906,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12154,7 +19930,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12171,7 +19947,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12179,7 +19971,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12196,7 +19988,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12204,7 +20012,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12221,7 +20029,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12229,7 +20053,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12246,7 +20070,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12254,7 +20094,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12271,7 +20111,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12279,7 +20135,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12296,7 +20152,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12304,7 +20176,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12321,7 +20193,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12329,7 +20217,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12346,7 +20234,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12354,7 +20258,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12371,7 +20275,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12379,7 +20299,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12396,7 +20316,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12404,7 +20340,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12421,7 +20357,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12429,7 +20381,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12446,7 +20398,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12454,7 +20422,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12471,7 +20439,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12479,7 +20463,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12496,7 +20480,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12504,7 +20504,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12521,7 +20521,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12529,7 +20545,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12546,7 +20562,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12554,7 +20586,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12571,7 +20603,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12579,7 +20627,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12596,7 +20644,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12604,7 +20668,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12621,7 +20685,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12629,7 +20709,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12646,7 +20726,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12654,7 +20750,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12671,7 +20767,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12679,7 +20791,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12696,7 +20808,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12704,7 +20832,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12721,7 +20849,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12729,7 +20873,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12746,7 +20890,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12754,7 +20914,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12771,7 +20931,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12779,7 +20955,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12796,7 +20972,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12804,7 +20996,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12821,7 +21013,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12829,7 +21037,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12846,7 +21054,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12854,7 +21078,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12871,7 +21095,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12879,7 +21119,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12896,7 +21136,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12904,7 +21160,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12921,7 +21177,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12929,7 +21201,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12946,7 +21218,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12954,7 +21242,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12971,7 +21259,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -12979,7 +21283,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -12996,7 +21300,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13004,7 +21324,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13021,7 +21341,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13029,7 +21365,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13046,7 +21382,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13054,7 +21406,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13071,7 +21423,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13079,7 +21447,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13096,7 +21464,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13104,7 +21488,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13121,7 +21505,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13129,7 +21529,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13146,7 +21546,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13154,7 +21570,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13171,7 +21587,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13179,7 +21611,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13196,7 +21628,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13204,7 +21652,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13221,7 +21669,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13229,7 +21693,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13246,7 +21710,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13254,7 +21734,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13271,7 +21751,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13279,7 +21775,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13296,7 +21792,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13304,7 +21816,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13321,7 +21833,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13329,7 +21857,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13346,7 +21874,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13354,7 +21898,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13371,7 +21915,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13379,7 +21939,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13396,7 +21956,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13404,7 +21980,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13421,7 +21997,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13429,7 +22021,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13446,7 +22038,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13454,7 +22062,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13471,7 +22079,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13479,7 +22103,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13496,7 +22120,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13504,7 +22144,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13521,7 +22161,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13529,7 +22185,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13546,7 +22202,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13554,7 +22226,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13571,7 +22243,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13579,7 +22267,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13596,7 +22284,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13604,7 +22308,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13621,7 +22325,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13629,7 +22349,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13646,7 +22366,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13654,7 +22390,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13671,7 +22407,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13679,7 +22431,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13696,7 +22448,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13704,7 +22472,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13721,7 +22489,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13729,7 +22513,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13746,7 +22530,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13754,7 +22554,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13771,7 +22571,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13779,7 +22595,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13796,7 +22612,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13804,7 +22636,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13821,7 +22653,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13829,7 +22677,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13846,7 +22694,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13854,7 +22718,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13871,7 +22735,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13879,7 +22759,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13896,7 +22776,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13904,7 +22800,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13921,7 +22817,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13929,7 +22841,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13946,7 +22858,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13954,7 +22882,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13971,7 +22899,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -13979,7 +22923,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -13996,7 +22940,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14004,7 +22964,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14021,7 +22981,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14029,7 +23005,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14046,7 +23022,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14054,7 +23046,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14071,7 +23063,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14079,7 +23087,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14096,7 +23104,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14104,7 +23128,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14121,7 +23145,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14129,7 +23169,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14146,7 +23186,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14154,7 +23210,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14171,7 +23227,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14179,7 +23251,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14196,7 +23268,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14204,7 +23292,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14221,7 +23309,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14229,7 +23333,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14246,7 +23350,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14254,7 +23374,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14271,7 +23391,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14279,7 +23415,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14296,7 +23432,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14304,7 +23456,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14321,7 +23473,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14329,7 +23497,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14346,7 +23514,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14354,7 +23538,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14371,7 +23555,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14379,7 +23579,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14396,7 +23596,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14404,7 +23620,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14421,7 +23637,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14429,7 +23661,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14446,7 +23678,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14454,7 +23702,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14471,7 +23719,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14479,7 +23743,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14496,7 +23760,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14504,7 +23784,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14521,7 +23801,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14529,7 +23825,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14546,7 +23842,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14554,7 +23866,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14571,7 +23883,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14579,7 +23907,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14596,7 +23924,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14604,7 +23948,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14621,7 +23965,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14629,7 +23989,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14646,7 +24006,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14654,7 +24030,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14671,7 +24047,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14679,7 +24071,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14696,7 +24088,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14704,7 +24112,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14721,7 +24129,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14729,7 +24153,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14746,7 +24170,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14754,7 +24194,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14771,7 +24211,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14779,7 +24235,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14796,7 +24252,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14804,7 +24276,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14821,7 +24293,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14829,7 +24317,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14846,7 +24334,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14854,7 +24358,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14871,7 +24375,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14879,7 +24399,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14896,7 +24416,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14904,7 +24440,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14921,7 +24457,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14929,7 +24481,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14946,7 +24498,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14954,7 +24522,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14971,7 +24539,23 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
 
 
@@ -14979,7 +24563,7 @@
     {
         public string primarytype { get; set; }
         public string uuid { get; set; }
-        public string activationstatus { get; set; }
+        public bool activationstatus { get; set; }
         public DateTime created { get; set; }
         public string createdby { get; set; }
         public DateTime lastactivated { get; set; }
@@ -14996,10 +24580,24 @@
         public string imagecredit { get; set; }
         public string imagealttext { get; set; }
         public string url { get; set; }
+        public string videocredit { get; set; }
+        public string imagelist { get; set; }
+        public string authorimage { get; set; }
+        public string customlead { get; set; }
         public string embedcode { get; set; }
+        public bool assetautoplay { get; set; }
+        public string quotation { get; set; }
+        public string imageAltText { get; set; }
+        public string videoCredit { get; set; }
+        public bool assetcontrols { get; set; }
+        public bool assetloop { get; set; }
+        public string assetpreload { get; set; }
+        public bool assetmuted { get; set; }
+        public string assetsource { get; set; }
+        public string videoCaption { get; set; }
+        public DateTime rated { get; set; }
+        public string mixintypes { get; set; }
     }
-
-
 
 
 }
