@@ -17,24 +17,22 @@ internal class Program
         int PostID = 589838;
         int ErrorCount = 0;
         string[] directories = {
-                                @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2015",
-                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2016",
-                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2017",
-                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2018",
-                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2019",
-                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2020",
-                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2021",
-                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2022",
-                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2023"
-                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN\Articles\archived\2024"
+                                @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2015",
+                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2016",
+                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2017",
+                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2018",
+                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2019",
+                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2020",
+                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2021",
+                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2022",
+                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2023"
+                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2024"
                                  };
 
 
 
 
-        //Generate classes
-        //GeneratePostClass();
-
+        
         //Migrate Authors
         //ProcessAuthors();
 
@@ -44,8 +42,6 @@ internal class Program
         //Add title starting point 
         //AddTItleMarking();
 
-        //Remove unused properties and transform to small caps letter
-        //CleanUpArticle();
 
         GenerateInsertSql();
 
@@ -181,27 +177,16 @@ internal class Program
                                 }
 
                                 List<string> articles = GetArticles(filePath, startLine, endLine);
-                                string yml = string.Join("\n", articles);
-
-                                //start parsing
-                                var deserializer = new DeserializerBuilder()
-                                    .WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
-                                    .Build();
-
-
                                 
-                                //yml contains a string containing your YAML
-                                //Replace aphostrophe with ‘
-                                string CleanYml = CleanApostrophe(yml);
-                                CleanYml = CleanStories(CleanYml);
-                                //Clean tags
-                                CleanYml = CleanTags(CleanYml);
 
-                                post = deserializer.Deserialize<Post>(CleanYml);
+                                post = processPostData(articles, post);
+
+
                                 if (post != null)
                                 {
-                                    //SavedCount++;
-                                    //Console.WriteLine("Saved");
+
+
+
                                     CreatePostInsertSql(post, PostID);
                                     //GeRedirectUrl(post);
                                     PostID++;
@@ -384,7 +369,7 @@ internal class Program
             int featuredImageId = GetPostMetaValue(featuredImage);
 
             string WP_Post_Article_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
-                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{mysqlStringFormat(post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{GenerateWordPressSlug(post.title)}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://newswatchplus-staging.azurewebsites.net/?p=', 0, 'post', '', 0);";
+                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{mysqlStringFormat(post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{GenerateWordPressSlug(post.title)}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://www.newswatchplus.ph/?p=', 0, 'post', '', 0);";
 
             
             string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{featuredImageId}');";
@@ -1441,6 +1426,16 @@ internal class Program
         }
     }
 
+    private static Post? processPostData(List<string> article, Post? post)
+    {
+
+        for (int i = 0; i < article.Count; i++)
+        {
+
+        }
+        return post;
+    }
+
     private static void GeRedirectUrl(Post p)
     {
         throw new NotImplementedException();
@@ -1585,37 +1580,37 @@ internal class Program
                                             string wP_term_relationships_category, string wP_term_relationships_tag)
     {
 
-        //Prod
-        string connStr = "server=nwpproduct-146b913ef7-wpdbserver.mysql.database.azure.com;user=qrdxngegwd;database=nwpproduct_146b913ef7_database;password=rgq6$jWrkQvsx3hL;";
+        ////Prod
+        //string connStr = "server=nwpproduct-146b913ef7-wpdbserver.mysql.database.azure.com;user=qrdxngegwd;database=nwpproduct_146b913ef7_database;password=rgq6$jWrkQvsx3hL;";
 
-        MySqlConnection conn = new MySqlConnection(connStr);
-        conn.Open();
-
-
-        var wp_post = new MySqlCommand(wP_Post_Article_InsertSql, conn);
-        wp_post.ExecuteNonQuery();
-
-        var wp_postMeta = new MySqlCommand(wP_PostMeta, conn);
-        wp_postMeta.ExecuteNonQuery();
+        //MySqlConnection conn = new MySqlConnection(connStr);
+        //conn.Open();
 
 
-        var wP_term = new MySqlCommand(wP_term_relationships, conn);
-        wP_term.ExecuteNonQuery();
+        //var wp_post = new MySqlCommand(wP_Post_Article_InsertSql, conn);
+        //wp_post.ExecuteNonQuery();
 
-        var wP_term_category = new MySqlCommand(wP_term_relationships_category, conn);
-        wP_term_category.ExecuteNonQuery();
-
-        var wP_term_tag = new MySqlCommand(wP_term_relationships_tag, conn);
-        wP_term_tag.ExecuteNonQuery();
-
-        if (!string.IsNullOrEmpty(image_captionSql))
-        {
-            var image_caption = new MySqlCommand(image_captionSql, conn);
-            image_caption.ExecuteNonQuery();
-        }
+        //var wp_postMeta = new MySqlCommand(wP_PostMeta, conn);
+        //wp_postMeta.ExecuteNonQuery();
 
 
-        conn.Close();
+        //var wP_term = new MySqlCommand(wP_term_relationships, conn);
+        //wP_term.ExecuteNonQuery();
+
+        //var wP_term_category = new MySqlCommand(wP_term_relationships_category, conn);
+        //wP_term_category.ExecuteNonQuery();
+
+        //var wP_term_tag = new MySqlCommand(wP_term_relationships_tag, conn);
+        //wP_term_tag.ExecuteNonQuery();
+
+        //if (!string.IsNullOrEmpty(image_captionSql))
+        //{
+        //    var image_caption = new MySqlCommand(image_captionSql, conn);
+        //    image_caption.ExecuteNonQuery();
+        //}
+
+
+        //conn.Close();
 
         SavedCount++;
         Console.WriteLine("Saved");
