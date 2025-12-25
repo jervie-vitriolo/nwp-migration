@@ -2,6 +2,7 @@
 using NWP_DB_Migration.Article;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
+using YamlDotNet.Core.Tokens;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
@@ -136,7 +137,7 @@ internal class Program
             WP_PostMeta_list = new List<string>();
             WP_term_relationships_list = new List<string>();
             WP_Post_Attachment_caption = new List<string>();
-            Post post = new Post();
+            
             // Loop through each directory
             foreach (string rootdirectory in directories)
             {
@@ -147,7 +148,7 @@ internal class Program
                     string lastDirectoryName = Path.GetFileName(dir);
                     //if (!lastDirectoryName.Equals("2")) continue;
 
-
+                    Post post;
                     Console.WriteLine(dir);
                     foreach (string filePath in Directory.EnumerateFiles(dir))
                     {
@@ -159,9 +160,10 @@ internal class Program
 
                         int[] lineNumbers = matchingLines.Select(x => x.LineNumber).ToArray();
 
-
+                        
                         for (int i = 0; i < lineNumbers.Length; i++)
                         {
+                            post = new Post();
                             try
                             {
                                 int startLine = lineNumbers[i] + 1;
@@ -177,8 +179,8 @@ internal class Program
                                 }
 
                                 List<string> articles = GetArticles(filePath, startLine, endLine);
-                                
 
+                                
                                 post = processPostData(articles, post);
 
 
@@ -195,10 +197,9 @@ internal class Program
                             catch (Exception ex)
                             {
                                 ErrorCount++;
-                                if (post != null)
-                                {
+                      
                                     Console.WriteLine($"Error at line {lineNumbers[i]} - {ex} - {post.title}");
-                                }
+                                
                                 continue;
                             }
 
@@ -1425,17 +1426,58 @@ internal class Program
             var _usermeta = wp_usermeta;
         }
     }
+    private static string trimProperty(string selectedString, string property)
+    {
 
-    private static Post? processPostData(List<string> article, Post? post)
+        var text = selectedString.Replace($"{property}: '", string.Empty).Trim();
+        
+
+        if (text.EndsWith("'"))
+            return text.Remove(text.Length - 1);
+        return text;
+    }
+
+
+    private static Post processPostData(List<string> article, Post post)
     {
 
         for (int i = 0; i < article.Count; i++)
         {
+            if (article[i].Contains("'author'"))
+            {
+                post.author = trimProperty(article[i],"'author'");
+            }
+            else if(article[i].Contains("'caption'"))
+            {
+                post.caption = trimProperty(article[i], "'caption'");
+            }
+            else if (article[i].Contains("'categories'"))
+            {
+                post.categories = trimProperty(article[i], "'categories'");
+            }
+            else if (article[i].Contains("'created'"))
+            {
+                post.created = trimProperty(article[i], "'created'").ToString("yyyy-MM-dd HH:mm:ss");
+            }
+            else if (article[i].Contains("'lastModified'"))
+            {
+                post.lastModified = trimProperty(article[i], "'lastModified'");
+            }
+            else if (article[i].Contains("'title'"))
+            {
+                post.acuthor = trimProperty(article[i], "'title'");
+            }
+            else if (article[i].Contains("'activationstatus'"))
+            {
+                post.author = trimProperty(article[i], "'caption'");
+            }
+            
 
         }
         return post;
     }
 
+    
     private static void GeRedirectUrl(Post p)
     {
         throw new NotImplementedException();
