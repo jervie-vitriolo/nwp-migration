@@ -1428,12 +1428,20 @@ internal class Program
     }
     private static string trimProperty(string selectedString, string property)
     {
-
-        var text = selectedString.Replace($"{property}: '", string.Empty).Trim();
+        selectedString = selectedString.Replace($"{property}: '", string.Empty);
+        selectedString = selectedString.Replace($"{property}: ", string.Empty);
         
+        var text = selectedString.Replace($"{property}: ['", string.Empty).Trim();
+
+        if (text.EndsWith("]"))
+            text = text.Remove(text.Length - 1);
 
         if (text.EndsWith("'"))
-            return text.Remove(text.Length - 1);
+            text = text.Remove(text.Length - 1);
+
+        if (text.EndsWith("+08:00"))
+            text = text.Remove(text.Length - 6);
+
         return text;
     }
 
@@ -1443,33 +1451,35 @@ internal class Program
 
         for (int i = 0; i < article.Count; i++)
         {
-            if (article[i].Contains("'author'"))
+            string currentValue = article[i];
+
+            if (currentValue.Contains("'author'"))
             {
-                post.author = trimProperty(article[i],"'author'");
+                post.author = trimProperty(currentValue,"'author'");
             }
-            else if(article[i].Contains("'caption'"))
+            else if(currentValue.Contains("'caption'"))
             {
-                post.caption = trimProperty(article[i], "'caption'");
+                post.caption = trimProperty(currentValue, "'caption'");
             }
-            else if (article[i].Contains("'categories'"))
+            else if (currentValue.Contains("'categories'"))
             {
-                post.categories = trimProperty(article[i], "'categories'");
+                post.categories = trimProperty(currentValue, "'categories'");
             }
-            else if (article[i].Contains("'created'"))
+            else if (currentValue.Contains("'created'"))
             {
-                post.created = trimProperty(article[i], "'created'").ToString("yyyy-MM-dd HH:mm:ss");
+                post.created = DateTime.Parse(trimProperty(currentValue, "'created'"));
             }
-            else if (article[i].Contains("'lastModified'"))
+            else if (currentValue.Contains("'mgnl:lastModified'"))
             {
-                post.lastModified = trimProperty(article[i], "'lastModified'");
+                post.lastmodified = DateTime.Parse(trimProperty(currentValue, "'mgnl:lastModified'"));
             }
-            else if (article[i].Contains("'title'"))
+            else if (currentValue.Contains("'title'"))
             {
-                post.acuthor = trimProperty(article[i], "'title'");
+                post.title = trimProperty(currentValue, "'title'");
             }
-            else if (article[i].Contains("'activationstatus'"))
+            else if (currentValue.Contains("'mgnl:activationStatus'"))
             {
-                post.author = trimProperty(article[i], "'caption'");
+                post.activationstatus = trimProperty(currentValue, "'mgnl:activationStatus'") =="true"? true : false;
             }
             
 
