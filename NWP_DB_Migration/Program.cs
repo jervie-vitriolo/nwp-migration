@@ -370,7 +370,7 @@ internal class Program
             int featuredImageId = GetPostMetaValue(featuredImage);
 
             string WP_Post_Article_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
-                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{mysqlStringFormat(post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{GenerateWordPressSlug(post.title)}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://www.newswatchplus.ph/?p=', 0, 'post', '', 0);";
+                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{ (post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{GenerateWordPressSlug(post.title)}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://www.newswatchplus.ph/?p=', 0, 'post', '', 0);";
 
             
             string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{featuredImageId}');";
@@ -1448,7 +1448,7 @@ internal class Program
 
     private static Post processPostData(List<string> article, Post post)
     {
-
+        //header
         for (int i = 0; i < article.Count; i++)
         {
             string currentValue = article[i];
@@ -1481,10 +1481,32 @@ internal class Program
             {
                 post.activationstatus = trimProperty(currentValue, "'mgnl:activationStatus'") =="true"? true : false;
             }
-            
-
         }
-        return post;
+
+        //content
+        for (int i = 0; i < article.Count; i++)
+        {
+            string currentValue = article[i];
+
+            if (currentValue.Contains("'embed':"))
+            {
+                var x = trimProperty(currentValue, "'embed'");
+            }
+            else if(currentValue.Contains("'embedCode':"))
+            {
+                var x = trimProperty(currentValue, "'embedCode'");
+            }
+            else if (currentValue.Contains("'text':"))
+            {
+                var x = trimProperty(currentValue, "'text'");
+            }
+            else if (currentValue.Contains("'image':"))
+            {
+                var x = trimProperty(currentValue, "'image'");
+            }
+        }
+
+            return post;
     }
 
     
