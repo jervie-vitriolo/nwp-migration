@@ -131,7 +131,7 @@ internal class Program
             File.WriteAllText(filePath, matchingLines);
         }
 
-        void GenerateInsertSql()
+        void  GenerateInsertSql()
         {
             WP_Post_Article_InsertSql_list = new List<string>();
             WP_PostMeta_list = new List<string>();
@@ -186,9 +186,6 @@ internal class Program
 
                                 if (post != null)
                                 {
-
-
-
                                     CreatePostInsertSql(post, PostID);
                                     //GeRedirectUrl(post);
                                     PostID++;
@@ -221,7 +218,6 @@ internal class Program
 
         int GetPostMetaValue(string imagesource)
         {
-
             try
             {
 
@@ -1465,6 +1461,10 @@ internal class Program
             {
                 post.categories = trimProperty(currentValue, "'categories'");
             }
+            else if (currentValue.Contains("'embedsource'"))
+            {
+                post.embedsource = trimProperty(currentValue, "'embedsource'");
+            }
             else if (currentValue.Contains("'created'"))
             {
                 post.created = DateTime.Parse(trimProperty(currentValue, "'created'"));
@@ -1481,32 +1481,101 @@ internal class Program
             {
                 post.activationstatus = trimProperty(currentValue, "'mgnl:activationStatus'") =="true"? true : false;
             }
+            else if (currentValue.Contains("'visualType'"))
+            {
+                post.visualtype = trimProperty(currentValue, "'visualType'");
+                break;
+            }
+
+            
         }
 
         //content
+
+
+
+        var matchingLines = article.Select((line, index) => new { LineText = line, LineNumber = index + 1 })
+                                            .Where(item => item.LineText.Contains("'jcr:primaryType': 'mgnl:block'"));
+
+        int[] blocks = matchingLines.Select(x => x.LineNumber).ToArray();
+
+
+        for (int i = 0; i < blocks.Length; i++)
+        {
+            try
+            {
+                int startLine = blocks[i] + 1;
+                int endLine = 0;
+
+                if (i == blocks.Length - 1)
+                {
+                    endLine = File.ReadAllLines(filePath).Length;
+                }
+                else
+                {
+                    endLine = blocks[i + 1] - 1;
+                }
+
+                List<string> articles = GetArticles(filePath, startLine, endLine);
+
+
+                post = processPostData(articles, post);
+
+
+                if (post != null)
+                {
+                    CreatePostInsertSql(post, PostID);
+                    //GeRedirectUrl(post);
+                    PostID++;
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorCount++;
+
+                Console.WriteLine($"Error at line {blocks[i]} - {ex} - {post.title}");
+
+                continue;
+            }
+
+        }
+
         for (int i = 0; i < article.Count; i++)
         {
             string currentValue = article[i];
+            string contentString = "";
 
             if (currentValue.Contains("'embed':"))
             {
-                var x = trimProperty(currentValue, "'embed'");
+                contentString = trimProperty(currentValue, "'embed'");
             }
             else if(currentValue.Contains("'embedCode':"))
             {
-                var x = trimProperty(currentValue, "'embedCode'");
+                contentString = trimProperty(currentValue, "'embedCode'");
             }
             else if (currentValue.Contains("'text':"))
             {
-                var x = trimProperty(currentValue, "'text'");
+                contentString = trimProperty(currentValue, "'text'");
             }
             else if (currentValue.Contains("'image':"))
             {
-                var x = trimProperty(currentValue, "'image'");
+                contentString = trimProperty(currentValue, "'image'");
             }
+
+
+
+            if (post.visualtype == "video" && post.embedsource.Contains("https://www.youtube.com/embed"))
+            {
+                contentString = post.embedsource.Replace("width=\"560\"", "width=\"800\"").Replace("height=\"315\"", "height=\"500\"");
+            }
+            else if (post.visualtype == "embed")
+            {
+                contentString = post.embedsource;
+            }
+
         }
 
-            return post;
+        return post;
     }
 
     
