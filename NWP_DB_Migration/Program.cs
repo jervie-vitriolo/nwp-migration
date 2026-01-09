@@ -1,10 +1,12 @@
 ﻿using MySql.Data.MySqlClient;
 using NWP_DB_Migration.Article;
+using System.Security.Policy;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using YamlDotNet.Core.Tokens;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
+using static System.Net.Mime.MediaTypeNames;
 
 internal class Program
 {
@@ -1492,46 +1494,79 @@ internal class Program
 
         //content
 
-
-
         var matchingLines = article.Select((line, index) => new { LineText = line, LineNumber = index + 1 })
                                             .Where(item => item.LineText.Contains("'jcr:primaryType': 'mgnl:block'"));
 
         int[] blocks = matchingLines.Select(x => x.LineNumber).ToArray();
-
+        string finalString = string.Empty;
 
         for (int i = 0; i < blocks.Length; i++)
         {
             try
             {
-                int startLine = blocks[i] + 1;
-                int endLine = 0;
+                int startLine = blocks[i];
+                int endLine = blocks[i+1]-2;
+                string type = string.Empty;
 
-                if (i == blocks.Length - 1)
+                for (int a = startLine; a <= endLine; a++)
                 {
-                    endLine = File.ReadAllLines(filePath).Length;
+                    string currentLine = article[a];
+
+
+                   
+
+                    if (currentLine.Contains("type"))
+                    {
+                        if (currentLine.Contains("text"))
+                        {
+                            type = "text";
+                        }
+                        else if (currentLine.Contains("image"))
+                        {
+                            type = "image";
+                        }
+                    }
+
+
+
+
                 }
-                else
+
+                if (post.visualtype == "video" && post.embedsource.Contains("https://www.youtube.com/embed"))
                 {
-                    endLine = blocks[i + 1] - 1;
+                    finalString = post.embedsource.Replace("width=\"560\"", "width=\"800\"").Replace("height=\"315\"", "height=\"500\"");
                 }
-
-                List<string> articles = GetArticles(filePath, startLine, endLine);
-
-
-                post = processPostData(articles, post);
-
-
-                if (post != null)
+                else if (post.visualtype == "embed")
                 {
-                    CreatePostInsertSql(post, PostID);
-                    //GeRedirectUrl(post);
-                    PostID++;
+                    finalString = post.embedsource;
                 }
+
+
+                //switch (type)
+                //{
+                //    case "text":
+                //        return text;
+                //    case "embedcode":
+                //        return embedcode;
+                //    case "embed":
+                //        return embed;
+                //    case "externalLink":
+                //        return url;
+                //    case "image":
+                //        return $"<figure class=\"wp-block-image alignwide size-full\"><img src=\"/wp-content/uploads/2025/10/{image}.jpg\" alt=\"\" /></figure>";
+                //    default:
+                //        if (type != null)
+                //        {
+                //            Console.WriteLine($"{title} : BLOCK TYPE NOT FOUND: {type}");
+                //        }
+                //        return string.Empty;
+                //}
+
+
             }
             catch (Exception ex)
             {
-                ErrorCount++;
+                //ErrorCount++;
 
                 Console.WriteLine($"Error at line {blocks[i]} - {ex} - {post.title}");
 
