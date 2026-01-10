@@ -1507,13 +1507,14 @@ internal class Program
                 int startLine = blocks[i];
                 int endLine = blocks[i+1]-2;
                 string type = string.Empty;
+                string text = string.Empty;
+                string image = string.Empty;
+                string embedCode = string.Empty;
+                string embed = string.Empty;
 
                 for (int a = startLine; a <= endLine; a++)
                 {
                     string currentLine = article[a];
-
-
-                   
 
                     if (currentLine.Contains("type"))
                     {
@@ -1525,8 +1526,29 @@ internal class Program
                         {
                             type = "image";
                         }
+                        else if (currentLine.Contains("video"))
+                        {
+                            type = "video";
+                        }
                     }
+                    else if (currentLine.Contains("'text':"))
+                    {
+                        var multitext = article.Skip(a).Take(endLine-a);
+                        //clean up for single qoute
 
+                    }
+                    else if (currentLine.Contains("'image':"))
+                    {
+                        image = currentLine;
+                    }
+                    else if (currentLine.Contains("'embedCode':"))
+                    {
+                        embedCode = currentLine;
+                    }
+                    else if (currentLine.Contains("'embed':"))
+                    {
+                        embed = currentLine;
+                    }
 
 
 
