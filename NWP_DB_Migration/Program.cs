@@ -1533,8 +1533,10 @@ internal class Program
                     }
                     else if (currentLine.Contains("'text':"))
                     {
-                        var multitext = article.Skip(a).Take(endLine-a);
-                        //clean up for single qoute
+                        var multitext = article.Skip(a).Take(endLine - a);
+                        //trim property
+                        multitext = TrimProperty(multitext, "'text':");
+                        //trim space and single qoute
 
                     }
                     else if (currentLine.Contains("'image':"))
@@ -1633,6 +1635,12 @@ internal class Program
         }
 
         return post;
+    }
+
+    private static IEnumerable<string> TrimProperty(IEnumerable<string> multitext,string toReplace)
+    {
+        multitext = multitext.Select(x => x.Replace(toReplace, string.Empty)).ToArray();
+        return multitext;
     }
 
     
