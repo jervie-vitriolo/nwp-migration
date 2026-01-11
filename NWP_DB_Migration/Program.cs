@@ -1,5 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using NWP_DB_Migration.Article;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
 using System.Security.Policy;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
@@ -368,7 +370,7 @@ internal class Program
             int featuredImageId = GetPostMetaValue(featuredImage);
 
             string WP_Post_Article_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
-                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{getPostContent(post)}', '{ (post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{GenerateWordPressSlug(post.title)}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://www.newswatchplus.ph/?p=', 0, 'post', '', 0);";
+                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', {getPostContent(post)}, '{ (post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{GenerateWordPressSlug(post.title)}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://www.newswatchplus.ph/?p=', 0, 'post', '', 0);";
 
             
             string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{featuredImageId}');";
@@ -1512,44 +1514,42 @@ internal class Program
                 string embedCode = string.Empty;
                 string embed = string.Empty;
 
-                for (int a = startLine; a <= endLine; a++)
+                for (int currentLineNumber = startLine; currentLineNumber <= endLine; currentLineNumber++)
                 {
-                    string currentLine = article[a];
+                    string currentLineText = article[currentLineNumber];
 
-                    if (currentLine.Contains("type"))
+                    if (currentLineText.Contains("type"))
                     {
-                        if (currentLine.Contains("text"))
+                        if (currentLineText.Contains("text"))
                         {
                             type = "text";
                         }
-                        else if (currentLine.Contains("image"))
+                        else if (currentLineText.Contains("image"))
                         {
                             type = "image";
                         }
-                        else if (currentLine.Contains("video"))
+                        else if (currentLineText.Contains("video"))
                         {
                             type = "video";
                         }
                     }
-                    else if (currentLine.Contains("'text':"))
+                    else if (currentLineText.Contains("'text':"))
                     {
-                        var multitext = article.Skip(a).Take(endLine - a);
-                        //trim property
+                        var multitext = article.Skip(currentLineNumber).Take(endLine - currentLineNumber);
                         multitext = TrimProperty(multitext, "'text':");
-                        //trim space and single qoute
-
                     }
-                    else if (currentLine.Contains("'image':"))
+                    else if (currentLineText.Contains("'image':"))
                     {
-                        image = currentLine;
+                        image = TrimProperty(currentLineText, "'image':");
+                        image = TrimProperty(image, "jcr:");
                     }
-                    else if (currentLine.Contains("'embedCode':"))
+                    else if (currentLineText.Contains("'embedCode':"))
                     {
-                        embedCode = currentLine;
+                        embedCode = GetMultiLineValue(article,currentLineNumber);
                     }
-                    else if (currentLine.Contains("'embed':"))
+                    else if (currentLineText.Contains("'embed':"))
                     {
-                        embed = currentLine;
+                        embed = GetMultiLineValue(article, currentLineNumber);
                     }
 
 
@@ -1640,13 +1640,43 @@ internal class Program
     private static IEnumerable<string> TrimProperty(IEnumerable<string> multitext,string toReplace)
     {
         multitext = multitext.Select(x => x.Replace(toReplace, string.Empty)).ToArray();
-        return multitext;
+        IEnumerable<string> trimmedStrings = multitext.Select(s => s.Trim());
+        return trimmedStrings;
     }
 
-    
-    private static void GeRedirectUrl(Post p)
+    private static string TrimProperty(string text, string toReplace)
     {
-        throw new NotImplementedException();
+        return text.Replace(toReplace, string.Empty).Trim();
+    }
+
+    private static string GetMultiLineValue(IEnumerable<string> multitext, int LineStart)
+    {
+        for (int i = LineStart; i < multitext.ToArray().Length; i++)
+        {
+            if (multitext.ToArray()[i].Contains("'jcr:") || multitext.ToArray()[i].Contains("'mgnl:"))
+            {
+                //clean sigle qoute
+                var uncleaned = multitext.Skip(LineStart).Take(i - LineStart);
+                List<string> newList = new List<string>();
+                foreach (var item in uncleaned)
+                {
+                    if (item.Trim().Equals("'"))
+                    {
+                        newList.Add(item.Replace("'", string.Empty));
+                    }
+                    else
+                    {
+                        newList.Add(item);
+                    }   
+                }
+
+                var cleaned = string.Join("\n", newList);
+                return TrimProperty(TrimProperty(cleaned, "'embed':"), "'embedCode':").Trim();
+            }
+        }
+        
+
+        return string.Empty;
     }
 
     public static string GenerateWordPressSlug(string title)
