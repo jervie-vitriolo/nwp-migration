@@ -56,6 +56,7 @@ namespace NWP_DB_Migration.Article
         public string customLead { get; set; } = string.Empty;
 
 
+        public string Content { get; set; } = string.Empty;
 
 
 

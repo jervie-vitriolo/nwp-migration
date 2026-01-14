@@ -370,7 +370,7 @@ internal class Program
             int featuredImageId = GetPostMetaValue(featuredImage);
 
             string WP_Post_Article_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
-                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', {getPostContent(post)}, '{ (post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{GenerateWordPressSlug(post.title)}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://www.newswatchplus.ph/?p=', 0, 'post', '', 0);";
+                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{post.Content}', '{ (post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{GenerateWordPressSlug(post.title)}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://www.newswatchplus.ph/?p=', 0, 'post', '', 0);";
 
             
             string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{featuredImageId}');";
@@ -1428,26 +1428,36 @@ internal class Program
     }
     private static string trimProperty(string selectedString, string property)
     {
-        selectedString = selectedString.Replace($"{property}: '", string.Empty);
-        selectedString = selectedString.Replace($"{property}: ", string.Empty);
+        try
+        {
+            selectedString = selectedString.Replace($"{property}: '", string.Empty);
+            selectedString = selectedString.Replace($"{property}: ", string.Empty);
+
+            var text = selectedString.Replace($"{property}: ['", string.Empty).Trim();
+
+            if (text.EndsWith("]"))
+                text = text.Remove(text.Length - 1);
+
+            if (text.EndsWith("'"))
+                text = text.Remove(text.Length - 1);
+
+            if (text.EndsWith("+08:00"))
+                text = text.Remove(text.Length - 6);
+
+            return text;
+        }
+        catch (Exception)
+        {
+
+            throw;
+        }
         
-        var text = selectedString.Replace($"{property}: ['", string.Empty).Trim();
-
-        if (text.EndsWith("]"))
-            text = text.Remove(text.Length - 1);
-
-        if (text.EndsWith("'"))
-            text = text.Remove(text.Length - 1);
-
-        if (text.EndsWith("+08:00"))
-            text = text.Remove(text.Length - 6);
-
-        return text;
     }
 
 
     private static Post processPostData(List<string> article, Post post)
     {
+
         //header
         for (int i = 0; i < article.Count; i++)
         {
@@ -1491,7 +1501,6 @@ internal class Program
                 break;
             }
 
-            
         }
 
         //content
@@ -1506,8 +1515,10 @@ internal class Program
         {
             try
             {
+                
+
                 int startLine = blocks[i];
-                int endLine = blocks[i+1]-2;
+                int endLine = i == blocks.Length-1 ? blocks[i] : blocks[i + 1] - 2;
                 string type = string.Empty;
                 string text = string.Empty;
                 string image = string.Empty;
@@ -1532,11 +1543,15 @@ internal class Program
                         {
                             type = "video";
                         }
+                        else if (currentLineText.Contains("embedCode"))
+                        {
+                            type = "embedCode";
+                        }
                     }
                     else if (currentLineText.Contains("'text':"))
                     {
                         var multitext = article.Skip(currentLineNumber).Take(endLine - currentLineNumber);
-                        multitext = TrimProperty(multitext, "'text':");
+                        text = TrimProperty(multitext, "'text':");
                     }
                     else if (currentLineText.Contains("'image':"))
                     {
@@ -1552,9 +1567,8 @@ internal class Program
                         embed = GetMultiLineValue(article, currentLineNumber);
                     }
 
-
-
                 }
+
 
                 if (post.visualtype == "video" && post.embedsource.Contains("https://www.youtube.com/embed"))
                 {
@@ -1565,26 +1579,23 @@ internal class Program
                     finalString = post.embedsource;
                 }
 
-
-                //switch (type)
-                //{
-                //    case "text":
-                //        return text;
-                //    case "embedcode":
-                //        return embedcode;
-                //    case "embed":
-                //        return embed;
-                //    case "externalLink":
-                //        return url;
-                //    case "image":
-                //        return $"<figure class=\"wp-block-image alignwide size-full\"><img src=\"/wp-content/uploads/2025/10/{image}.jpg\" alt=\"\" /></figure>";
-                //    default:
-                //        if (type != null)
-                //        {
-                //            Console.WriteLine($"{title} : BLOCK TYPE NOT FOUND: {type}");
-                //        }
-                //        return string.Empty;
-                //}
+                if(type == "text")
+                {
+                    finalString = finalString + text;
+                }
+                else if (type == "embedCode")
+                {
+                    finalString = finalString + embedCode;
+                }
+                    
+                else if(type == "embed")
+                {
+                    finalString = finalString + embed;
+                }
+                else if(type== "image")
+                {
+                    finalString = finalString + $"<figure class=\"wp-block-image alignwide size-full\"><img src=\"/wp-content/uploads/2025/10/{image}.jpg\" alt=\"\" /></figure>";
+                }
 
 
             }
@@ -1599,55 +1610,24 @@ internal class Program
 
         }
 
-        for (int i = 0; i < article.Count; i++)
-        {
-            string currentValue = article[i];
-            string contentString = "";
 
-            if (currentValue.Contains("'embed':"))
-            {
-                contentString = trimProperty(currentValue, "'embed'");
-            }
-            else if(currentValue.Contains("'embedCode':"))
-            {
-                contentString = trimProperty(currentValue, "'embedCode'");
-            }
-            else if (currentValue.Contains("'text':"))
-            {
-                contentString = trimProperty(currentValue, "'text'");
-            }
-            else if (currentValue.Contains("'image':"))
-            {
-                contentString = trimProperty(currentValue, "'image'");
-            }
-
-
-
-            if (post.visualtype == "video" && post.embedsource.Contains("https://www.youtube.com/embed"))
-            {
-                contentString = post.embedsource.Replace("width=\"560\"", "width=\"800\"").Replace("height=\"315\"", "height=\"500\"");
-            }
-            else if (post.visualtype == "embed")
-            {
-                contentString = post.embedsource;
-            }
-
-        }
+        
 
         return post;
     }
 
-    private static IEnumerable<string> TrimProperty(IEnumerable<string> multitext,string toReplace)
+    private static string TrimProperty(IEnumerable<string> multitext,string toReplace)
     {
         multitext = multitext.Select(x => x.Replace(toReplace, string.Empty)).ToArray();
         IEnumerable<string> trimmedStrings = multitext.Select(s => s.Trim());
-        return trimmedStrings;
+        return string.Join("\n", trimmedStrings).Trim('\'');
     }
 
     private static string TrimProperty(string text, string toReplace)
     {
-        return text.Replace(toReplace, string.Empty).Trim();
+        return text.Replace(toReplace, string.Empty).Trim().Trim('\'');
     }
+
 
     private static string GetMultiLineValue(IEnumerable<string> multitext, int LineStart)
     {
@@ -1671,7 +1651,7 @@ internal class Program
                 }
 
                 var cleaned = string.Join("\n", newList);
-                return TrimProperty(TrimProperty(cleaned, "'embed':"), "'embedCode':").Trim();
+                return TrimProperty(TrimProperty(cleaned, "embed':"), "embedCode':").Trim().Trim('\'');
             }
         }
         
