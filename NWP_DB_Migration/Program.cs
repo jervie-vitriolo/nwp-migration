@@ -19,7 +19,7 @@ internal class Program
         List<string> WP_PostMeta_list;
         List<string> WP_term_relationships_list;
         List<string> WP_Post_Attachment_caption;
-        int PostID = 589838;
+        int PostID = 643471;
         int ErrorCount = 0;
         string[] directories = {
                                 @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2015",
@@ -370,7 +370,7 @@ internal class Program
             int featuredImageId = GetPostMetaValue(featuredImage);
 
             string WP_Post_Article_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
-                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{post.Content}', '{ (post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{GenerateWordPressSlug(post.title)}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://www.newswatchplus.ph/?p=', 0, 'post', '', 0);";
+                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{mysqlStringFormat(post.Content)}', '{mysqlStringFormat(post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{GenerateWordPressSlug(post.title)}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://www.newswatchplus.ph/?p=', 0, 'post', '', 0);";
 
             
             string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{featuredImageId}');";
@@ -1469,7 +1469,7 @@ internal class Program
             }
             else if(currentValue.Contains("'caption'"))
             {
-                post.caption = trimProperty(currentValue, "'caption'");
+                post.caption = GetMultiLineCaption(article, i);
             }
             else if (currentValue.Contains("'categories'"))
             {
@@ -1489,7 +1489,7 @@ internal class Program
             }
             else if (currentValue.Contains("'title'"))
             {
-                post.title = trimProperty(currentValue, "'title'");
+                post.title = GetMultiLineTitle(article, i);
             }
             else if (currentValue.Contains("'mgnl:activationStatus'"))
             {
@@ -1611,7 +1611,7 @@ internal class Program
         }
 
 
-        
+        post.Content = finalString;
 
         return post;
     }
@@ -1620,13 +1620,75 @@ internal class Program
     {
         multitext = multitext.Select(x => x.Replace(toReplace, string.Empty)).ToArray();
         IEnumerable<string> trimmedStrings = multitext.Select(s => s.Trim());
-        return string.Join("\n", trimmedStrings).Trim('\'');
+        return string.Join(" ", trimmedStrings).Trim('\'');
     }
 
     private static string TrimProperty(string text, string toReplace)
     {
         return text.Replace(toReplace, string.Empty).Trim().Trim('\'');
     }
+
+
+    private static string GetMultiLineTitle(IEnumerable<string> multitext, int LineStart)
+    {
+        for (int i = LineStart; i < multitext.ToArray().Length; i++)
+        {
+            if (multitext.ToArray()[i].Contains("'visualType':") || multitext.ToArray()[i].Contains("'updated':"))
+            {
+                //clean sigle qoute
+                var uncleaned = multitext.Skip(LineStart).Take(i - LineStart);
+                List<string> newList = new List<string>();
+                foreach (var item in uncleaned)
+                {
+                    if (item.Trim().Equals("'"))
+                    {
+                        newList.Add(item.Replace("'", string.Empty).Trim().Trim('\''));
+                    }
+                    else
+                    {
+                        newList.Add(item.Trim().Trim('\''));
+                    }
+                }
+
+                var cleaned = string.Join(" ", newList);
+                return TrimProperty(cleaned, "title':");
+            }
+        }
+
+
+        return string.Empty;
+    }
+    private static string GetMultiLineCaption(IEnumerable<string> multitext, int LineStart)
+    {
+        for (int i = LineStart; i < multitext.ToArray().Length; i++)
+        {
+            if (multitext.ToArray()[i].Contains("'categories':"))
+            {
+                //clean sigle qoute
+                var uncleaned = multitext.Skip(LineStart).Take(i - LineStart);
+                List<string> newList = new List<string>();
+                foreach (var item in uncleaned)
+                {
+                    if (item.Trim().Equals("'"))
+                    {
+                        newList.Add(item.Replace("'", string.Empty).Trim().Trim('\''));
+                    }
+                    else
+                    {
+                        newList.Add(item.Trim().Trim('\''));
+                    }
+                }
+
+                var cleaned = string.Join(" ", newList);
+                return TrimProperty(cleaned, "caption':");
+            }
+        }
+
+
+        return string.Empty;
+    }
+
+
 
 
     private static string GetMultiLineValue(IEnumerable<string> multitext, int LineStart)
@@ -1798,37 +1860,37 @@ internal class Program
                                             string wP_term_relationships_category, string wP_term_relationships_tag)
     {
 
-        ////Prod
-        //string connStr = "server=nwpproduct-146b913ef7-wpdbserver.mysql.database.azure.com;user=qrdxngegwd;database=nwpproduct_146b913ef7_database;password=rgq6$jWrkQvsx3hL;";
+        //Prod
+        string connStr = "server=nwpproduct-146b913ef7-wpdbserver.mysql.database.azure.com;user=qrdxngegwd;database=nwpproduct_146b913ef7_database;password=rgq6$jWrkQvsx3hL;";
 
-        //MySqlConnection conn = new MySqlConnection(connStr);
-        //conn.Open();
-
-
-        //var wp_post = new MySqlCommand(wP_Post_Article_InsertSql, conn);
-        //wp_post.ExecuteNonQuery();
-
-        //var wp_postMeta = new MySqlCommand(wP_PostMeta, conn);
-        //wp_postMeta.ExecuteNonQuery();
+        MySqlConnection conn = new MySqlConnection(connStr);
+        conn.Open();
 
 
-        //var wP_term = new MySqlCommand(wP_term_relationships, conn);
-        //wP_term.ExecuteNonQuery();
+        var wp_post = new MySqlCommand(wP_Post_Article_InsertSql, conn);
+        wp_post.ExecuteNonQuery();
 
-        //var wP_term_category = new MySqlCommand(wP_term_relationships_category, conn);
-        //wP_term_category.ExecuteNonQuery();
-
-        //var wP_term_tag = new MySqlCommand(wP_term_relationships_tag, conn);
-        //wP_term_tag.ExecuteNonQuery();
-
-        //if (!string.IsNullOrEmpty(image_captionSql))
-        //{
-        //    var image_caption = new MySqlCommand(image_captionSql, conn);
-        //    image_caption.ExecuteNonQuery();
-        //}
+        var wp_postMeta = new MySqlCommand(wP_PostMeta, conn);
+        wp_postMeta.ExecuteNonQuery();
 
 
-        //conn.Close();
+        var wP_term = new MySqlCommand(wP_term_relationships, conn);
+        wP_term.ExecuteNonQuery();
+
+        var wP_term_category = new MySqlCommand(wP_term_relationships_category, conn);
+        wP_term_category.ExecuteNonQuery();
+
+        var wP_term_tag = new MySqlCommand(wP_term_relationships_tag, conn);
+        wP_term_tag.ExecuteNonQuery();
+
+        if (!string.IsNullOrEmpty(image_captionSql))
+        {
+            var image_caption = new MySqlCommand(image_captionSql, conn);
+            image_caption.ExecuteNonQuery();
+        }
+
+
+        conn.Close();
 
         SavedCount++;
         Console.WriteLine("Saved");
