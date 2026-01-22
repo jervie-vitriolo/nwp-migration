@@ -19,7 +19,7 @@ internal class Program
         List<string> WP_PostMeta_list;
         List<string> WP_term_relationships_list;
         List<string> WP_Post_Attachment_caption;
-        int PostID = 643471;
+        int PostID = 644090;
         int ErrorCount = 0;
         string[] directories = {
                                 @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2015",
@@ -370,7 +370,7 @@ internal class Program
             int featuredImageId = GetPostMetaValue(featuredImage);
 
             string WP_Post_Article_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
-                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{mysqlStringFormat(post.Content)}', '{mysqlStringFormat(post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{GenerateWordPressSlug(post.title)}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://www.newswatchplus.ph/?p=', 0, 'post', '', 0);";
+                                  $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{mysqlStringFormat(post.Content)}', '{mysqlStringFormat(post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{mysqlStringFormat(GenerateWordPressSlug(post.title))}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://www.newswatchplus.ph/?p=', 0, 'post', '', 0);";
 
             
             string WP_PostMeta = $"INSERT INTO `wp_postmeta` ( `post_id`, `meta_key`, `meta_value`) VALUES( {PostID}, '_thumbnail_id', '{featuredImageId}');";
@@ -386,7 +386,7 @@ internal class Program
 
             if (!string.IsNullOrEmpty(post.caption ))
             {
-                image_caption_sql = $"update wp_posts set post_excerpt='{post.caption}'  where post_title ='{featuredImage}' and post_type='attachment';";
+                image_caption_sql = $"update wp_posts set post_excerpt='{mysqlStringFormat(post.caption)}'  where post_title ='{featuredImage}' and post_type='attachment';";
                 WP_Post_Attachment_caption.Add(image_caption_sql);
             }
             
@@ -1438,8 +1438,14 @@ internal class Program
             if (text.EndsWith("]"))
                 text = text.Remove(text.Length - 1);
 
+            if (text.StartsWith("["))
+                text = text.Remove(0,1);
+
             if (text.EndsWith("'"))
                 text = text.Remove(text.Length - 1);
+
+            if (text.StartsWith("'"))
+                text = text.Remove(0, 1);
 
             if (text.EndsWith("+08:00"))
                 text = text.Remove(text.Length - 6);
@@ -1466,6 +1472,10 @@ internal class Program
             if (currentValue.Contains("'author'"))
             {
                 post.author = trimProperty(currentValue,"'author'");
+            }
+            else if (currentValue.Contains("'imagesource'"))
+            {
+                post.imagesource = trimProperty(currentValue, "'imagesource'").Replace("jcr:",string.Empty);
             }
             else if(currentValue.Contains("'caption'"))
             {
@@ -1859,6 +1869,8 @@ internal class Program
     private static void SaveDataToDatabase(string wP_Post_Article_InsertSql, string wP_PostMeta, string wP_term_relationships,string image_captionSql,
                                             string wP_term_relationships_category, string wP_term_relationships_tag)
     {
+        try
+        {
 
         //Prod
         string connStr = "server=nwpproduct-146b913ef7-wpdbserver.mysql.database.azure.com;user=qrdxngegwd;database=nwpproduct_146b913ef7_database;password=rgq6$jWrkQvsx3hL;";
@@ -1894,6 +1906,15 @@ internal class Program
 
         SavedCount++;
         Console.WriteLine("Saved");
+
+
+        }
+        catch (Exception ex)
+        {
+
+            Console.WriteLine("Error on saving");
+        }
+
     }
 
     /// <summary>
