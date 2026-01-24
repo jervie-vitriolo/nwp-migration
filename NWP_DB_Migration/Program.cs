@@ -19,10 +19,10 @@ internal class Program
         List<string> WP_PostMeta_list;
         List<string> WP_term_relationships_list;
         List<string> WP_Post_Attachment_caption;
-        int PostID = 644090;
+        
         int ErrorCount = 0;
-        string[] directories = {
-                                @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2015",
+        string[] directories = {@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP new\2024"
+                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2015",
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2016",
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2017",
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2018",
@@ -190,9 +190,8 @@ internal class Program
 
                                 if (post != null)
                                 {
-                                    CreatePostInsertSql(post, PostID);
+                                    CreatePostInsertSql(post);
                                     //GeRedirectUrl(post);
-                                    PostID++;
                                 }
                             }
                             catch (Exception ex)
@@ -220,11 +219,39 @@ internal class Program
         }
 
 
+        int GetPostMaxId()
+        {
+            try
+            {
+                string connStr = "server=nwpproduct-146b913ef7-wpdbserver.mysql.database.azure.com;user=qrdxngegwd;database=nwpproduct_146b913ef7_database;password=rgq6$jWrkQvsx3hL;";
+                MySqlConnection conn = new MySqlConnection(connStr);
+                conn.Open();
+
+                var sql = $"select max(ID) maxId from wp_posts;";
+                int id = 0;
+                var wp_post = new MySqlCommand(sql, conn);
+                MySqlDataReader reader = wp_post.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    id = reader.GetInt32("maxId");
+                }
+
+                conn.Close();
+
+                return id+1;
+            }
+            catch (Exception)
+            {
+                //log the imagesource id if can't be found
+                return 0;
+            }
+        }
+
         int GetPostMetaValue(string imagesource)
         {
             try
             {
-
                 string connStr = "server=nwpproduct-146b913ef7-wpdbserver.mysql.database.azure.com;user=qrdxngegwd;database=nwpproduct_146b913ef7_database;password=rgq6$jWrkQvsx3hL;";
                 MySqlConnection conn = new MySqlConnection(connStr);
                 conn.Open();
@@ -362,12 +389,18 @@ internal class Program
             }
         }
 
-        void CreatePostInsertSql(Post post, int PostID)
+        void CreatePostInsertSql(Post post)
         {
             string image_caption_sql = string.Empty;
 
             var featuredImage = post.imagesource == "" ? post.embedimage : post.imagesource;
-            int featuredImageId = GetPostMetaValue(featuredImage);
+            int featuredImageId = 0;
+            int PostID = GetPostMaxId();
+            if (!string.IsNullOrEmpty(featuredImage))
+            {
+                featuredImageId = GetPostMetaValue(featuredImage);
+            }
+            
 
             string WP_Post_Article_InsertSql = $"INSERT INTO `wp_posts` ( `ID`,`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) " +
                                   $"VALUES({PostID} ,'{getPostAuthorID(post.author)}', '{formatDateTime(post.created)}', '{formatDateTime(post.created)}', '{mysqlStringFormat(post.Content)}', '{mysqlStringFormat(post.title)}', '{mysqlStringFormat(post.caption)}', '{getPostStatus(post)}', 'closed', 'open','', '{mysqlStringFormat(GenerateWordPressSlug(post.title))}', '', '', '{formatDateTime(post.lastmodified)}', '{formatDateTime(post.lastmodified)}', '', 0, 'https://www.newswatchplus.ph/?p=', 0, 'post', '', 0);";
@@ -1487,7 +1520,7 @@ internal class Program
             }
             else if (currentValue.Contains("'embedsource'"))
             {
-                post.embedsource = trimProperty(currentValue, "'embedsource'");
+                post.embedsource = GetMultiLineValue(article, i);
             }
             else if (currentValue.Contains("'created'"))
             {
@@ -1560,8 +1593,12 @@ internal class Program
                     }
                     else if (currentLineText.Contains("'text':"))
                     {
-                        var multitext = article.Skip(currentLineNumber).Take(endLine - currentLineNumber);
-                        text = TrimProperty(multitext, "'text':");
+                        if (!currentLineText.Contains("'text': \"\\r\""))
+                        {
+                            var multitext = article.Skip(currentLineNumber).Take(endLine - currentLineNumber);
+                            text = TrimProperty(multitext, "'text':");
+                        }
+                        
                     }
                     else if (currentLineText.Contains("'image':"))
                     {
@@ -1583,13 +1620,14 @@ internal class Program
                 if (post.visualtype == "video" && post.embedsource.Contains("https://www.youtube.com/embed"))
                 {
                     finalString = post.embedsource.Replace("width=\"560\"", "width=\"800\"").Replace("height=\"315\"", "height=\"500\"");
+                    post.visualtype = string.Empty;
                 }
                 else if (post.visualtype == "embed")
                 {
-                    finalString = post.embedsource;
+                    //finalString = post.embedsource;
+                    post.visualtype = string.Empty;
                 }
-
-                if(type == "text")
+                else if(type == "text")
                 {
                     finalString = finalString + text;
                 }
@@ -1723,7 +1761,7 @@ internal class Program
                 }
 
                 var cleaned = string.Join("\n", newList);
-                return TrimProperty(TrimProperty(cleaned, "embed':"), "embedCode':").Trim().Trim('\'');
+                return TrimProperty(TrimProperty(TrimProperty(cleaned, "'embedsource':"), "embed':"), "embedCode':").Trim().Trim('\'') + "\n";
             }
         }
         
