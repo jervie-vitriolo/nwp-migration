@@ -21,7 +21,7 @@ internal class Program
         List<string> WP_Post_Attachment_caption;
         
         int ErrorCount = 0;
-        string[] directories = {@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\NWP new\2024"
+        string[] directories = {
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2015",
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2016",
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2017",
@@ -30,8 +30,8 @@ internal class Program
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2020",
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2021",
                                 //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2022",
-                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2023"
-                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2024"
+                                //@"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2023",
+                                @"C:\Users\jervi\Desktop\Newswatchplus\db migration\NWP\CNN new\Articles\archived\2024"
                                  };
 
 
@@ -46,7 +46,6 @@ internal class Program
 
         //Add title starting point 
         //AddTItleMarking();
-
 
         GenerateInsertSql();
 
@@ -413,9 +412,11 @@ internal class Program
 
             //CNN
              string WP_term_relationships_CNN_category = $"INSERT INTO wp_term_relationships(OBJECT_ID,TERM_TAXONOMY_ID,TERM_ORDER) VALUES({PostID},505,0);";
+            //WP_term_relationships_CNN_category = "";
 
             //Tag
             string  WP_term_relationships_CNN_tag = $"INSERT INTO wp_term_relationships(OBJECT_ID,TERM_TAXONOMY_ID,TERM_ORDER) VALUES({PostID},500,0);";
+            //WP_term_relationships_CNN_tag = "";
 
             if (!string.IsNullOrEmpty(post.caption ))
             {
@@ -1593,12 +1594,10 @@ internal class Program
                     }
                     else if (currentLineText.Contains("'text':"))
                     {
-                        if (!currentLineText.Contains("'text': \"\\r\""))
-                        {
-                            var multitext = article.Skip(currentLineNumber).Take(endLine - currentLineNumber);
-                            text = TrimProperty(multitext, "'text':");
-                        }
                         
+                        var multitext = article.Skip(currentLineNumber).Take(endLine - currentLineNumber);
+                        text = TrimProperty(multitext, "'text':");
+
                     }
                     else if (currentLineText.Contains("'image':"))
                     {
@@ -1667,8 +1666,38 @@ internal class Program
     private static string TrimProperty(IEnumerable<string> multitext,string toReplace)
     {
         multitext = multitext.Select(x => x.Replace(toReplace, string.Empty)).ToArray();
-        IEnumerable<string> trimmedStrings = multitext.Select(s => s.Trim());
-        return string.Join(" ", trimmedStrings).Trim('\'');
+        List<string> trimmedStrings = multitext.Select(s => s.Trim()).ToList();
+
+        for (int i = 0; i < trimmedStrings.Count(); i++)
+        {
+            var text = trimmedStrings[i];
+
+            if (text.EndsWith("\\r\""))
+            {
+                text = text.Replace("\\r\"", "<br>");
+            }
+            else if (text.Equals("\"\\r\""))
+            {
+                text = "<br>";
+            }
+
+            if (text.EndsWith('\\'))
+            {
+                text = text.Remove(text.Length - 1);
+            }
+
+            if (text.StartsWith('\\'))
+            {
+                text = text.Remove(0,1);
+            }
+            text = text.Replace("\\ \\", string.Empty);
+
+            trimmedStrings[i] = text;
+        }
+
+        
+
+        return string.Join(" ", trimmedStrings).Trim('\'').Trim('\"');
     }
 
     private static string TrimProperty(string text, string toReplace)
@@ -1927,11 +1956,19 @@ internal class Program
         var wP_term = new MySqlCommand(wP_term_relationships, conn);
         wP_term.ExecuteNonQuery();
 
-        var wP_term_category = new MySqlCommand(wP_term_relationships_category, conn);
-        wP_term_category.ExecuteNonQuery();
+        if(!string.IsNullOrEmpty(wP_term_relationships_category))
+        {
+            var wP_term_category = new MySqlCommand(wP_term_relationships_category, conn);
+            wP_term_category.ExecuteNonQuery();
+        }
+        
 
-        var wP_term_tag = new MySqlCommand(wP_term_relationships_tag, conn);
-        wP_term_tag.ExecuteNonQuery();
+        if (!string.IsNullOrEmpty(wP_term_relationships_tag))
+        {
+            var wP_term_tag = new MySqlCommand(wP_term_relationships_tag, conn);
+            wP_term_tag.ExecuteNonQuery();
+        }
+        
 
         if (!string.IsNullOrEmpty(image_captionSql))
         {
